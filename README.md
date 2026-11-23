@@ -1,440 +1,240 @@
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     SUBHAMITA ADHIKARI — GitHub Profile README
-     ⚠️  REPLACE all occurrences of REPLACE_WITH_GITHUB_USERNAME with your
-         actual GitHub username before pushing.
-     ⚠️  Replace project repo slugs in the Featured Projects section.
-     ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- ░░ HEADER ░░ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,40:0A2472,80:0066FF,100:00D4FF&height=220&section=header&text=SUBHAMITA%20ADHIKARI&fontSize=62&fontColor=FFFFFF&fontAlignY=38&desc=%2F%2F%20AI%20%26%20ML%20%E2%80%A2%20Full-Stack%20%E2%80%A2%20Design%20%E2%80%A2%20Community%20Leader&descAlignY=62&descSize=17&animation=fadeIn" width="100%" />
 
-<!-- ───────────────────────────── ANIMATED HEADER ───────────────────────────── -->
-<div align="center">
+<p align="center">
+  <a href="https://readme-typing-svg.demolab.com">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1000&color=00D4FF&width=1000&center=true&vCenter=true&lines=Hello+Git-World!+%F0%9F%8C%8D;Building+technology+that+creates+impact.;AI+%2B+ML+%2B+Full-Stack+%2B+Design+%2B+Leadership.;Where+code+meets+creativity+meets+the+cosmos.;Secretary%2C+Microsoft+Student+Society+UEMK+%7C+ACM+Treasurer." alt="Typing SVG" />
+  </a>
+</p>
 
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Subhamita%20Adhikari&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20%26%20ML%20Enthusiast%20%7C%20Full-Stack%20Developer%20%7C%20Creative%20Designer%20%7C%20Community%20Leader&descAlignY=62&descSize=14&animation=fadeIn" alt="Header" width="100%"/>
-</a>
-
-</div>
-
-<!-- ───────────────────────────── TYPING ANIMATION ───────────────────────────── -->
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=55&lines=Building+technology+that+creates+impact.;AI+%2B+ML+%2B+Full-Stack+%2B+Design+%2B+Leadership.;Where+code+meets+creativity+meets+cosmos.)](https://git.io/typing-svg)
-
-</div>
-
-<!-- ───────────────────────────── PROFILE BADGES ─────────────────────────────── -->
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Subhamita%20Adhikari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhamita-adhikari-a14b00273/)
-[![GitHub](https://img.shields.io/badge/GitHub-your--username-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/REPLACE_WITH_GITHUB_USERNAME)
-[![Gmail](https://img.shields.io/badge/Gmail-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:REPLACE_WITH_EMAIL@gmail.com)
-[![Profile Views](https://komarev.com/ghpvc/?username=REPLACE_WITH_GITHUB_USERNAME&color=00D4FF&style=for-the-badge&label=Profile+Views)](https://github.com/REPLACE_WITH_GITHUB_USERNAME)
-
-</div>
-
-<br/>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=REPLACE_WITH_GITHUB_USERNAME&label=PROFILE%20VIEWS&color=00D4FF&style=for-the-badge&labelColor=0D1117" alt="Profile views" />
+  <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME?tab=followers">
+    <img src="https://img.shields.io/github/followers/REPLACE_WITH_GITHUB_USERNAME?label=FOLLOWERS&style=for-the-badge&color=0066FF&labelColor=0D1117" alt="Followers" />
+  </a>
+  <img src="https://img.shields.io/badge/STATUS-BUILDING%20%26%20LEADING-00D4FF?style=for-the-badge&labelColor=0D1117" alt="Status" />
+</p>
 
 ---
 
-<!-- ─────────────────────────────── ABOUT ME ──────────────────────────────────── -->
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-## `⚡ whoami`
+### `> whoami`
 
 ```python
 class SubhamitaAdhikari:
 
-    name        = "Subhamita Adhikari"
-    location    = "Kolkata, India 🇮🇳"
-    education   = "B.Tech CSE | Minor: Astronomy, Astrophysics & Astrobiology"
+    alias        = "subha"
+    location     = "Kolkata, India 🇮🇳"
+    education    = "B.Tech CSE | Minor: Astronomy, Astrophysics & Astrobiology"
 
-    roles = [
-        "Secretary — Microsoft Student Society UEMK (2026–27)",
-        "Treasurer — ACM UEMK Student Chapter",
-        "Graphics Lead — Chainsphere 2026",
-        "Organizer — Diversion 2k25 & Diversion 2k26",
-        "Student Developer & Creative Strategist",
-    ]
+    currently    = {
+        "building"   : "AI-powered tools & full-stack systems that actually matter",
+        "leading"    : "Microsoft Student Society UEMK + ACM Student Chapter",
+        "designing"  : "brand identities, event graphics & UI systems",
+        "exploring"  : "the universe — both digital and cosmic",
+    }
 
-    interests = [
-        "Artificial Intelligence & Machine Learning",
-        "Full-Stack Development",
-        "UI/UX & Graphic Design",
-        "Data Science & Analytics",
-        "Astronomy, Astrophysics & Astrobiology",
-        "Open Source Communities",
-        "Technical Leadership",
-    ]
-
-    philosophy = "Build. Design. Lead. Explore."
+    stack        = ["Python", "React", "Next.js", "Node.js", "ML", "Figma"]
+    fuel         = "chai (always brewing)"
+    philosophy   = "Build. Design. Lead. Explore."
+    goal         = "leave every system — technical or human — better than I found it"
 ```
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+### ✨ About Me
 
-<br/>
-
-<!-- ───────────────────────────── LEADERSHIP ROLES ───────────────────────────── -->
-
-## `🏛️ Leadership & Community`
-
-<div align="center">
-
-| Role | Organization | Period |
-|------|-------------|--------|
-| 🔷 **Secretary** | Microsoft Student Society UEMK | 2026 – 2027 |
-| 💎 **Treasurer** | ACM UEMK Student Chapter | Active |
-| 🎨 **Graphics Lead** | Chainsphere 2026 | 2026 |
-| 🚀 **Organizer** | Diversion 2k25 & Diversion 2k26 | 2025 – 2026 |
-| 💡 **Student Developer & Creative Strategist** | — | Active |
-
-</div>
-
-<br/>
+I spend my days at the intersection of algorithms and aesthetics — writing code that works, designing things that *breathe*, and leading communities that build real momentum. From training ML models to detect malware, to architecting full-stack systems, to crafting brand identities for 1000+ attendee events — I operate where logic meets creativity. I have a minor in Astronomy, because I believe the best engineers look up as often as they look inward. If something isn't broken yet, give me a sprint — I'll redesign it, ship it, and document it properly this time.
 
 ---
 
-<!-- ───────────────────────────── TECH STACK ─────────────────────────────────── -->
+### ⚡ Tech Arsenal
 
-## `🛠️ Tech Stack`
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,java,c,js,html,css,react,nextjs,nodejs,tailwind,mysql,mongodb&perline=12&theme=dark" /><br/>
+    <img src="https://skillicons.dev/icons?i=sklearn,tensorflow,numpy,git,github,vscode,linux,figma,ps,ai,postman,canva&perline=12&theme=dark" />
+  </a>
+</p>
 
-### Languages
+<details>
+  <summary><h2>🛠️ The Full Toolbox (click to expand)</h2></summary>
 
-<div align="center">
+  <br/>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+  <h3>💻 Programming Languages</h3>
+  <br/>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white" alt="Python" />
+    <img src="https://custom-icon-badges.demolab.com/badge/Java-007396.svg?logo=java&logoColor=white" alt="Java" />
+    <img src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white" alt="C" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://custom-icon-badges.demolab.com/badge/SQL-025E8C.svg?logo=database&logoColor=white" alt="SQL" />
+    <img src="https://img.shields.io/badge/HTML-E34F26.svg?logo=html5&logoColor=white" alt="HTML" />
+    <img src="https://img.shields.io/badge/CSS-1572B6.svg?logo=css3&logoColor=white" alt="CSS" />
+  </p>
 
-</div>
+  <br/>
 
-### Frontend
+  <h3>🧰 Frameworks & Libraries</h3>
+  <br/>
+  <p align="center">
+    <img src="https://img.shields.io/badge/React-20232a.svg?logo=react&logoColor=%2361DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Next.js-000000.svg?logo=next.js&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/Node.js-43853D.svg?logo=node.js&logoColor=white" alt="Node.js" />
+    <img src="https://img.shields.io/badge/Express.js-000000.svg?logo=express&logoColor=white" alt="Express.js" />
+    <img src="https://img.shields.io/badge/Tailwind-38B2AC.svg?logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/NumPy-013243.svg?logo=numpy&logoColor=white" alt="NumPy" />
+    <img src="https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white" alt="Pandas" />
+    <img src="https://img.shields.io/badge/scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white" alt="scikit-learn" />
+    <img src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=TensorFlow&logoColor=white" alt="TensorFlow" />
+  </p>
 
-<div align="center">
+  <br/>
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  <h3>🗄️ Databases & Cloud</h3>
+  <br/>
+  <p align="center">
+    <img src="https://img.shields.io/badge/MySQL-00f.svg?logo=mysql&logoColor=white" alt="MySQL" />
+    <img src="https://img.shields.io/badge/MongoDB-4ea94b.svg?logo=mongodb&logoColor=white" alt="MongoDB" />
+    <img src="https://img.shields.io/badge/GitHub%20Pages-327FC7.svg?logo=github&logoColor=white" alt="GitHub Pages" />
+    <img src="https://img.shields.io/badge/Vercel-000000.svg?logo=vercel&logoColor=white" alt="Vercel" />
+  </p>
 
-</div>
+  <br/>
 
-### Backend & Databases
+  <h3>🎨 Design & Creative Tools</h3>
+  <br/>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Figma-F24E1E.svg?logo=figma&logoColor=white" alt="Figma" />
+    <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00.svg?logo=adobe-illustrator&logoColor=white" alt="Adobe Illustrator" />
+    <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF.svg?logo=adobe-photoshop&logoColor=white" alt="Adobe Photoshop" />
+    <img src="https://img.shields.io/badge/Canva-00C4CC.svg?logo=canva&logoColor=white" alt="Canva" />
+  </p>
 
-<div align="center">
+  <br/>
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+  <h3>🧰 Developer Tools</h3>
+  <br/>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Git-F05033.svg?logo=git&logoColor=white" alt="Git" />
+    <img src="https://img.shields.io/badge/GitHub-181717.svg?logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?logo=visual-studio-code&logoColor=white" alt="VS Code" />
+    <img src="https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black" alt="Linux" />
+    <img src="https://img.shields.io/badge/Postman-FF6C37.svg?logo=postman&logoColor=white" alt="Postman" />
+    <img src="https://img.shields.io/badge/Jupyter-F37626.svg?logo=Jupyter&logoColor=white" alt="Jupyter" />
+  </p>
 
-</div>
-
-### AI / Data Science
-
-<div align="center">
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-</div>
-
-### Tools & DevOps
-
-<div align="center">
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-</div>
-
-### Design & Creative
-
-<div align="center">
-
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe Illustrator](https://img.shields.io/badge/Adobe_Illustrator-FF9A00?style=for-the-badge&logo=adobe-illustrator&logoColor=white)
-![Adobe Photoshop](https://img.shields.io/badge/Adobe_Photoshop-31A8FF?style=for-the-badge&logo=adobe-photoshop&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
-
-</div>
-
-<br/>
-
----
-
-<!-- ───────────────────────────── GITHUB STATISTICS ──────────────────────────── -->
-
-## `📊 GitHub Statistics`
-
-<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME in ALL stat card URLs below -->
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=REPLACE_WITH_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=00D4FF" alt="GitHub Stats"/>
-&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=REPLACE_WITH_GITHUB_USERNAME&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=C9D1D9" alt="Top Languages"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<!-- Streak Stats — uses streak-stats.demolab.com (herokuapp is deprecated) -->
-<img src="https://streak-stats.demolab.com?user=REPLACE_WITH_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D4FF&ring=BD00FF&fire=00D4FF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00D4FF&sideLabels=C9D1D9&dates=C9D1D9" alt="GitHub Streak" width="65%"/>
-
-</div>
-
-<br/>
-
-<!-- Activity Graph — ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME below -->
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=REPLACE_WITH_GITHUB_USERNAME&bg_color=0D1117&color=00D4FF&line=BD00FF&point=00D4FF&area=true&hide_border=true)](https://github.com/REPLACE_WITH_GITHUB_USERNAME)
-
-</div>
-
-<br/>
+</details>
 
 ---
 
-<!-- ───────────────────────────── TROPHY SHOWCASE ────────────────────────────── -->
+### 🏛️ Leadership Signal
 
-## `🏆 Trophy Showcase`
-
-<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME below -->
-<div align="center">
-
-[![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=REPLACE_WITH_GITHUB_USERNAME&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-<br/>
+| Role | Organization | Mode |
+| :-- | :-- | :-- |
+| ![Secretary](https://img.shields.io/badge/Secretary-00D4FF?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Microsoft Student Society UEMK** | 2026 – 2027 |
+| ![Treasurer](https://img.shields.io/badge/Treasurer-0066FF?style=for-the-badge&logoColor=white&labelColor=0D1117) | **ACM UEMK Student Chapter** | Active |
+| ![Organizer](https://img.shields.io/badge/Organizer-0A2472?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Diversion 2k25 & Diversion 2k26** | 2025 – 2026 |
+| ![Strategist](https://img.shields.io/badge/Creative%20Strategist-00B4D8?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Student Developer** | Active |
 
 ---
 
-<!-- ───────────────────────────── FEATURED PROJECTS ──────────────────────────── -->
+### 📌 Featured Work
 
-## `🚀 Featured Projects`
-
-<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME with your GitHub username
-         Replace each href repo slug with your real repository name
-         Replace each description with your actual project description  -->
-
-<div align="center">
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>⚡ Ignitia</h3>
-      <p><em>Add your project description here — what it does, the problem it solves, and its impact.</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-      </p>
-      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/ignitia">
-        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛡️ Malware Detection — ML</h3>
-      <p>ML-powered malware classification and analysis system using behavioural features and ensemble models for real-time threat detection.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-      </p>
-      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/malware-detection-ml">
-        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📊 Data Science Portfolio</h3>
-      <p>End-to-end data science notebooks covering EDA, feature engineering, model building, and deployment across diverse real-world datasets.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-        <img src="https://img.shields.io/badge/ML-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-      </p>
-      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/data-science-portfolio">
-        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🌐 Full-Stack Web Applications</h3>
-      <p>Production-grade full-stack apps with modern architecture — REST APIs, authentication, responsive UI and cloud-ready deployment.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
-      </p>
-      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/fullstack-web-apps">
-        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔭 Astronomy & Research Projects</h3>
-      <p>Computational astronomy explorations — stellar data analysis, astrophysics simulations, and open-source space datasets from NASA/ESA.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Data%20Analysis-00D4FF?style=flat-square&logo=jupyter&logoColor=white"/>
-      </p>
-      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/astronomy-research">
-        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🎨 Design & Branding Portfolio</h3>
-      <p>Visual identity systems, event branding, social media design, and UI/UX work created across Microsoft Student Society, ACM, Chainsphere, and Diversion.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=flat-square&logo=adobe-illustrator&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobe-photoshop&logoColor=white"/>
-      </p>
-      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/design-portfolio">
-        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-
-<br/>
+| Project | What it does |
+| :-- | :-- |
+| [![employee-management](https://img.shields.io/badge/Employee%20Management-00D4FF?style=for-the-badge&logo=python&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/employee_management) | 🗂️ Full-stack employee management system — CRUD operations, role-based access, dashboard & reporting. |
+| [![ai-claims-ace](https://img.shields.io/badge/AI--Claims--Ace-0066FF?style=for-the-badge&logo=openai&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/AI-Claims-Ace) | 🤖 AI-powered insurance claims processing — intelligent document parsing, validation & decision support. |
+| [![malware-detection](https://img.shields.io/badge/Malware%20Detection%20ML-00B4D8?style=for-the-badge&logo=shield&logoColor=white&labelColor=0D1117)](https://github.com/REPLACE_WITH_GITHUB_USERNAME/malware-detection-ml) | 🛡️ ML-powered malware classifier using behavioural features & ensemble models for real-time threat detection. *(Python, scikit-learn)* |
+| [![data-science](https://img.shields.io/badge/Data%20Science%20Portfolio-0A2472?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0D1117)](https://github.com/REPLACE_WITH_GITHUB_USERNAME/data-science-portfolio) | 📊 End-to-end DS notebooks — EDA, feature engineering, model building & deployment across real-world datasets. *(Python, Pandas, NumPy)* |
+| [![astronomy](https://img.shields.io/badge/Astronomy%20Research-1a1a2e?style=for-the-badge&logo=nasa&logoColor=00D4FF&labelColor=0D1117)](https://github.com/REPLACE_WITH_GITHUB_USERNAME/astronomy-research) | 🔭 Computational astrophysics — stellar data analysis, orbital simulations & NASA/ESA open dataset exploration. |
 
 ---
 
-<!-- ───────────────────────────── COMMUNITY IMPACT ───────────────────────────── -->
+### 📊 Stats & Activity
 
-## `🌐 Community Impact`
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=REPLACE_WITH_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=0066FF&text_color=C9D1D9&ring_color=00D4FF" height="180px" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=REPLACE_WITH_GITHUB_USERNAME&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=C9D1D9" height="180px" alt="Top languages" />
+</p>
 
-<div align="center">
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=REPLACE_WITH_GITHUB_USERNAME&hide_border=true&background=0D1117&ring=00D4FF&fire=0066FF&currStreakLabel=00D4FF&sideLabels=00B4D8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&stroke=30363D" alt="Streak" />
+</p>
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                     COMMUNITY & LEADERSHIP                       ║
-╠══════════════════════╦═══════════════════════════════════════════╣
-║  Student Leadership  ║  Secretary · Microsoft Student Society    ║
-║                      ║  Treasurer · ACM UEMK Student Chapter     ║
-╠══════════════════════╬═══════════════════════════════════════════╣
-║  Event Management    ║  Organizer · Diversion 2k25 & 2k26        ║
-║                      ║  Graphics Lead · Chainsphere 2026         ║
-╠══════════════════════╬═══════════════════════════════════════════╣
-║  Mentorship &        ║  Guiding junior developers & designers     ║
-║  Knowledge Sharing   ║  Fostering collaborative tech communities  ║
-╠══════════════════════╬═══════════════════════════════════════════╣
-║  Design              ║  Brand identity, event design, UI/UX,      ║
-║  Contributions       ║  social media graphics & visual systems   ║
-╚══════════════════════╩═══════════════════════════════════════════╝
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=REPLACE_WITH_GITHUB_USERNAME&bg_color=0D1117&color=00D4FF&line=0066FF&point=00D4FF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
+</p>
+
+<!-- Snake contribution graph — enable by adding this GitHub Action to your profile repo:
+     https://github.com/Platane/snk
+     Once set up, uncomment the lines below: -->
+<!--
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_GITHUB_USERNAME/output/github-contribution-grid-snake.svg" alt="Snake eating my contributions" />
+  </picture>
+</p>
+-->
+
+<p align="center"><sub><b>Note:</b> Top languages reflects public code only — not experience or skill depth.</sub></p>
+
+---
+
+### 🏆 Trophy Rack
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=REPLACE_WITH_GITHUB_USERNAME&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
+</p>
+
+---
+
+### 📡 Currently Transmitting
+
+```python
+learning = {
+    "Advanced ML"    : ["Deep Learning", "Neural Networks", "Model Deployment"],
+    "Modern Web"     : ["Next.js App Router", "Server Components", "Edge Functions"],
+    "Architecture"   : ["System Design", "Distributed Systems", "Scalability"],
+    "Space Science"  : ["Computational Astrophysics", "Space Data Analysis"],
+}
 ```
 
-</div>
+---
 
-<br/>
+### 🔭 Cosmic Corner
+
+<p align="center">
+  <i>"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself."</i><br/>
+  <sub>— Carl Sagan</sub>
+</p>
+
+Beyond the terminal, I study the universe through data. My minor in **Astronomy, Astrophysics & Astrobiology** isn't a detour — it's a lens. The same curiosity that makes me debug at 2 AM is what makes me read papers on biosignature detection and habitable-zone dynamics. The universe is the greatest unsolved codebase, and I intend to contribute.
+
+| Field | Focus Area |
+| :-- | :-- |
+| 🌠 **Astronomy** | Stellar evolution · galactic structure · observational data analysis |
+| 🌌 **Astrophysics** | Computational modelling · cosmology · gravitational dynamics |
+| 🧬 **Astrobiology** | Origins of life · habitable zones · biosignature detection |
+| 🛰️ **Space Data** | NASA/ESA open datasets · mission archives · space ML applications |
 
 ---
 
-<!-- ───────────────────────────── CURRENTLY LEARNING ─────────────────────────── -->
+<h3 align="center">📫 Connect</h3>
+<p align="center">
+  <a href="mailto:REPLACE_WITH_EMAIL@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/subhamita-adhikari-a14b00273/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
 
-## `📡 Currently Learning`
+<p align="center"><i>"I write code that works. Eventually. And I design things that look like they always did."</i></p>
 
-<div align="center">
+<!-- ░░ FOOTER ░░ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:0066FF,100:0D1117&height=120&section=footer&animation=fadeIn" width="100%" />
 
-| Domain | Topics |
-|--------|--------|
-| 🤖 **Advanced Machine Learning** | Deep Learning · Neural Networks · Model Deployment |
-| ⚡ **Next.js & Modern Web** | App Router · Server Components · Performance |
-| 🏗️ **System Design** | Scalability · Distributed Systems · Architecture |
-| 🌌 **Space Technology** | Computational Astrophysics · Space Data Analysis |
-
-</div>
-
-<br/>
-
----
-
-<!-- ───────────────────────────── ASTRONOMY CORNER ───────────────────────────── -->
-
-## `🔭 Astronomy Corner`
-
-<div align="center">
-
-> *"The cosmos is within us. We are made of star-stuff."* — Carl Sagan
-
-</div>
-
-Beyond code and design, I explore the universe through the lens of science and data.
-
-| Field | Focus |
-|-------|-------|
-| 🌠 **Astronomy** | Stellar evolution, galactic structure, observational techniques |
-| 🌌 **Astrophysics** | Computational modeling, cosmology, gravitational dynamics |
-| 🧬 **Astrobiology** | Origins of life, habitable zones, biosignature detection |
-| 🛰️ **Space Research** | Space data analysis, mission datasets, NASA/ESA open data |
-
-> Minor in **Astronomy, Astrophysics & Astrobiology** — because the universe is the greatest unsolved problem.
-
-<br/>
-
----
-
-<!-- ───────────────────────────── CONNECT WITH ME ────────────────────────────── -->
-
-## `📬 Connect With Me`
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhamita-adhikari-a14b00273/)
-[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/REPLACE_WITH_GITHUB_USERNAME)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:REPLACE_WITH_EMAIL@gmail.com)
-
-<br/>
-
-*Open to collaborations, research projects, open source contributions, and internship opportunities.*
-
-</div>
-
-<br/>
-
----
-
-<!-- ───────────────────────────── FOOTER ─────────────────────────────────────── -->
-
-<div align="center">
-
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=fadeIn" alt="Footer" width="100%"/>
-</a>
-
-<sub>Designed with precision · Built with passion · Led with purpose</sub>
-
-<br/>
-
-![GitHub followers](https://img.shields.io/github/followers/REPLACE_WITH_GITHUB_USERNAME?label=Followers&style=social)
-![GitHub stars](https://img.shields.io/github/stars/REPLACE_WITH_GITHUB_USERNAME?label=Stars&style=social)
-
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     END OF README
-     Checklist before pushing:
-     [ ] Replace all REPLACE_WITH_GITHUB_USERNAME with your GitHub username
-     [ ] Replace REPLACE_WITH_EMAIL@gmail.com with your actual email
-     [ ] Replace repo slugs (ignitia, malware-detection-ml, etc.) with real repo names
-     [ ] Add project descriptions to the Project Highlights table
-     ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════
+     CHECKLIST BEFORE PUSHING
+     [ ] Replace REPLACE_WITH_GITHUB_USERNAME (all occurrences)
+     [ ] Replace REPLACE_WITH_EMAIL@gmail.com
+     [ ] Update placeholder repo slugs (malware-detection-ml, data-science-portfolio, astronomy-research)
+     [ ] To enable snake graph: set up Platane/snk Action, then uncomment the snake block
+     ═══════════════════════════════════════════════════════ -->
