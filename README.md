@@ -175,32 +175,31 @@ class SubhamitaAdhikari:
 
 ## `📊 GitHub Statistics`
 
-<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME in all stat card URLs below -->
+<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME in ALL stat card URLs below -->
 
 <div align="center">
 
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=REPLACE_WITH_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=00D4FF" alt="GitHub Stats"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=REPLACE_WITH_GITHUB_USERNAME&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=C9D1D9" alt="Top Languages"/>
-</a>
-
-</div>
-
-<div align="center">
-
-<a href="https://git.io/streak-stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=REPLACE_WITH_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D4FF&ring=BD00FF&fire=00D4FF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00D4FF&sideLabels=C9D1D9&dates=C9D1D9" alt="GitHub Streak" width="60%"/>
-</a>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=REPLACE_WITH_GITHUB_USERNAME&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=00D4FF" alt="GitHub Stats"/>
+&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=REPLACE_WITH_GITHUB_USERNAME&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=C9D1D9" alt="Top Languages"/>
 
 </div>
 
 <br/>
 
-<!-- Activity Graph -->
-<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME below -->
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=REPLACE_WITH_GITHUB_USERNAME&bg_color=0D1117&color=00D4FF&line=BD00FF&point=00D4FF&area=true&hide_border=true&area_color=1a1a3e)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<!-- Streak Stats — uses streak-stats.demolab.com (herokuapp is deprecated) -->
+<img src="https://streak-stats.demolab.com?user=REPLACE_WITH_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D4FF&ring=BD00FF&fire=00D4FF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00D4FF&sideLabels=C9D1D9&dates=C9D1D9" alt="GitHub Streak" width="65%"/>
+
+</div>
+
+<br/>
+
+<!-- Activity Graph — ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME below -->
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=REPLACE_WITH_GITHUB_USERNAME&bg_color=0D1117&color=00D4FF&line=BD00FF&point=00D4FF&area=true&hide_border=true)](https://github.com/REPLACE_WITH_GITHUB_USERNAME)
 
 </div>
 
@@ -227,48 +226,94 @@ class SubhamitaAdhikari:
 
 ## `🚀 Featured Projects`
 
-<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME and each repo slug (e.g. ignitia, malware-detection)
-         with your actual GitHub repository names -->
+<!-- ⚠️ Replace REPLACE_WITH_GITHUB_USERNAME with your GitHub username
+         Replace each href repo slug with your real repository name
+         Replace each description with your actual project description  -->
 
 <div align="center">
-
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/ignitia">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=REPLACE_WITH_GITHUB_USERNAME&repo=ignitia&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9" alt="Ignitia"/>
-</a>
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/malware-detection-ml">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=REPLACE_WITH_GITHUB_USERNAME&repo=malware-detection-ml&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9" alt="Malware Detection ML"/>
-</a>
-
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ Ignitia</h3>
+      <p><em>Add your project description here — what it does, the problem it solves, and its impact.</em></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+      </p>
+      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/ignitia">
+        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛡️ Malware Detection — ML</h3>
+      <p>ML-powered malware classification and analysis system using behavioural features and ensemble models for real-time threat detection.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+      </p>
+      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/malware-detection-ml">
+        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📊 Data Science Portfolio</h3>
+      <p>End-to-end data science notebooks covering EDA, feature engineering, model building, and deployment across diverse real-world datasets.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+        <img src="https://img.shields.io/badge/ML-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
+      </p>
+      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/data-science-portfolio">
+        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌐 Full-Stack Web Applications</h3>
+      <p>Production-grade full-stack apps with modern architecture — REST APIs, authentication, responsive UI and cloud-ready deployment.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+      </p>
+      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/fullstack-web-apps">
+        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔭 Astronomy & Research Projects</h3>
+      <p>Computational astronomy explorations — stellar data analysis, astrophysics simulations, and open-source space datasets from NASA/ESA.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Data%20Analysis-00D4FF?style=flat-square&logo=jupyter&logoColor=white"/>
+      </p>
+      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/astronomy-research">
+        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎨 Design & Branding Portfolio</h3>
+      <p>Visual identity systems, event branding, social media design, and UI/UX work created across Microsoft Student Society, ACM, Chainsphere, and Diversion.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=flat-square&logo=adobe-illustrator&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobe-photoshop&logoColor=white"/>
+      </p>
+      <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/design-portfolio">
+        <img src="https://img.shields.io/badge/View%20Repo-00D4FF?style=for-the-badge&logo=github&logoColor=black"/>
+      </a>
+    </td>
+  </tr>
+</table>
 </div>
-
-<div align="center">
-
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/data-science-portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=REPLACE_WITH_GITHUB_USERNAME&repo=data-science-portfolio&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9" alt="Data Science Portfolio"/>
-</a>
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/fullstack-web-apps">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=REPLACE_WITH_GITHUB_USERNAME&repo=fullstack-web-apps&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9" alt="Full Stack Web Apps"/>
-</a>
-
-</div>
-
-<div align="center">
-
-<a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME/astronomy-research">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=REPLACE_WITH_GITHUB_USERNAME&repo=astronomy-research&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=BD00FF&text_color=C9D1D9" alt="Astronomy & Research"/>
-</a>
-
-</div>
-
-### Project Highlights
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **Ignitia** | *(Add your project description here)* | `Python` `React` `Node.js` |
-| **Malware Detection — ML** | ML-powered malware classification & analysis system | `Python` `scikit-learn` `Pandas` |
-| **Data Science Portfolio** | Collection of end-to-end data science projects & notebooks | `Python` `NumPy` `Pandas` `ML` |
-| **Full-Stack Web Applications** | Production-grade web apps with modern architecture | `React` `Next.js` `Node.js` `MongoDB` |
-| **Astronomy & Research Projects** | Computational astronomy, astrophysics simulations & research | `Python` `Data Analysis` |
 
 <br/>
 
