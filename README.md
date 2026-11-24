@@ -130,7 +130,6 @@ I spend my days at the intersection of algorithms and aesthetics — writing cod
 
 | Role | Organization | Mode |
 | :-- | :-- | :-- |
-| ![Secretary](https://img.shields.io/badge/Secretary-00D4FF?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Microsoft Student Society UEMK** | 2026 – 2027 |
 | ![Treasurer](https://img.shields.io/badge/Treasurer-0066FF?style=for-the-badge&logoColor=white&labelColor=0D1117) | **ACM UEMK Student Chapter** | Active |
 | ![Organizer](https://img.shields.io/badge/Organizer-0A2472?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Diversion 2k25 & Diversion 2k26** | 2025 – 2026 |
 | ![Strategist](https://img.shields.io/badge/Creative%20Strategist-00B4D8?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Student Developer** | Active |
