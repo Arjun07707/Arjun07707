@@ -8,9 +8,9 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=REPLACE_WITH_GITHUB_USERNAME&label=PROFILE%20VIEWS&color=00D4FF&style=for-the-badge&labelColor=0D1117" alt="Profile views" />
-  <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME?tab=followers">
-    <img src="https://img.shields.io/github/followers/REPLACE_WITH_GITHUB_USERNAME?label=FOLLOWERS&style=for-the-badge&color=0066FF&labelColor=0D1117" alt="Followers" />
+  <img src="https://komarev.com/ghpvc/?username=Arjun07707&label=PROFILE%20VIEWS&color=00D4FF&style=for-the-badge&labelColor=0D1117" alt="Profile views" />
+  <a href="https://github.com/Arjun07707?tab=followers">
+    <img src="https://img.shields.io/github/followers/Arjun07707?label=FOLLOWERS&style=for-the-badge&color=0066FF&labelColor=0D1117" alt="Followers" />
   </a>
   <img src="https://img.shields.io/badge/STATUS-BUILDING%20%26%20LEADING-00D4FF?style=for-the-badge&labelColor=0D1117" alt="Status" />
 </p>
@@ -143,9 +143,9 @@ I spend my days at the intersection of algorithms and aesthetics — writing cod
 | :-- | :-- |
 | [![employee-management](https://img.shields.io/badge/Employee%20Management-00D4FF?style=for-the-badge&logo=python&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/employee_management) | 🗂️ Full-stack employee management system — CRUD operations, role-based access, dashboard & reporting. |
 | [![ai-claims-ace](https://img.shields.io/badge/AI--Claims--Ace-0066FF?style=for-the-badge&logo=openai&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/AI-Claims-Ace) | 🤖 AI-powered insurance claims processing — intelligent document parsing, validation & decision support. |
-| [![malware-detection](https://img.shields.io/badge/Malware%20Detection%20ML-00B4D8?style=for-the-badge&logo=shield&logoColor=white&labelColor=0D1117)](https://github.com/REPLACE_WITH_GITHUB_USERNAME/malware-detection-ml) | 🛡️ ML-powered malware classifier using behavioural features & ensemble models for real-time threat detection. *(Python, scikit-learn)* |
-| [![data-science](https://img.shields.io/badge/Data%20Science%20Portfolio-0A2472?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0D1117)](https://github.com/REPLACE_WITH_GITHUB_USERNAME/data-science-portfolio) | 📊 End-to-end DS notebooks — EDA, feature engineering, model building & deployment across real-world datasets. *(Python, Pandas, NumPy)* |
-| [![astronomy](https://img.shields.io/badge/Astronomy%20Research-1a1a2e?style=for-the-badge&logo=nasa&logoColor=00D4FF&labelColor=0D1117)](https://github.com/REPLACE_WITH_GITHUB_USERNAME/astronomy-research) | 🔭 Computational astrophysics — stellar data analysis, orbital simulations & NASA/ESA open dataset exploration. |
+| [![malware-detection](https://img.shields.io/badge/Malware%20Detection%20ML-00B4D8?style=for-the-badge&logo=shield&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/malware-detection-ml) | 🛡️ ML-powered malware classifier using behavioural features & ensemble models for real-time threat detection. *(Python, scikit-learn)* |
+| [![data-science](https://img.shields.io/badge/Data%20Science%20Portfolio-0A2472?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/data-science-portfolio) | 📊 End-to-end DS notebooks — EDA, feature engineering, model building & deployment across real-world datasets. *(Python, Pandas, NumPy)* |
+| [![astronomy](https://img.shields.io/badge/Astronomy%20Research-1a1a2e?style=for-the-badge&logo=nasa&logoColor=00D4FF&labelColor=0D1117)](https://github.com/Arjun07707/astronomy-research) | 🔭 Computational astrophysics — stellar data analysis, orbital simulations & NASA/ESA open dataset exploration. |
 
 ---
 
@@ -158,11 +158,11 @@ I spend my days at the intersection of algorithms and aesthetics — writing cod
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=REPLACE_WITH_GITHUB_USERNAME&hide_border=true&background=0D1117&ring=00D4FF&fire=0066FF&currStreakLabel=00D4FF&sideLabels=00B4D8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&stroke=30363D" alt="Streak" />
+  <img src="https://streak-stats.demolab.com?user=Arjun07707&hide_border=true&background=0D1117&ring=00D4FF&fire=0066FF&currStreakLabel=00D4FF&sideLabels=00B4D8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&stroke=30363D" alt="Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=REPLACE_WITH_GITHUB_USERNAME&bg_color=0D1117&color=00D4FF&line=0066FF&point=00D4FF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Arjun07707&bg_color=0D1117&color=00D4FF&line=0066FF&point=00D4FF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
 </p>
 
 <!-- Snake contribution graph — enable by adding this GitHub Action to your profile repo:
@@ -171,8 +171,8 @@ I spend my days at the intersection of algorithms and aesthetics — writing cod
 <!--
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_GITHUB_USERNAME/output/github-contribution-grid-snake.svg" alt="Snake eating my contributions" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arjun07707/Arjun07707/output/github-contribution-grid-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Arjun07707/Arjun07707/output/github-contribution-grid-snake.svg" alt="Snake eating my contributions" />
   </picture>
 </p>
 -->
@@ -184,7 +184,7 @@ I spend my days at the intersection of algorithms and aesthetics — writing cod
 ### 🏆 Trophy Rack
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=REPLACE_WITH_GITHUB_USERNAME&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Arjun07707&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
 </p>
 
 ---
@@ -224,7 +224,7 @@ Beyond the terminal, I study the universe through data. My minor in **Astronomy,
 <p align="center">
   <a href="mailto:REPLACE_WITH_EMAIL@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/subhamita-adhikari-a14b00273/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Arjun07707"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
 
 <p align="center"><i>"I write code that works. Eventually. And I design things that look like they always did."</i></p>
@@ -234,7 +234,7 @@ Beyond the terminal, I study the universe through data. My minor in **Astronomy,
 
 <!-- ═══════════════════════════════════════════════════════
      CHECKLIST BEFORE PUSHING
-     [ ] Replace REPLACE_WITH_GITHUB_USERNAME (all occurrences)
+     [ ] Replace Arjun07707 (all occurrences)
      [ ] Replace REPLACE_WITH_EMAIL@gmail.com
      [ ] Update placeholder repo slugs (malware-detection-ml, data-science-portfolio, astronomy-research)
      [ ] To enable snake graph: set up Platane/snk Action, then uncomment the snake block
