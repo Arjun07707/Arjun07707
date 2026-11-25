@@ -1,240 +1,252 @@
-<!-- ░░ HEADER ░░ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,40:0A2472,80:0066FF,100:00D4FF&height=220&section=header&text=SUBHAMITA%20ADHIKARI&fontSize=62&fontColor=FFFFFF&fontAlignY=38&desc=%2F%2F%20AI%20%26%20ML%20%E2%80%A2%20Full-Stack%20%E2%80%A2%20Design%20%E2%80%A2%20Community%20Leader&descAlignY=62&descSize=17&animation=fadeIn" width="100%" />
+<div align="center">
+  <img src="assets/hero.svg" alt="Subhamita Adhikari — Beyond the Code. Into the Cosmos." width="100%" />
+</div>
 
 <p align="center">
-  <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=1000&color=00D4FF&width=1000&center=true&vCenter=true&lines=Hello+Git-World!+%F0%9F%8C%8D;Building+technology+that+creates+impact.;AI+%2B+ML+%2B+Full-Stack+%2B+Design+%2B+Leadership.;Where+code+meets+creativity+meets+the+cosmos.;Secretary%2C+Microsoft+Student+Society+UEMK+%7C+ACM+Treasurer." alt="Typing SVG" />
+  <a href="https://github.com/Arjun07707">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=500&amp;size=18&amp;duration=3200&amp;pause=900&amp;color=42D9FF&amp;center=true&amp;vCenter=true&amp;width=720&amp;lines=Computer+Science+Student;AI%2FML+Enthusiast;Full-Stack+Developer;Astronomy+Explorer;Creative+Problem+Solver" alt="Computer Science Student, AI/ML Enthusiast, Full-Stack Developer, Astronomy Explorer, Creative Problem Solver" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Arjun07707&label=PROFILE%20VIEWS&color=00D4FF&style=for-the-badge&labelColor=0D1117" alt="Profile views" />
-  <a href="https://github.com/Arjun07707?tab=followers">
-    <img src="https://img.shields.io/github/followers/Arjun07707?label=FOLLOWERS&style=for-the-badge&color=0066FF&labelColor=0D1117" alt="Followers" />
-  </a>
-  <img src="https://img.shields.io/badge/STATUS-BUILDING%20%26%20LEADING-00D4FF?style=for-the-badge&labelColor=0D1117" alt="Status" />
-</p>
-
----
-
-### `> whoami`
-
-```python
-class SubhamitaAdhikari:
-
-    alias        = "subhamita"
-    location     = "Kolkata, India 🇮🇳"
-    education    = "B.Tech CSE | Minor: Astronomy, Astrophysics & Astrobiology"
-
-    currently    = {
-        "building"   : "AI-powered tools & full-stack systems that actually matter",
-        "leading"    : "Microsoft Student Society UEMK + ACM Student Chapter",
-        "designing"  : "brand identities, event graphics & UI systems",
-        "exploring"  : "the universe — both digital and cosmic",
-    }
-
-    stack        = ["Python", "React", "Next.js", "Node.js", "ML", "Figma"]
-    fuel         = "chai (always brewing)"
-    philosophy   = "Build. Design. Lead. Explore."
-    goal         = "leave every system — technical or human — better than I found it"
-```
-
-### ✨ About Me
-
-I spend my days at the intersection of algorithms and aesthetics — writing code that works, designing things that *breathe*, and leading communities that build real momentum. From training ML models to detect malware, to architecting full-stack systems, to crafting brand identities for 1000+ attendee events — I operate where logic meets creativity. I have a minor in Astronomy, because I believe the best engineers look up as often as they look inward. If something isn't broken yet, give me a sprint — I'll redesign it, ship it, and document it properly this time.
-
----
-
-### ⚡ Tech Arsenal
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,java,c,js,html,css,react,nextjs,nodejs,tailwind,mysql,mongodb&perline=12&theme=dark" /><br/>
-    <img src="https://skillicons.dev/icons?i=sklearn,tensorflow,numpy,git,github,vscode,linux,figma,ps,ai,postman,canva&perline=12&theme=dark" />
-  </a>
-</p>
-
-<details>
-  <summary><h2>🛠️ The Full Toolbox (click to expand)</h2></summary>
-
-  <br/>
-
-  <h3>💻 Programming Languages</h3>
-  <br/>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white" alt="Python" />
-    <img src="https://custom-icon-badges.demolab.com/badge/Java-007396.svg?logo=java&logoColor=white" alt="Java" />
-    <img src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white" alt="C" />
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black" alt="JavaScript" />
-    <img src="https://custom-icon-badges.demolab.com/badge/SQL-025E8C.svg?logo=database&logoColor=white" alt="SQL" />
-    <img src="https://img.shields.io/badge/HTML-E34F26.svg?logo=html5&logoColor=white" alt="HTML" />
-    <img src="https://img.shields.io/badge/CSS-1572B6.svg?logo=css3&logoColor=white" alt="CSS" />
-  </p>
-
-  <br/>
-
-  <h3>🧰 Frameworks & Libraries</h3>
-  <br/>
-  <p align="center">
-    <img src="https://img.shields.io/badge/React-20232a.svg?logo=react&logoColor=%2361DAFB" alt="React" />
-    <img src="https://img.shields.io/badge/Next.js-000000.svg?logo=next.js&logoColor=white" alt="Next.js" />
-    <img src="https://img.shields.io/badge/Node.js-43853D.svg?logo=node.js&logoColor=white" alt="Node.js" />
-    <img src="https://img.shields.io/badge/Express.js-000000.svg?logo=express&logoColor=white" alt="Express.js" />
-    <img src="https://img.shields.io/badge/Tailwind-38B2AC.svg?logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/NumPy-013243.svg?logo=numpy&logoColor=white" alt="NumPy" />
-    <img src="https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white" alt="Pandas" />
-    <img src="https://img.shields.io/badge/scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white" alt="scikit-learn" />
-    <img src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=TensorFlow&logoColor=white" alt="TensorFlow" />
-  </p>
-
-  <br/>
-
-  <h3>🗄️ Databases & Cloud</h3>
-  <br/>
-  <p align="center">
-    <img src="https://img.shields.io/badge/MySQL-00f.svg?logo=mysql&logoColor=white" alt="MySQL" />
-    <img src="https://img.shields.io/badge/MongoDB-4ea94b.svg?logo=mongodb&logoColor=white" alt="MongoDB" />
-    <img src="https://img.shields.io/badge/GitHub%20Pages-327FC7.svg?logo=github&logoColor=white" alt="GitHub Pages" />
-    <img src="https://img.shields.io/badge/Vercel-000000.svg?logo=vercel&logoColor=white" alt="Vercel" />
-  </p>
-
-  <br/>
-
-  <h3>🎨 Design & Creative Tools</h3>
-  <br/>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Figma-F24E1E.svg?logo=figma&logoColor=white" alt="Figma" />
-    <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00.svg?logo=adobe-illustrator&logoColor=white" alt="Adobe Illustrator" />
-    <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF.svg?logo=adobe-photoshop&logoColor=white" alt="Adobe Photoshop" />
-    <img src="https://img.shields.io/badge/Canva-00C4CC.svg?logo=canva&logoColor=white" alt="Canva" />
-  </p>
-
-  <br/>
-
-  <h3>🧰 Developer Tools</h3>
-  <br/>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Git-F05033.svg?logo=git&logoColor=white" alt="Git" />
-    <img src="https://img.shields.io/badge/GitHub-181717.svg?logo=github&logoColor=white" alt="GitHub" />
-    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?logo=visual-studio-code&logoColor=white" alt="VS Code" />
-    <img src="https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black" alt="Linux" />
-    <img src="https://img.shields.io/badge/Postman-FF6C37.svg?logo=postman&logoColor=white" alt="Postman" />
-    <img src="https://img.shields.io/badge/Jupyter-F37626.svg?logo=Jupyter&logoColor=white" alt="Jupyter" />
-  </p>
-
-</details>
-
----
-
-### 🏛️ Leadership Signal
-
-| Role | Organization | Mode |
-| :-- | :-- | :-- |
-| ![Treasurer](https://img.shields.io/badge/Treasurer-0066FF?style=for-the-badge&logoColor=white&labelColor=0D1117) | **ACM UEMK Student Chapter** | Active |
-| ![Organizer](https://img.shields.io/badge/Organizer-0A2472?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Diversion 2k25 & Diversion 2k26** | 2025 – 2026 |
-| ![Strategist](https://img.shields.io/badge/Creative%20Strategist-00B4D8?style=for-the-badge&logoColor=white&labelColor=0D1117) | **Student Developer** | Active |
-
----
-
-### 📌 Featured Work
-
-| Project | What it does |
-| :-- | :-- |
-| [![employee-management](https://img.shields.io/badge/Employee%20Management-00D4FF?style=for-the-badge&logo=python&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/employee_management) | 🗂️ Full-stack employee management system — CRUD operations, role-based access, dashboard & reporting. |
-| [![ai-claims-ace](https://img.shields.io/badge/AI--Claims--Ace-0066FF?style=for-the-badge&logo=openai&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/AI-Claims-Ace) | 🤖 AI-powered insurance claims processing — intelligent document parsing, validation & decision support. |
-| [![malware-detection](https://img.shields.io/badge/Malware%20Detection%20ML-00B4D8?style=for-the-badge&logo=shield&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/malware-detection-ml) | 🛡️ ML-powered malware classifier using behavioural features & ensemble models for real-time threat detection. *(Python, scikit-learn)* |
-| [![data-science](https://img.shields.io/badge/Data%20Science%20Portfolio-0A2472?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0D1117)](https://github.com/Arjun07707/data-science-portfolio) | 📊 End-to-end DS notebooks — EDA, feature engineering, model building & deployment across real-world datasets. *(Python, Pandas, NumPy)* |
-| [![astronomy](https://img.shields.io/badge/Astronomy%20Research-1a1a2e?style=for-the-badge&logo=nasa&logoColor=00D4FF&labelColor=0D1117)](https://github.com/Arjun07707/astronomy-research) | 🔭 Computational astrophysics — stellar data analysis, orbital simulations & NASA/ESA open dataset exploration. |
-
----
-
-### 📊 Stats & Activity
-
-<p align="center">
-  <!-- Self-hosted SVGs generated by scripts/generate_stats.py via GitHub Actions -->
-  <img src="./profile-stats/stats.svg" height="180px" alt="GitHub stats" />
-  <img src="./profile-stats/top-langs.svg" height="180px" alt="Top languages" />
+  I'm a Computer Science undergraduate in Kolkata working across AI/ML, full-stack engineering, and interface design.<br/>
+  I care about turning ambiguous ideas into clear, useful systems — and about looking up often enough to remember why we build.
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Arjun07707&hide_border=true&background=0D1117&ring=00D4FF&fire=0066FF&currStreakLabel=00D4FF&sideLabels=00B4D8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&stroke=30363D" alt="Streak" />
+  <a href="https://www.linkedin.com/in/subhamita-adhikari-a14b00273/"><img src="https://img.shields.io/badge/-LinkedIn-202C40?style=flat-square&amp;logo=linkedin&amp;logoColor=42D9FF" height="22" alt="LinkedIn" /></a>
+  &nbsp;
+  <a href="https://github.com/Arjun07707"><img src="https://img.shields.io/badge/-GitHub-202C40?style=flat-square&amp;logo=github&amp;logoColor=F5F7FF" height="22" alt="GitHub" /></a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Arjun07707&bg_color=0D1117&color=00D4FF&line=0066FF&point=00D4FF&area=true&hide_border=true" alt="Activity Graph" width="95%" />
+  <a href="#featured-projects"><img src="https://img.shields.io/badge/-Explore_My_Projects-3984FF?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="28" alt="Explore my projects" /></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/subhamita-adhikari-a14b00273/"><img src="https://img.shields.io/badge/-Connect_on_LinkedIn-202C40?style=for-the-badge&amp;logo=linkedin&amp;logoColor=42D9FF" height="28" alt="Connect on LinkedIn" /></a>
 </p>
 
-<!-- Snake contribution graph — enable by adding this GitHub Action to your profile repo:
-     https://github.com/Platane/snk
-     Once set up, uncomment the lines below: -->
-<!--
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## About Me
+
+I'm a B.Tech Computer Science undergraduate with a minor in Astronomy, Astrophysics and Astrobiology, based in Kolkata. My work moves between AI/ML experiments, full-stack product builds, and interface design.
+
+I like problems that need both structure and imagination: modelling data, shaping an interaction, or turning a rough idea into something people can actually use. The astronomy minor keeps that curiosity honest — a reminder that every system we build is a small model of something much larger.
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## Currently Exploring
+
+A living list of fields I'm spending time with — interests, not a claim of active projects.
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <sub><code>01</code></sub><br/>
+      <strong>AI / ML</strong><br/>
+      <sub>Model building, evaluation, and applied experiments.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <sub><code>02</code></sub><br/>
+      <strong>Full-Stack Development</strong><br/>
+      <sub>Product flows, APIs, and interfaces that hold together.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <sub><code>03</code></sub><br/>
+      <strong>Data Science</strong><br/>
+      <sub>EDA, feature work, and the stories hidden in datasets.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <sub><code>04</code></sub><br/>
+      <strong>Software Engineering</strong><br/>
+      <sub>Architecture, clean boundaries, and maintainable systems.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <sub><code>05</code></sub><br/>
+      <strong>Astronomy &amp; Space Science</strong><br/>
+      <sub>Astrophysics, exoplanets, and the search for life beyond Earth.</sub>
+    </td>
+  </tr>
+</table>
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## Tech Stack
+
+<p align="center"><sub>LANGUAGES</sub></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,java,c,js&amp;perline=4&amp;theme=dark" />
+    <img src="https://skillicons.dev/icons?i=py,java,c,js&amp;perline=4&amp;theme=light" alt="Python, Java, C, JavaScript" height="42" />
+  </picture>
+</p>
+
+<p align="center"><sub>FRONTEND</sub></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&amp;perline=5&amp;theme=dark" />
+    <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind&amp;perline=5&amp;theme=light" alt="HTML, CSS, React, Next.js, Tailwind CSS" height="42" />
+  </picture>
+</p>
+
+<p align="center"><sub>BACKEND · AI / ML · DATA</sub></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,express,sklearn,tensorflow,jupyter&amp;perline=5&amp;theme=dark" />
+    <img src="https://skillicons.dev/icons?i=nodejs,express,sklearn,tensorflow,jupyter&amp;perline=5&amp;theme=light" alt="Node.js, Express, scikit-learn, TensorFlow, Jupyter" height="42" />
+  </picture>
+</p>
+
+<p align="center"><sub>DATABASES · TOOLS</sub></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mysql,mongodb,git,github,vscode,linux,postman&amp;perline=7&amp;theme=dark" />
+    <img src="https://skillicons.dev/icons?i=mysql,mongodb,git,github,vscode,linux,postman&amp;perline=7&amp;theme=light" alt="MySQL, MongoDB, Git, GitHub, VS Code, Linux, Postman" height="42" />
+  </picture>
+</p>
+
+<p align="center"><sub>DESIGN · DEPLOYMENT</sub></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=figma,ai,ps,canva,vercel&amp;perline=5&amp;theme=dark" />
+    <img src="https://skillicons.dev/icons?i=figma,ai,ps,canva,vercel&amp;perline=5&amp;theme=light" alt="Figma, Adobe Illustrator, Photoshop, Canva, Vercel" height="42" />
+  </picture>
+</p>
+
+<p align="center"><sub>Also working with NumPy, Pandas, SQL, and GitHub Pages.</sub></p>
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## Featured Projects
+
+Selected work across product engineering, applied AI, and insurance workflows.
+
+<table width="100%">
+  <tr>
+    <td width="56" align="center" valign="top"><br/><sub><code>01</code></sub></td>
+    <td valign="top">
+      <p><sub><code>FULL-STACK · PRODUCT ENGINEERING</code></sub></p>
+      <h3>Employee Management System</h3>
+      <p>A full-stack employee operations platform with JWT authentication, role-based access, employee CRUD, search and filtering, CSV export, and a dashboard for team stats. The API, auth layer, and interface live in one Next.js application.</p>
+      <p><sub><strong>Stack</strong> &nbsp; Next.js 16 · TypeScript · MongoDB · Mongoose · Tailwind CSS · Zod · JWT</sub></p>
+      <p><a href="https://github.com/Arjun07707/employee_management"><strong>Repository</strong></a> &nbsp;·&nbsp; <a href="https://employee-management-delta-jet.vercel.app"><strong>Live demo</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="56" align="center" valign="top"><br/><sub><code>02</code></sub></td>
+    <td valign="top">
+      <p><sub><code>AI / ML · INSURANCE TECH</code></sub></p>
+      <h3>AI Claims Ace</h3>
+      <p>An AI-assisted insurance claims prototype with conversational claim intake, document data extraction, claim tracking, admin review, fraud signals, and approval-probability estimates. The AI workflows are built with Genkit and Google AI inside a Next.js app.</p>
+      <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Genkit · Google AI · Firebase · Tailwind CSS</sub></p>
+      <p><a href="https://github.com/Arjun07707/AI-Claims-Ace"><strong>Repository</strong></a> &nbsp;·&nbsp; <sub>[CONFIRM: live demo]</sub></p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="56" align="center" valign="top"><br/><sub><code>03</code></sub></td>
+    <td valign="top">
+      <p><sub><code>FULL-STACK · INSURANCE TECH</code></sub></p>
+      <h3>InsurEase</h3>
+      <p>A role-based insurance management prototype covering policy browsing and administration, claims, payments, agent tools, and reporting dashboards. Built with Next.js, Tailwind CSS, Radix UI, Recharts, and Firebase; the data layer is currently mocked and the login is not yet connected to real authentication.</p>
+      <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Tailwind CSS · Radix UI · Recharts · Firebase</sub></p>
+      <p><a href="https://github.com/Arjun07707/InsurEase"><strong>Repository</strong></a> &nbsp;·&nbsp; <sub>[CONFIRM: live demo]</sub></p>
+    </td>
+  </tr>
+</table>
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## GitHub Stats
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img src="https://github-readme-stats.vercel.app/api?username=Arjun07707&amp;show_icons=true&amp;hide_border=true&amp;bg_color=05070D&amp;title_color=F5F7FF&amp;icon_color=42D9FF&amp;text_color=9BA8BD&amp;ring_color=3984FF&amp;include_all_commits=true&amp;count_private=false&amp;rank_icon=github" width="100%" alt="GitHub stats for Arjun07707" />
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img src="https://streak-stats.demolab.com?user=Arjun07707&amp;hide_border=true&amp;background=05070D&amp;border=202C40&amp;stroke=202C40&amp;ring=3984FF&amp;fire=42D9FF&amp;currStreakNum=F5F7FF&amp;sideNums=F5F7FF&amp;currStreakLabel=42D9FF&amp;sideLabels=9BA8BD&amp;dates=68758A&amp;border_radius=12" width="100%" alt="GitHub contribution streak for Arjun07707" />
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arjun07707&amp;layout=compact&amp;hide_border=true&amp;bg_color=05070D&amp;title_color=F5F7FF&amp;text_color=9BA8BD&amp;langs_count=6" width="100%" alt="Top languages in public repositories for Arjun07707" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Arjun07707&amp;bg_color=05070D&amp;color=42D9FF&amp;line=3984FF&amp;point=9270FF&amp;area=true&amp;area_color=3984FF&amp;hide_border=true&amp;custom_title=Contribution%20Activity" width="100%" alt="Contribution activity graph for Arjun07707" />
+</p>
+
+<p align="center"><sub>Public data only; top languages reflect public repositories, not depth of experience. Cards come from third-party services and may occasionally rate-limit — if one does not load, refresh the page or browse my <a href="https://github.com/Arjun07707?tab=repositories">repositories</a> directly.</sub></p>
+
+## Contribution Snake
+
+An animated view of the contribution graph, generated daily by GitHub Actions.
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arjun07707/Arjun07707/output/github-contribution-grid-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/Arjun07707/Arjun07707/output/github-contribution-grid-snake.svg" alt="Snake eating my contributions" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Arjun07707/Arjun07707/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/Arjun07707/Arjun07707/output/github-contribution-grid-snake.svg" width="100%" alt="Animated snake moving through Subhamita's GitHub contribution graph" />
   </picture>
 </p>
--->
 
-<p align="center"><sub><b>Note:</b> Top languages reflects public code only — not experience or skill depth.</sub></p>
+<p align="center"><sub>If the graphic is missing, the workflow has not produced the output branch yet — run it once from the Actions tab.</sub></p>
 
----
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
 
-### 🏆 Trophy Rack
+## Leadership &amp; Community
+
+<table width="100%">
+  <tr>
+    <td width="42%" valign="top"><strong>ACM UEMK</strong></td>
+    <td valign="top"><sub>Treasurer</sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>Diversion 2k25 &amp; 2k26</strong></td>
+    <td valign="top"><sub>Organizer</sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><strong>Microsoft Student Society, UEMK</strong></td>
+    <td valign="top"><sub>[CONFIRM: exact role/title]</sub></td>
+  </tr>
+</table>
+
+<p><sub><strong>Also:</strong> student developer and creative strategist, working across development and creative direction.</sub></p>
+
+## Cosmic Corner
+
+<p><sub>Exploring the Universe Beyond Our Screens.</sub></p>
+
+Astronomy taught me to think in scales I cannot see. Stars are fusion engines with life cycles; galaxies are gravitational structures; black holes are boundary cases where our models stop being comfortable. Astrophysics turns those observations into models, and exoplanet research and the search for life turn them into questions about habitability, signals, and uncertainty. That is not far from computer science: build a model, test its limits, and stay honest about what the data cannot tell you.
+
+> "The cosmos is within us. We are made of star-stuff."
+>
+> — Carl Sagan, *Cosmos*
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## Connect With Me
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Arjun07707&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
+  <a href="https://www.linkedin.com/in/subhamita-adhikari-a14b00273/"><img src="https://img.shields.io/badge/-LinkedIn-202C40?style=flat-square&amp;logo=linkedin&amp;logoColor=42D9FF" height="24" alt="LinkedIn" /></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Arjun07707"><img src="https://img.shields.io/badge/-GitHub-202C40?style=flat-square&amp;logo=github&amp;logoColor=F5F7FF" height="24" alt="GitHub" /></a>
 </p>
 
----
-
-### 📡 Currently Transmitting
-
-```python
-learning = {
-    "Advanced ML"    : ["Deep Learning", "Neural Networks", "Model Deployment"],
-    "Modern Web"     : ["Next.js App Router", "Server Components", "Edge Functions"],
-    "Architecture"   : ["System Design", "Distributed Systems", "Scalability"],
-    "Space Science"  : ["Computational Astrophysics", "Space Data Analysis"],
-}
-```
-
----
-
-### 🔭 Cosmic Corner
+<img src="assets/cosmic-footer.svg" width="100%" alt="A sparse star field above a dark planet horizon, with a faint shooting star." />
 
 <p align="center">
-  <i>"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself."</i><br/>
-  <sub>— Carl Sagan</sub>
+  <strong>Thanks for exploring my corner of the universe.</strong><br/>
+  <sub>Keep building. Keep exploring. Stay curious.</sub>
 </p>
-
-Beyond the terminal, I study the universe through data. My minor in **Astronomy, Astrophysics & Astrobiology** isn't a detour — it's a lens. The same curiosity that makes me debug at 2 AM is what makes me read papers on biosignature detection and habitable-zone dynamics. The universe is the greatest unsolved codebase, and I intend to contribute.
-
-| Field | Focus Area |
-| :-- | :-- |
-| 🌠 **Astronomy** | Stellar evolution · galactic structure · observational data analysis |
-| 🌌 **Astrophysics** | Computational modelling · cosmology · gravitational dynamics |
-| 🧬 **Astrobiology** | Origins of life · habitable zones · biosignature detection |
-| 🛰️ **Space Data** | NASA/ESA open datasets · mission archives · space ML applications |
-
----
-
-<h3 align="center">📫 Connect</h3>
-<p align="center">
-  <a href="mailto:REPLACE_WITH_EMAIL@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/subhamita-adhikari-a14b00273/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/Arjun07707"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
-
-<p align="center"><i>"I write code that works. Eventually. And I design things that look like they always did."</i></p>
-
-<!-- ░░ FOOTER ░░ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:0066FF,100:0D1117&height=120&section=footer&animation=fadeIn" width="100%" />
-
-<!-- ═══════════════════════════════════════════════════════
-     CHECKLIST BEFORE PUSHING
-     [ ] Replace Arjun07707 (all occurrences)
-     [ ] Replace REPLACE_WITH_EMAIL@gmail.com
-     [ ] Update placeholder repo slugs (malware-detection-ml, data-science-portfolio, astronomy-research)
-     [ ] To enable snake graph: set up Platane/snk Action, then uncomment the snake block
-     ═══════════════════════════════════════════════════════ -->

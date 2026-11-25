@@ -1,0 +1,95 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="footerTitle footerDesc">
+  <title id="footerTitle">Cosmic footer for Subhamita Adhikari</title>
+  <desc id="footerDesc">A sparse star field above a dark planet horizon, with a faint shooting star and the words AD ASTRA.</desc>
+  <defs>
+    <linearGradient id="footerBg" x1="0" y1="0" x2="1200" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05070D"/>
+      <stop offset="1" stop-color="#0A0F1C"/>
+    </linearGradient>
+    <radialGradient id="footerGlow" cx="600" cy="90" r="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3984FF" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#3984FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="footerPlanet" cx="600" cy="130" r="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101827"/>
+      <stop offset="0.45" stop-color="#0A0F1C"/>
+      <stop offset="1" stop-color="#05070D"/>
+    </radialGradient>
+    <linearGradient id="footerAtmo" x1="300" y1="130" x2="900" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42D9FF" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#3984FF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#9270FF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="shootTrail" x1="1070" y1="64" x2="970" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42D9FF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#F5F7FF" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="footerGlowFilter" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <clipPath id="footerClip">
+      <rect width="1200" height="220" rx="20"/>
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes twinkleSoft { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.65; } }
+    @keyframes shoot {
+      0%, 72% { opacity: 0; transform: translate(0, 0); }
+      76% { opacity: 0.85; }
+      84% { opacity: 0.15; transform: translate(-110px, 58px); }
+      86%, 100% { opacity: 0; transform: translate(-150px, 80px); }
+    }
+    .ftw { animation: twinkleSoft 11s ease-in-out infinite; }
+    .shoot { animation: shoot 16s ease-out infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .ftw { animation: none; opacity: 0.45; }
+      .shoot { animation: none; opacity: 0.3; }
+    }
+  </style>
+  <g clip-path="url(#footerClip)">
+    <rect width="1200" height="220" fill="url(#footerBg)"/>
+    <circle cx="600" cy="90" r="260" fill="url(#footerGlow)"/>
+    <g fill="#F5F7FF">
+      <circle cx="82" cy="42" r="0.8" opacity="0.4" class="ftw" style="animation-delay:-2.1s"/>
+      <circle cx="168" cy="78" r="0.7" opacity="0.3" class="ftw" style="animation-delay:-7.4s"/>
+      <circle cx="254" cy="36" r="1" opacity="0.5" class="ftw" style="animation-delay:-4.6s"/>
+      <circle cx="338" cy="94" r="0.6" opacity="0.25"/>
+      <circle cx="412" cy="52" r="0.8" opacity="0.35" class="ftw" style="animation-delay:-9.2s"/>
+      <circle cx="486" cy="110" r="0.6" opacity="0.25"/>
+      <circle cx="548" cy="42" r="0.9" opacity="0.4" class="ftw" style="animation-delay:-6.3s"/>
+      <circle cx="624" cy="118" r="0.6" opacity="0.25"/>
+      <circle cx="702" cy="54" r="0.8" opacity="0.35" class="ftw" style="animation-delay:-1.7s"/>
+      <circle cx="778" cy="96" r="0.6" opacity="0.25"/>
+      <circle cx="846" cy="38" r="0.9" opacity="0.4" class="ftw" style="animation-delay:-8.1s"/>
+      <circle cx="912" cy="82" r="0.7" opacity="0.3" class="ftw" style="animation-delay:-3.4s"/>
+      <circle cx="982" cy="34" r="0.8" opacity="0.35"/>
+      <circle cx="1046" cy="104" r="0.6" opacity="0.25"/>
+      <circle cx="1122" cy="58" r="0.9" opacity="0.4" class="ftw" style="animation-delay:-5.8s"/>
+      <circle cx="1168" cy="128" r="0.6" opacity="0.25"/>
+      <circle cx="120" cy="118" r="0.6" opacity="0.25"/>
+      <circle cx="230" cy="126" r="0.5" opacity="0.2"/>
+      <circle cx="360" cy="118" r="0.5" opacity="0.2"/>
+      <circle cx="760" cy="124" r="0.5" opacity="0.2"/>
+      <circle cx="870" cy="118" r="0.5" opacity="0.2"/>
+      <circle cx="1000" cy="126" r="0.5" opacity="0.2"/>
+      <circle cx="1090" cy="116" r="0.5" opacity="0.2"/>
+    </g>
+    <g fill="#F5F7FF">
+      <path d="M262 24 L263.5 29.5 L269 31 L263.5 32.5 L262 38 L260.5 32.5 L255 31 L260.5 29.5 Z" opacity="0.55"/>
+      <path d="M1032 22 L1033.5 27.5 L1039 29 L1033.5 30.5 L1032 36 L1030.5 30.5 L1025 29 L1030.5 27.5 Z" opacity="0.5"/>
+    </g>
+    <g class="shoot">
+      <path d="M1070 64 L970 114" stroke="url(#shootTrail)" stroke-width="1.2" stroke-linecap="round"/>
+      <circle cx="970" cy="114" r="4" fill="#42D9FF" opacity="0.18" filter="url(#footerGlowFilter)"/>
+      <circle cx="970" cy="114" r="1.8" fill="#F5F7FF"/>
+    </g>
+    <circle cx="600" cy="430" r="306" stroke="#3984FF" stroke-width="8" opacity="0.06" filter="url(#footerGlowFilter)"/>
+    <circle cx="600" cy="430" r="300" fill="url(#footerPlanet)"/>
+    <circle cx="600" cy="430" r="300" stroke="url(#footerAtmo)" stroke-width="1.2" opacity="0.55"/>
+    <text x="56" y="48" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="9.5" letter-spacing="2.6" fill="#68758A">SUBHAMITA ADHIKARI</text>
+    <text x="1144" y="48" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="8.5" letter-spacing="1.4" fill="#68758A">KOLKATA · 22.57° N / 88.36° E</text>
+    <path d="M600 58 L601.5 64 L607 66 L601.5 68 L600 74 L598.5 68 L593 66 L598.5 64 Z" fill="#42D9FF" opacity="0.7"/>
+    <text x="600" y="96" text-anchor="middle" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="11" letter-spacing="5" fill="#9BA8BD">AD ASTRA</text>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="219" rx="19.5" stroke="#202C40" stroke-opacity="0.7"/>
+</svg>

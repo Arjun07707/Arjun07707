@@ -1,0 +1,40 @@
+<svg width="1200" height="64" viewBox="0 0 1200 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decorative orbital divider">
+  <title>Orbital divider</title>
+  <desc>A thin orbital line with a small ring and three faint bodies.</desc>
+  <defs>
+    <linearGradient id="dividerLeft" x1="72" y1="32" x2="536" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202C40" stop-opacity="0"/>
+      <stop offset="1" stop-color="#202C40" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="dividerRight" x1="664" y1="32" x2="1128" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202C40" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#202C40" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes softPulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.95; } }
+    .pulse { animation: softPulse 9s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse { animation: none; opacity: 0.8; }
+    }
+  </style>
+  <line x1="72" y1="32" x2="536" y2="32" stroke="url(#dividerLeft)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+  <line x1="664" y1="32" x2="1128" y2="32" stroke="url(#dividerRight)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+  <g>
+    <ellipse cx="600" cy="32" rx="46" ry="14" stroke="#202C40" stroke-width="1" vector-effect="non-scaling-stroke"/>
+    <ellipse cx="600" cy="32" rx="26" ry="8" stroke="#202C40" stroke-width="0.75" stroke-opacity="0.6" vector-effect="non-scaling-stroke"/>
+    <circle cx="554" cy="32" r="2.2" fill="#42D9FF" class="pulse"/>
+    <circle cx="646" cy="32" r="1.6" fill="#9270FF" opacity="0.8"/>
+    <circle cx="600" cy="32" r="1.8" fill="#F5F7FF" opacity="0.9"/>
+  </g>
+  <g fill="#68758A">
+    <circle cx="180" cy="18" r="0.8" opacity="0.35"/>
+    <circle cx="250" cy="46" r="0.7" opacity="0.3"/>
+    <circle cx="380" cy="22" r="0.8" opacity="0.35"/>
+    <circle cx="470" cy="44" r="0.7" opacity="0.3"/>
+    <circle cx="720" cy="22" r="0.8" opacity="0.35"/>
+    <circle cx="820" cy="46" r="0.7" opacity="0.3"/>
+    <circle cx="960" cy="18" r="0.8" opacity="0.35"/>
+    <circle cx="1060" cy="42" r="0.7" opacity="0.3"/>
+  </g>
+</svg>
