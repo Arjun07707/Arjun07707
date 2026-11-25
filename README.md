@@ -146,7 +146,7 @@ Selected work across product engineering, applied AI, and insurance workflows.
       <h3>AI Claims Ace</h3>
       <p>An AI-assisted insurance claims prototype with conversational claim intake, document data extraction, claim tracking, admin review, fraud signals, and approval-probability estimates. The AI workflows are built with Genkit and Google AI inside a Next.js app.</p>
       <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Genkit · Google AI · Firebase · Tailwind CSS</sub></p>
-      <p><a href="https://github.com/Arjun07707/AI-Claims-Ace"><strong>Repository</strong></a> &nbsp;·&nbsp; <sub>[CONFIRM: live demo]</sub></p>
+      <p><a href="https://github.com/Arjun07707/AI-Claims-Ace"><strong>Repository</strong></a></p>
     </td>
   </tr>
 </table>
@@ -159,7 +159,7 @@ Selected work across product engineering, applied AI, and insurance workflows.
       <h3>InsurEase</h3>
       <p>A role-based insurance management prototype covering policy browsing and administration, claims, payments, agent tools, and reporting dashboards. Built with Next.js, Tailwind CSS, Radix UI, Recharts, and Firebase; the data layer is currently mocked and the login is not yet connected to real authentication.</p>
       <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Tailwind CSS · Radix UI · Recharts · Firebase</sub></p>
-      <p><a href="https://github.com/Arjun07707/InsurEase"><strong>Repository</strong></a> &nbsp;·&nbsp; <sub>[CONFIRM: live demo]</sub></p>
+      <p><a href="https://github.com/Arjun07707/InsurEase"><strong>Repository</strong></a></p>
     </td>
   </tr>
 </table>
@@ -215,10 +215,6 @@ An animated view of the contribution graph, generated daily by GitHub Actions.
   <tr>
     <td valign="top"><strong>Diversion 2k25 &amp; 2k26</strong></td>
     <td valign="top"><sub>Organizer</sub></td>
-  </tr>
-  <tr>
-    <td valign="top"><strong>Microsoft Student Society, UEMK</strong></td>
-    <td valign="top"><sub>[CONFIRM: exact role/title]</sub></td>
   </tr>
 </table>
 
