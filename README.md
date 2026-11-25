@@ -22,7 +22,7 @@
 ```python
 class SubhamitaAdhikari:
 
-    alias        = "subha"
+    alias        = "subhamita"
     location     = "Kolkata, India 🇮🇳"
     education    = "B.Tech CSE | Minor: Astronomy, Astrophysics & Astrobiology"
 
