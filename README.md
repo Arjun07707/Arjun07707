@@ -309,6 +309,14 @@ Astronomy taught me to think in scales I cannot see. Stars are fusion engines wi
   <a href="https://github.com/Arjun07707"><img src="https://img.shields.io/badge/-GitHub-202C40?style=flat-square&amp;logo=github&amp;logoColor=F5F7FF" height="24" alt="GitHub" /></a>
 </p>
 
+<!-- SOLAR-SYSTEM:START -->
+<a href="https://github.com/Arjun07707?tab=repositories">
+  <img src="./assets/solar-system.svg" alt="Animated solar system: Subhamita's avatar as the sun, languages as planets, repositories as moons, recent pushes as comets" width="100%">
+</a>
+
+<sub>I am the sun; my languages are the planets, my repos their moons, and my recent pushes the comets.</sub>
+<!-- SOLAR-SYSTEM:END -->
+
 <img src="assets/cosmic-footer.svg" width="100%" alt="A sparse star field above a dark planet horizon, with a faint shooting star." />
 
 <p align="center">
