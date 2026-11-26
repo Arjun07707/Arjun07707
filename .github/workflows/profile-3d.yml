@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "settings/city.json"
+      - "scripts/build-city-card.mjs"
       - "scripts/round-city.mjs"
       - ".github/workflows/profile-3d.yml"
 
@@ -26,6 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Generate the 3D contribution city
         uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
         env:
@@ -36,11 +42,17 @@ jobs:
       - name: Round the card corners
         run: node scripts/round-city.mjs
 
+      - name: Build the stats card
+        run: node scripts/build-city-card.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
       - name: Commit generated files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add profile-3d-contrib/
+          git add profile-3d-contrib/ assets/contribution-city.svg
           if git diff --cached --quiet; then
             echo "City is unchanged; nothing to commit."
             exit 0
