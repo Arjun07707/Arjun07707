@@ -6,6 +6,7 @@ const CENTER = { x: 480, y: 180 };
 const SUN = { r: 43, image: 86 };
 const ORBIT = { base: 130, step: 65, ratio: 0.42, count: 4 };
 const PLANET_LIMIT = 4;
+const MIN_SHARE = 1 / 100; // the plan's 1% floor for a planet
 const MOON_LIMIT = 12;
 const COMET_DAYS = 30;
 const COMET_LIMIT = 4;
@@ -207,7 +208,7 @@ function buildPlanets(repos) {
   const languages = Object.entries(totals)
     .filter(([, bytes]) => bytes > 0)
     .sort((a, b) => b[1] - a[1]);
-  const chosen = languages.filter(([, bytes]) => bytes / totalBytes >= 0.01).slice(0, PLANET_LIMIT);
+  const chosen = languages.filter(([, bytes]) => bytes / totalBytes >= MIN_SHARE).slice(0, PLANET_LIMIT);
   if (chosen.length === 0) chosen.push(languages[0]);
 
   // Two planets sit on opposite sides of the ring stack so they never crowd
