@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/Arjun07707">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=500&amp;size=18&amp;duration=3200&amp;pause=900&amp;color=42D9FF&amp;center=true&amp;vCenter=true&amp;width=720&amp;lines=Computer+Science+Student;AI%2FML+Enthusiast;Full-Stack+Developer;Astronomy+Explorer;Creative+Problem+Solver" alt="Computer Science Student, AI/ML Enthusiast, Full-Stack Developer, Astronomy Explorer, Creative Problem Solver" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=500&amp;size=18&amp;duration=3200&amp;pause=900&amp;color=42D9FF&amp;center=true&amp;vCenter=true&amp;width=720&amp;lines=Computer+Science+Student;AI%2FML+Enthusiast;Full-Stack+Developer;Astronomy+Explorer;Creative+Problem+Solver" width="100%" alt="Computer Science Student, AI/ML Enthusiast, Full-Stack Developer, Astronomy Explorer, Creative Problem Solver" />
   </a>
 </p>
 
