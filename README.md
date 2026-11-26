@@ -246,6 +246,18 @@ An animated view of the contribution graph, generated daily by GitHub Actions.
 
 <p align="center"><sub>If the graphic is missing, the workflow has not produced the output branch yet — run it once from the Actions tab.</sub></p>
 
+<!-- 3D-CONTRIBUTION-CITY:START -->
+<div align="center">
+
+<h3>The City I Built This Year</h3>
+
+<img src="./profile-3d-contrib/profile-cosmic-city.svg" alt="Animated 3D contribution city for Arjun07707" width="100%">
+
+<sub>Every building is a day; taller means more contributions.</sub>
+
+</div>
+<!-- 3D-CONTRIBUTION-CITY:END -->
+
 <img src="assets/cosmic-divider.svg" width="100%" alt="" />
 
 ## Leadership &amp; Community

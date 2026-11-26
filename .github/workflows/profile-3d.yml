@@ -1,0 +1,45 @@
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 23:30 IST daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "settings/city.json"
+      - ".github/workflows/profile-3d.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-3d
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Regenerate the 3D contribution city
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate the 3D contribution city
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: ./settings/city.json
+
+      - name: Commit generated files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add profile-3d-contrib/
+          if git diff --cached --quiet; then
+            echo "City is unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: update 3D city [skip ci]"
+          git push

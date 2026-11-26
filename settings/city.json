@@ -1,0 +1,11 @@
+{
+  "type": "normal",
+  "fileName": "profile-cosmic-city.svg",
+  "backgroundColor": "#05070D",
+  "foregroundColor": "#F5F7FF",
+  "strongColor": "#7DE8D5",
+  "weakColor": "#9BA8BD",
+  "radarColor": "#2BC9B0",
+  "growingAnimation": true,
+  "contribColors": ["#0F5C54", "#1B8E80", "#22AC9B", "#2BC9B0", "#7DE8D5"]
+}
