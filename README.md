@@ -207,15 +207,15 @@ Selected work across product engineering, applied AI, and insurance workflows.
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Arjun07707&amp;show_icons=true&amp;hide_border=true&amp;bg_color=05070D&amp;title_color=F5F7FF&amp;icon_color=42D9FF&amp;text_color=9BA8BD&amp;ring_color=3984FF&amp;include_all_commits=true&amp;count_private=false&amp;rank_icon=github" width="100%" alt="GitHub stats for Arjun07707" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Arjun07707&amp;show_icons=true&amp;hide_border=true&amp;bg_color=05070D&amp;title_color=F5F7FF&amp;icon_color=42D9FF&amp;text_color=9BA8BD&amp;ring_color=3984FF&amp;include_all_commits=true&amp;count_private=false&amp;rank_icon=github" width="495" alt="GitHub stats for Arjun07707" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Arjun07707&amp;hide_border=true&amp;background=05070D&amp;border=202C40&amp;stroke=202C40&amp;ring=3984FF&amp;fire=42D9FF&amp;currStreakNum=F5F7FF&amp;sideNums=F5F7FF&amp;currStreakLabel=42D9FF&amp;sideLabels=9BA8BD&amp;dates=68758A&amp;border_radius=12" width="100%" alt="GitHub contribution streak for Arjun07707" />
+  <img src="https://streak-stats.demolab.com?user=Arjun07707&amp;hide_border=true&amp;background=05070D&amp;border=202C40&amp;stroke=202C40&amp;ring=3984FF&amp;fire=42D9FF&amp;currStreakNum=F5F7FF&amp;sideNums=F5F7FF&amp;currStreakLabel=42D9FF&amp;sideLabels=9BA8BD&amp;dates=68758A&amp;border_radius=12" width="495" alt="GitHub contribution streak for Arjun07707" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arjun07707&amp;layout=compact&amp;hide_border=true&amp;bg_color=05070D&amp;title_color=F5F7FF&amp;text_color=9BA8BD&amp;langs_count=6" width="100%" alt="Top languages in public repositories for Arjun07707" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arjun07707&amp;layout=compact&amp;hide_border=true&amp;bg_color=05070D&amp;title_color=F5F7FF&amp;text_color=9BA8BD&amp;langs_count=6" width="495" alt="Top languages in public repositories for Arjun07707" />
 </p>
 
 <p align="center">
@@ -246,7 +246,7 @@ An animated view of the contribution graph, generated daily by GitHub Actions.
 
 <table width="100%">
   <tr>
-    <td width="42%" valign="top"><strong>ACM UEMK</strong></td>
+    <td width="210" valign="top"><strong>ACM UEMK</strong></td>
     <td valign="top"><sub>Treasurer</sub></td>
   </tr>
   <tr>
