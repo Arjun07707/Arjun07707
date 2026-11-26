@@ -1,4 +1,4 @@
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const CARD = { w: 960, h: 360, rx: 20 };
@@ -36,6 +36,17 @@ const LANGUAGES = {
   JavaScript: { color: "#F1E05A", badge: "JS" },
 };
 const FALLBACK = { color: "#68758A" };
+
+// Icons are committed locally and inlined at build time. The brand fills for
+// TypeScript and CSS sit too close to the sphere colours, so those two are
+// forced light; JavaScript is forced dark so it stands out on its yellow sphere.
+const ICONS = {
+  TypeScript: { file: "typescript.svg", color: "#F5F7FF" },
+  Python: { file: "python.svg", color: "#FFD43B" },
+  CSS: { file: "css.svg", color: "#F5F7FF" },
+  JavaScript: { file: "javascript.svg", color: "#1A1A1A" },
+  Rust: { file: "rust.svg", color: "#F5F7FF" },
+};
 
 // Each comet crosses a little of the upper half of the card while visible.
 const COMET_PATHS = [
@@ -85,6 +96,31 @@ function languageMeta(language) {
   if (LANGUAGES[language]) return LANGUAGES[language];
   const badge = language === "Other" ? "OTH" : language.replace(/[^A-Za-z0-9]/g, "").slice(0, 3).toUpperCase() || "OTH";
   return { color: FALLBACK.color, badge };
+}
+
+const iconCache = new Map();
+
+function languageIcon(language) {
+  if (iconCache.has(language)) return iconCache.get(language);
+
+  let icon = null;
+  const config = ICONS[language];
+  if (config) {
+    try {
+      const raw = readFileSync(new URL(`../assets/icons/${config.file}`, import.meta.url), "utf8");
+      const viewBox = (raw.match(/viewBox="([^"]+)"/) || [])[1] || "0 0 24 24";
+      const paths = [...raw.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)].map((match) => match[1]);
+      const box = viewBox.trim().split(/[\s,]+/).map(Number);
+      if (paths.length > 0 && box.length === 4 && box.every(Number.isFinite) && box[2] > 0 && box[3] > 0) {
+        icon = { paths, viewBox: box, color: config.color };
+      }
+    } catch {
+      icon = null;
+    }
+  }
+
+  iconCache.set(language, icon);
+  return icon;
 }
 
 function shareLabel(share) {
@@ -214,12 +250,14 @@ function buildPlanets(repos) {
   // Two planets sit on opposite sides of the ring stack so they never crowd
   // each other; a single planet takes the middle ring.
   const slots = chosen.length === 1 ? [2] : chosen.length === 2 ? [2, 0] : [0, 1, 2, 3].slice(0, chosen.length);
-  const radiusCap = chosen.length === 2 ? 34 : 38;
+  const maxShare = chosen[0][1] / totalBytes;
+  const radiusMin = 20;
+  const radiusMax = chosen.length === 1 ? 38 : 34;
 
   const planets = chosen.map(([language, bytes], index) => {
     const share = bytes / totalBytes;
     const meta = languageMeta(language);
-    const radius = Math.min(radiusCap, Math.max(12, 14 + 22 * Math.sqrt(share)));
+    const radius = radiusMin + (radiusMax - radiusMin) * Math.sqrt(share / maxShare);
     const slot = slots[index];
     const rx = ORBIT.base + ORBIT.step * slot;
     const ry = rx * ORBIT.ratio;
@@ -238,7 +276,6 @@ function buildPlanets(repos) {
       duration,
       begin,
       moons: [],
-      label: `${language} ${shareLabel(share)}`,
       gradient: `planet-${index}`,
       moonOffset: radius + 16,
     };
@@ -291,9 +328,10 @@ function orbitRings() {
   return rings.join("\n");
 }
 
-function planetMarkup(planet) {
-  const { radius, color, badge, gradient, moons } = planet;
-  const badgeSize = Math.max(7, Math.min(11, radius * 0.52));
+function planetMarkup(planet, index) {
+  const { radius, color, badge, gradient, moons, language, share } = planet;
+  const icon = languageIcon(language);
+  const iconSize = radius * 2 * 0.55;
 
   const moonRings = moons
     .map(
@@ -312,30 +350,41 @@ function planetMarkup(planet) {
     )
     .join("\n");
 
+  // animateMotion only translates, so the icon stays upright without a
+  // counter-rotation group. The highlight is drawn after the icon so the logo
+  // reads as embedded in the sphere.
+  let iconMarkup;
+  if (icon) {
+    const [minX, minY, vbWidth, vbHeight] = icon.viewBox;
+    const scale = iconSize / Math.max(vbWidth, vbHeight);
+    const width = vbWidth * scale;
+    const height = vbHeight * scale;
+    iconMarkup = `<g class="planet-icon" clip-path="url(#icon-clip-${index})" fill="${icon.color}">
+      <g transform="translate(${(-width / 2).toFixed(2)} ${(-height / 2).toFixed(2)}) scale(${scale.toFixed(4)}) translate(${-minX} ${-minY})">
+        ${icon.paths.map((path) => `<path d="${path}"/>`).join("")}
+      </g>
+    </g>`;
+  } else {
+    iconMarkup = `<text class="planet-mono" x="0" y="0" text-anchor="middle" dominant-baseline="central" font-size="${(radius * 0.8).toFixed(1)}">${esc(badge.slice(0, 2))}</text>`;
+  }
+
+  // The label sits in its own upright group below the sphere, so it never
+  // rotates with the planet. It is plain text with no stroke, halo or filter.
+  const labelBelow = radius + 14;
+
   return `<g class="planet">
     <animateMotion dur="${planet.duration}s" begin="${planet.begin}s" repeatCount="indefinite" path="M ${planet.rx},0 A ${planet.rx},${planet.ry.toFixed(1)} 0 1,1 -${planet.rx},0 A ${planet.rx},${planet.ry.toFixed(1)} 0 1,1 ${planet.rx},0"/>
     ${moonRings}
     ${moonDots}
     <circle class="planet-body" r="${radius.toFixed(1)}" fill="url(#${gradient})" stroke="${color}" stroke-opacity="0.6" stroke-width="1"/>
+    ${iconMarkup}
     <ellipse cx="${(-radius * 0.3).toFixed(1)}" cy="${(-radius * 0.34).toFixed(1)}" rx="${(radius * 0.4).toFixed(1)}" ry="${(radius * 0.26).toFixed(1)}" fill="#FFFFFF" opacity="0.13"/>
-    <text class="planet-badge" x="0" y="0" text-anchor="middle" dominant-baseline="central" font-size="${badgeSize.toFixed(1)}">${esc(badge)}</text>
-  </g>`;
-}
-
-function languageKey(planets) {
-  const top = planets.length >= 4 ? 282 : planets.length === 3 ? 288 : 306;
-  const gap = planets.length >= 3 ? 18 : 20;
-  const items = planets.map((planet, index) => {
-    const y = top + gap + index * gap;
-    return `<g class="key-row">
-      <circle cx="32" cy="${y - 4.5}" r="3.6" fill="${planet.color}"/>
-      <text class="key-label" x="42" y="${y}">${esc(planet.language)} ${shareLabel(planet.share)}</text>
-    </g>`;
-  });
-
-  return `<g class="language-key" aria-hidden="true">
-    <text class="key-title" x="30" y="${top}">LANGUAGES</text>
-${items.join("\n")}
+    <g class="planet-label-group" transform="translate(0 ${labelBelow.toFixed(1)})">
+      <text class="planet-label" x="0" y="0" text-anchor="middle">
+        <tspan x="0">${esc(language)}</tspan>
+        <tspan x="0" dy="16">${shareLabel(share)}</tspan>
+      </text>
+    </g>
   </g>`;
 }
 
@@ -387,6 +436,13 @@ function buildSvg({ profile, planets, comets }) {
     })
     .join("\n  ");
 
+  const iconClips = planets
+    .map(
+      (planet, index) =>
+        `<clipPath id="icon-clip-${index}"><circle cx="0" cy="0" r="${(planet.radius * 0.8).toFixed(1)}"/></clipPath>`,
+    )
+    .join("\n  ");
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD.w}" height="${CARD.h}" viewBox="0 0 ${CARD.w} ${CARD.h}" role="img" aria-labelledby="solar-title solar-desc">
 <title id="solar-title">${esc(title)}</title>
 <desc id="solar-desc">${esc(description)}</desc>
@@ -407,14 +463,14 @@ function buildSvg({ profile, planets, comets }) {
   </radialGradient>
   ${planetGradients}
   ${cometGradients}
+  ${iconClips}
   <clipPath id="solar-clip"><rect x="0.5" y="0.5" width="${CARD.w - 1}" height="${CARD.h - 1}" rx="${CARD.rx}"/></clipPath>
   <clipPath id="sun-clip"><circle cx="${CENTER.x}" cy="${CENTER.y}" r="${SUN.r}"/></clipPath>
   <style>
     .solar text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
     .eyebrow { font-size: 12px; fill: ${COLORS.muted}; letter-spacing: 2.4px; font-weight: 600; }
-    .planet-badge { fill: #FFFFFF; font-weight: 700; letter-spacing: 0.4px; paint-order: stroke; stroke: #05070D; stroke-width: 2.4px; stroke-linejoin: round; }
-    .language-key .key-label { font-size: 15px; fill: ${COLORS.ink}; }
-    .language-key .key-title { font-size: 10px; fill: ${COLORS.muted}; letter-spacing: 2px; font-weight: 600; paint-order: stroke; stroke: ${COLORS.bg}; stroke-width: 3px; stroke-linejoin: round; }
+    .planet-label { font-size: 15px; fill: #F5F7FF; }
+    .planet-mono { fill: #F5F7FF; font-weight: 700; }
     .comet-label { font-size: 12.5px; fill: ${COLORS.ink}; paint-order: stroke; stroke: ${COLORS.bg}; stroke-width: 3.5px; stroke-linejoin: round; }
     .legend { font-size: 13px; fill: ${COLORS.muted}; }
     .star { fill: ${COLORS.ink}; animation: solarTwinkle 7s ease-in-out infinite; animation-delay: var(--delay, 0s); }
@@ -443,7 +499,7 @@ ${starField()}
 ${orbitRings()}
   </g>
   <g class="system" transform="translate(${CENTER.x} ${CENTER.y})">
-${planets.map((planet) => planetMarkup(planet)).join("\n")}
+${planets.map((planet, index) => planetMarkup(planet, index)).join("\n")}
   </g>
 ${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
   <g class="sun">
@@ -454,7 +510,6 @@ ${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="${SUN.r}" fill="none" stroke="${COLORS.goldBright}" stroke-width="2.2"/>
   </g>
   <text class="eyebrow" x="28" y="34">SOLAR SYSTEM \u00b7 @${esc(LOGIN)}</text>
-  ${languageKey(planets)}
   <g class="legend" text-anchor="end">
     <text x="932" y="334">planets = languages \u00b7 moons = repos</text>
     <text x="932" y="352">comets = recent pushes</text>
