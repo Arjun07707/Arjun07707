@@ -75,12 +75,59 @@ A living list of fields I'm spending time with — interests, not a claim of act
 
 <img src="assets/cosmic-divider.svg" width="100%" alt="" />
 
+## Featured Projects
+
+Selected work across product engineering, applied AI, and insurance workflows.
+
+<table width="100%">
+  <tr>
+    <td width="56" align="center" valign="top"><br/><sub><code>01</code></sub></td>
+    <td valign="top">
+      <p><sub><code>FULL-STACK · PRODUCT ENGINEERING</code></sub></p>
+      <h3>Employee Management System</h3>
+      <p>A full-stack employee operations platform with JWT authentication, role-based access, employee CRUD, search and filtering, CSV export, and a dashboard for team stats. The API, auth layer, and interface live in one Next.js application.</p>
+      <p><sub><strong>Stack</strong> &nbsp; Next.js 16 · TypeScript · MongoDB · Mongoose · Tailwind CSS · Zod · JWT</sub></p>
+      <p><a href="https://github.com/Arjun07707/employee_management"><strong>Repository</strong></a> &nbsp;·&nbsp; <a href="https://employee-management-delta-jet.vercel.app"><strong>Live demo</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="56" align="center" valign="top"><br/><sub><code>02</code></sub></td>
+    <td valign="top">
+      <p><sub><code>AI / ML · INSURANCE TECH</code></sub></p>
+      <h3>AI Claims Ace</h3>
+      <p>An AI-assisted insurance claims prototype with conversational claim intake, document data extraction, claim tracking, admin review, fraud signals, and approval-probability estimates. The AI workflows are built with Genkit and Google AI inside a Next.js app.</p>
+      <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Genkit · Google AI · Firebase · Tailwind CSS</sub></p>
+      <p><a href="https://github.com/Arjun07707/AI-Claims-Ace"><strong>Repository</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="56" align="center" valign="top"><br/><sub><code>03</code></sub></td>
+    <td valign="top">
+      <p><sub><code>FULL-STACK · INSURANCE TECH</code></sub></p>
+      <h3>InsurEase</h3>
+      <p>A role-based insurance management prototype covering policy browsing and administration, claims, payments, agent tools, and reporting dashboards. Built with Next.js, Tailwind CSS, Radix UI, Recharts, and Firebase; the data layer is currently mocked and the login is not yet connected to real authentication.</p>
+      <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Tailwind CSS · Radix UI · Recharts · Firebase</sub></p>
+      <p><a href="https://github.com/Arjun07707/InsurEase"><strong>Repository</strong></a></p>
+    </td>
+  </tr>
+</table>
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
+## Tech Stack
+
 ### ⚡ Tech Arsenal
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,java,c,js,html,css,react,nextjs,nodejs,tailwind,mysql,mongodb&perline=12&theme=dark" /><br/>
-    <img src="https://skillicons.dev/icons?i=sklearn,tensorflow,numpy,git,github,vscode,linux,figma,ps,ai,postman,canva&perline=12&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=py,java,c,js,ts,html,css,react,nextjs,nodejs,tailwind,mysql&perline=12&theme=dark" width="100%" /><br/>
+    <img src="https://skillicons.dev/icons?i=mongodb,sklearn,tensorflow,git,github,vscode,linux,figma,ps,ai,postman&perline=11&theme=dark" width="100%" />
   </a>
 </p>
 
@@ -96,6 +143,7 @@ A living list of fields I'm spending time with — interests, not a claim of act
     <img src="https://custom-icon-badges.demolab.com/badge/Java-007396.svg?logo=java&logoColor=white" alt="Java" />
     <img src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white" alt="C" />
     <img src="https://custom-icon-badges.demolab.com/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6.svg?logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://custom-icon-badges.demolab.com/badge/SQL-025E8C.svg?logo=database&logoColor=white" alt="SQL" />
     <img src="https://custom-icon-badges.demolab.com/badge/HTML-E34F26.svg?logo=html5&logoColor=white" alt="HTML" />
     <img src="https://custom-icon-badges.demolab.com/badge/CSS-1572B6.svg?logo=css3&logoColor=white" alt="CSS" />
@@ -152,48 +200,7 @@ A living list of fields I'm spending time with — interests, not a claim of act
     <img src="https://img.shields.io/badge/Jupyter-F37626.svg?logo=Jupyter&logoColor=white" alt="Jupyter" />
   </p>
 
-</details>## Featured Projects
-
-Selected work across product engineering, applied AI, and insurance workflows.
-
-<table width="100%">
-  <tr>
-    <td width="56" align="center" valign="top"><br/><sub><code>01</code></sub></td>
-    <td valign="top">
-      <p><sub><code>FULL-STACK · PRODUCT ENGINEERING</code></sub></p>
-      <h3>Employee Management System</h3>
-      <p>A full-stack employee operations platform with JWT authentication, role-based access, employee CRUD, search and filtering, CSV export, and a dashboard for team stats. The API, auth layer, and interface live in one Next.js application.</p>
-      <p><sub><strong>Stack</strong> &nbsp; Next.js 16 · TypeScript · MongoDB · Mongoose · Tailwind CSS · Zod · JWT</sub></p>
-      <p><a href="https://github.com/Arjun07707/employee_management"><strong>Repository</strong></a> &nbsp;·&nbsp; <a href="https://employee-management-delta-jet.vercel.app"><strong>Live demo</strong></a></p>
-    </td>
-  </tr>
-</table>
-
-<table width="100%">
-  <tr>
-    <td width="56" align="center" valign="top"><br/><sub><code>02</code></sub></td>
-    <td valign="top">
-      <p><sub><code>AI / ML · INSURANCE TECH</code></sub></p>
-      <h3>AI Claims Ace</h3>
-      <p>An AI-assisted insurance claims prototype with conversational claim intake, document data extraction, claim tracking, admin review, fraud signals, and approval-probability estimates. The AI workflows are built with Genkit and Google AI inside a Next.js app.</p>
-      <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Genkit · Google AI · Firebase · Tailwind CSS</sub></p>
-      <p><a href="https://github.com/Arjun07707/AI-Claims-Ace"><strong>Repository</strong></a></p>
-    </td>
-  </tr>
-</table>
-
-<table width="100%">
-  <tr>
-    <td width="56" align="center" valign="top"><br/><sub><code>03</code></sub></td>
-    <td valign="top">
-      <p><sub><code>FULL-STACK · INSURANCE TECH</code></sub></p>
-      <h3>InsurEase</h3>
-      <p>A role-based insurance management prototype covering policy browsing and administration, claims, payments, agent tools, and reporting dashboards. Built with Next.js, Tailwind CSS, Radix UI, Recharts, and Firebase; the data layer is currently mocked and the login is not yet connected to real authentication.</p>
-      <p><sub><strong>Stack</strong> &nbsp; Next.js 15 · TypeScript · Tailwind CSS · Radix UI · Recharts · Firebase</sub></p>
-      <p><a href="https://github.com/Arjun07707/InsurEase"><strong>Repository</strong></a></p>
-    </td>
-  </tr>
-</table>
+</details>
 
 <img src="assets/cosmic-divider.svg" width="100%" alt="" />
 
