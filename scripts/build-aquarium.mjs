@@ -182,10 +182,15 @@ async function fetchCalendar() {
   const days = calendar.weeks.flatMap((week) => week.contributionDays || []);
   if (days.length === 0) throw new Error("contribution calendar is empty");
 
-  const last30 = days.slice(-TANK.bubbleCount).map((day) => ({
-    date: day.date,
-    count: Number(day.contributionCount) || 0,
-  }));
+  // The current week includes future days as zero; keep the last 30 real days.
+  const today = new Date().toISOString().slice(0, 10);
+  const pastDays = days.filter((day) => day.date <= today);
+  const last30 = (pastDays.length > 0 ? pastDays : days)
+    .slice(-TANK.bubbleCount)
+    .map((day) => ({
+      date: day.date,
+      count: Number(day.contributionCount) || 0,
+    }));
 
   return { weeks, last30 };
 }
@@ -377,7 +382,7 @@ function buildSvg({ repos, weeks, last30 }) {
   const totalStars = repos.reduce((sum, repo) => sum + repo.stars, 0);
   const title = `Repo aquarium \u2014 ${fish.length} repositories, ${nf.format(totalStars)} stars`;
   const description =
-    `${fish.length} swimming ${fish.length === 1 ? "fish" : "fish"}, one per public repository, sized by stars. ` +
+    `${fish.length} fish, one per public repository, sized by stars. ` +
     `${weeks.length} seaweed strands show weekly contributions; ${last30.length} bubbles show the last 30 days.`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD.w}" height="${CARD.h}" viewBox="0 0 ${CARD.w} ${CARD.h}" role="img" aria-labelledby="aq-title aq-desc">
