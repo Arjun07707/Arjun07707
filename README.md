@@ -124,6 +124,18 @@ Selected work across product engineering, applied AI, and insurance workflows.
   </tr>
 </table>
 
+<!-- AQUARIUM:START -->
+<div align="center">
+
+<h3>The Repo Aquarium</h3>
+
+<img src="./assets/aquarium.svg" alt="Animated aquarium: each fish is one of Arjun07707's repositories, sized by stars" width="100%">
+
+<sub>Every fish is one of my repositories; the big ones have the most stars.</sub>
+
+</div>
+<!-- AQUARIUM:END -->
+
 <img src="assets/cosmic-divider.svg" width="100%" alt="" />
 
 ## Tech Stack
