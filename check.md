@@ -1,106 +1,70 @@
-Plan: Big-number stats inside the Contribution City
+Nothing structural changes. The workflow, README markers, snake and every other section stay as they are. You only edit the layout constants in scripts/build-city-card.mjs and regenerate assets/contribution-city.svg.
 
-This adds three large stats to the city card: contributions in the last year, active days, and busiest day. Only the 3D city block changes. snake.yml, the other README sections and your assets stay as they are.
+Step 1: Put the layout in one constants block
 
-Step 0: Switch to the self-hosted route
+Add this at the top of the script so any later tweak is a one-line change. The "new" values are my estimates, so treat them as a starting point to adjust after the first render.
 
-GitSkins cards are fixed images, so you can't change their font sizes. If you used Route A from last time, move to Route B (the profile-3d.yml workflow). Then your repo builds the whole card itself, and the stats become part of the same SVG as the animated city.
+js
+const CARD = { w: 960, h: 400 };
+const FONT = {
+  eyebrow: 18,        // was 20
+  total: 80,          // was 96
+  totalLabel: 20,     // was 24
+  stat: 52,           // was 64  (active days, busiest day)
+  statLabel: 20,      // was 24
+  statSub: 16,        // busiest-day date
+  footer: 16          // was 18
+};
+const LAYOUT = {
+  textColW: 340,      // left column width
+  gutter: 24,         // gap between text and city
+  cityX: 364,         // was about 480
+  cityW: 580,         // was about 460
+  cityPad: 0.04       // bbox padding
+};
 
-Step 1: Define the three numbers
+That's about a 17-20% reduction on the text, which is a slight drop. Nothing goes below 16px, because the card scales down on phones.
 
-These come from your contribution calendar, using GitHub's GraphQL API with the same token the workflow already has.
+Step 2: Enlarge the city
 
-Stat	How it's computed
-Contributions	totalContributions for the last 12 months
-Active days	Count of days with contributionCount > 0
-Busiest day	Highest single-day contributionCount, with its date as a small sub-label
-graphql
-query($login: String!) {
-  user(login: $login) {
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        weeks { contributionDays { date contributionCount } }
-      }
-    }
-  }
-}
-Day boundaries follow GitHub's calendar (UTC).
-This counts public contributions only. Counting private work needs a personal access token and the "Include private contributions" profile setting.
-Check the output against your profile's own count before publishing. Your two GitSkins cards disagreed earlier (20 vs 33).
-Step 2: Add a card-builder script
+The scene is a long diagonal strip, so it is limited by width, not height. To make it bigger you give it more width and trim its empty margins:
 
-Create scripts/build-city-card.mjs (Node 20, no dependencies). It will:
+Widen its slot. Move the city's left edge from about x=480 to x=364 and widen it to about 580. That is roughly 25% more width, so the buildings come out about 25% bigger, which is "slightly larger".
+Trim empty margins. After the first generation, read the scene's real bounding box and set the nested <svg>'s viewBox to that box plus about 4% padding. This removes dead space so the city fills its slot instead of floating in it.
+Keep proportions. Leave preserveAspectRatio="xMidYMid meet" so nothing stretches.
+Clip safely. Keep overflow="hidden" on the nested svg so taller buildings can't poke outside the card frame.
 
-Fetch the calendar and compute the three stats.
-Read the generated scene from profile-3d-contrib/ (your recoloured profile-customize.svg, or the animated green one).
-Wrap the scene's contents in a card SVG and write assets/contribution-city.svg.
-Exit with an error and write nothing if the API call fails, so the last good card stays in place.
+If the tallest buildings touch the top edge after the resize, increase cityPad or lower the scene about 10px. Don't shrink the city again.
 
-Inline the scene instead of linking it, because an SVG shown as an image can't load other files. I haven't seen the generated SVG yet, so two risks need checking on the first run:
+Step 3: Re-space the text column
 
-Style clashes. The scene's own <style> rules apply across the whole document. Prefix every card class with cc- and avoid duplicate ids.
-Built-in text. If the scene includes its own labels or charts, crop to the city only using a viewBox, so the numbers aren't shown twice.
-Step 3: Card layout (viewBox 960×400)
-Element	Position	Style
-Card frame	Full canvas, rounded	Dark teal gradient, thin teal border at low opacity
-Eyebrow CONTRIBUTION CITY	Top left	Monospace, 20px, wide letter-spacing
-Contributions number	Left, under eyebrow	96px, bold, mint #7DE8D5
-Label contributions in the last year	Under the number	24px, teal #2BC9B0
-Active days and Busiest day	Left, side by side	64px numbers, 24px labels, busiest date in small text
-@Arjun07707 and credit line	Bottom left	18px, muted teal. Credit "3D view: github-profile-3d-contrib (MIT)".
-City scene	Right half	Nested <svg>, preserveAspectRatio="xMidYMid meet"
+With a narrower column (340px) the left side needs a quick check:
 
-Colour values are sampled by eye from your screenshot, so adjust them.
+Element	New size	Check
+CONTRIBUTION CITY	18px	Fits on one line
+Total (e.g. 1,516)	80px	About 240px wide, fits
+contributions in the last year	20px	About 310px, tight. Break into two lines if it clips.
+Active days and Busiest day	52px values	Two blocks of about 160px side by side
+Labels	20px	Active days and Busiest day fit in 160px
+@Arjun07707 and credit	16px	Bottom left, one line each
 
-Fonts. Use system fonts only ('Segoe UI', -apple-system, Helvetica, Arial, sans-serif). Web fonts won't load inside an SVG shown as an image.
+Keep vertical gaps proportional to the new sizes (roughly 14px between a number and its label, 28px between stat rows).
 
-Mobile. GitHub scales the whole card to the screen width, so on a phone the numbers shrink proportionally. At roughly 390px wide, the 96px number renders around 39px and the 24px labels around 10px. That's why labels are 24px and not smaller. A stacked layout would keep them larger, at the cost of a taller card. I don't recommend counting on <picture> width breakpoints for a separate mobile version, since GitHub support for that is unreliable.
+Step 4: Re-check phone readability
 
-Number format. Show full numbers with commas (1,516) instead of 4K for accuracy.
+GitHub scales the whole card by width. At a 390px screen the factor is about 0.41, so 20px labels render near 8px and the 80px total near 32px. That's the reason for the 16px floor. If labels feel too small on your phone, either raise statLabel to 22 or use a stacked layout with the city under the text.
 
-Animation. The rising buildings come from the scene and should survive nesting. Verify this. I'd skip count-up effects on the numbers (SVG has no clean way without scripting). A slow fade-in is optional, and add prefers-reduced-motion to calm it.
-
-Step 4: Update only profile-3d.yml
-
-Add a Node step after the 3D action, pass the token and username, and include the new file in the commit:
-
-yaml
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Build stats card
-        run: node scripts/build-city-card.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: Arjun07707
-      - name: Commit generated files
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add profile-3d-contrib/ assets/contribution-city.svg
-          git diff --cached --quiet || git commit -m "chore: update 3D city [skip ci]"
-          git push
-
-Keep [skip ci] so the commit doesn't retrigger your snake workflow. snake.yml is untouched.
-
-Step 5: README change (one line)
-
-Inside the 3D-CONTRIBUTION-CITY markers only, change the image source to ./assets/contribution-city.svg. Keep the heading and caption. Nothing outside the markers changes.
-
+Step 5: Regenerate and ship
+Edit only the constants (and the viewBox trim) in the script.
+Run the workflow from the Actions tab (workflow_dispatch).
+The existing commit step updates assets/contribution-city.svg. The README doesn't change.
+Hard-refresh your profile (Ctrl+Shift+R). GitHub may cache the image for a few minutes.
 Step 6: Verify
-[ ] Workflow runs green from the Actions tab
-[ ] Opening assets/contribution-city.svg directly shows the card, big numbers, and rising buildings
-[ ] The three numbers match your profile's contribution graph
-[ ] Labels are readable at phone width
-[ ] No duplicated stats from the scene
-[ ] Hard-refresh the profile: snake and everything else look the same as before
-Lightweight fallback
-
-If nesting causes problems, keep the scene image as is and put the three stats in an HTML table above it using <h1 align="center"> for the numbers. It's simpler but caps out at heading size and needs a script to update the README text between markers.
-
-Order and effort
-Generate and inspect the scene SVG (10 min)
-Write and test the stats script locally or via a manual run (45 min)
-Style the card and check mobile (30 min)
-Wire up the workflow and README line (15 min)
+[ ] Number sizes are visibly smaller than before, but the total is still clearly the largest
+[ ] The city looks larger and fills the right side without touching the text
+[ ] The tallest building stays inside the card frame
+[ ] No text overlaps or clips (check two-line label)
+[ ] The rising-building animation still plays
+[ ] The numbers still match your profile
+[ ] Phone width is readable
+[ ] Snake and everything else look unchanged
