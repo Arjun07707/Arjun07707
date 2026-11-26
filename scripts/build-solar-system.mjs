@@ -230,6 +230,28 @@ async function fetchRecentPushes() {
     }));
 }
 
+// The Sun sits at the centre of every orbit, so the front/back boundary is
+// the horizontal line y = 0 through the Sun. animateMotion starts at the
+// rightmost point and sweeps through the bottom first, so the first crossing
+// (the start) leads into the front half and the second crossing (the leftmost
+// point) leads into the back half. Sample the ellipse rather than hard-coding
+// the fraction, so the switch always follows the path.
+function orbitSwitchFraction(ry, samples = 720) {
+  const yAt = (fraction) => ry * Math.sin(2 * Math.PI * fraction);
+  const crossings = [];
+  for (let i = 0; i < samples; i += 1) {
+    const a = i / samples;
+    const b = (i + 1) / samples;
+    const ya = yAt(a);
+    const yb = yAt(b);
+    if ((ya < 0 && yb >= 0) || (ya >= 0 && yb < 0)) {
+      crossings.push((a + ((b - a) * ya) / (ya - yb)) % 1);
+    }
+  }
+  crossings.sort((a, b) => a - b);
+  return crossings.find((fraction) => fraction > 0.01) ?? 0.5;
+}
+
 function buildPlanets(repos) {
   const totals = {};
   for (const repo of repos) {
@@ -275,6 +297,7 @@ function buildPlanets(repos) {
       ry,
       duration,
       begin,
+      switchAt: orbitSwitchFraction(ry),
       moons: [],
       gradient: `planet-${index}`,
       moonOffset: radius + 16,
@@ -328,7 +351,9 @@ function orbitRings() {
   return rings.join("\n");
 }
 
-function planetMarkup(planet, index) {
+// One copy of the planet's artwork lives in <defs>. Both the back and front
+// layers reference it, so the sphere, icon, moons and label stay identical.
+function planetVisual(planet, index) {
   const { radius, color, badge, gradient, moons, language, share } = planet;
   const icon = languageIcon(language);
   const iconSize = radius * 2 * 0.55;
@@ -372,8 +397,7 @@ function planetMarkup(planet, index) {
   // rotates with the planet. It is plain text with no stroke, halo or filter.
   const labelBelow = radius + 14;
 
-  return `<g class="planet">
-    <animateMotion dur="${planet.duration}s" begin="${planet.begin}s" repeatCount="indefinite" path="M ${planet.rx},0 A ${planet.rx},${planet.ry.toFixed(1)} 0 1,1 -${planet.rx},0 A ${planet.rx},${planet.ry.toFixed(1)} 0 1,1 ${planet.rx},0"/>
+  return `<g id="planet-visual-${index}">
     ${moonRings}
     ${moonDots}
     <circle class="planet-body" r="${radius.toFixed(1)}" fill="url(#${gradient})" stroke="${color}" stroke-opacity="0.6" stroke-width="1"/>
@@ -385,6 +409,16 @@ function planetMarkup(planet, index) {
         <tspan x="0" dy="16">${shareLabel(share)}</tspan>
       </text>
     </g>
+  </g>`;
+}
+
+function planetCopy(planet, index, layer) {
+  const path = `M ${planet.rx},0 A ${planet.rx},${planet.ry.toFixed(1)} 0 1,1 -${planet.rx},0 A ${planet.rx},${planet.ry.toFixed(1)} 0 1,1 ${planet.rx},0`;
+  const visibility = layer === "back" ? "hidden;visible;hidden" : "visible;hidden;visible";
+  return `<g class="planet-copy ${layer}" data-planet="${index}">
+    <animateMotion dur="${planet.duration}s" begin="${planet.begin}s" repeatCount="indefinite" path="${path}"/>
+    <animate attributeName="visibility" dur="${planet.duration}s" begin="${planet.begin}s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;${planet.switchAt.toFixed(4)};1" values="${visibility}"/>
+    <use href="#planet-visual-${index}"/>
   </g>`;
 }
 
@@ -443,6 +477,8 @@ function buildSvg({ profile, planets, comets }) {
     )
     .join("\n  ");
 
+  const planetVisuals = planets.map((planet, index) => planetVisual(planet, index)).join("\n  ");
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD.w}" height="${CARD.h}" viewBox="0 0 ${CARD.w} ${CARD.h}" role="img" aria-labelledby="solar-title solar-desc">
 <title id="solar-title">${esc(title)}</title>
 <desc id="solar-desc">${esc(description)}</desc>
@@ -464,6 +500,7 @@ function buildSvg({ profile, planets, comets }) {
   ${planetGradients}
   ${cometGradients}
   ${iconClips}
+  ${planetVisuals}
   <clipPath id="solar-clip"><rect x="0.5" y="0.5" width="${CARD.w - 1}" height="${CARD.h - 1}" rx="${CARD.rx}"/></clipPath>
   <clipPath id="sun-clip"><circle cx="${CENTER.x}" cy="${CENTER.y}" r="${SUN.r}"/></clipPath>
   <style>
@@ -498,10 +535,9 @@ ${starField()}
   <g class="orbits">
 ${orbitRings()}
   </g>
-  <g class="system" transform="translate(${CENTER.x} ${CENTER.y})">
-${planets.map((planet, index) => planetMarkup(planet, index)).join("\n")}
+  <g class="system system-back" transform="translate(${CENTER.x} ${CENTER.y})">
+${planets.map((planet, index) => planetCopy(planet, index, "back")).join("\n")}
   </g>
-${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
   <g class="sun">
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="52" fill="none" stroke="${COLORS.gold}" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 7"/>
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="47" fill="none" stroke="${COLORS.gold}" stroke-opacity="0.3" stroke-width="1"/>
@@ -509,6 +545,10 @@ ${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="${SUN.r}" fill="none" stroke="${COLORS.gold}" stroke-width="5" stroke-opacity="0.14"/>
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="${SUN.r}" fill="none" stroke="${COLORS.goldBright}" stroke-width="2.2"/>
   </g>
+  <g class="system system-front" transform="translate(${CENTER.x} ${CENTER.y})">
+${planets.map((planet, index) => planetCopy(planet, index, "front")).join("\n")}
+  </g>
+${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
   <text class="eyebrow" x="28" y="34">SOLAR SYSTEM \u00b7 @${esc(LOGIN)}</text>
   <g class="legend" text-anchor="end">
     <text x="932" y="334">planets = languages \u00b7 moons = repos</text>

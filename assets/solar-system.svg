@@ -33,6 +33,56 @@
   </linearGradient>
   <clipPath id="icon-clip-0"><circle cx="0" cy="0" r="27.2"/></clipPath>
   <clipPath id="icon-clip-1"><circle cx="0" cy="0" r="17.4"/></clipPath>
+  <g id="planet-visual-0">
+    <circle r="50" fill="none" stroke="#3984FF" stroke-opacity="0.26" stroke-width="0.9" stroke-dasharray="2 7"/>
+<circle r="59" fill="none" stroke="#3984FF" stroke-opacity="0.26" stroke-width="0.9" stroke-dasharray="2 7"/>
+<circle r="68" fill="none" stroke="#3984FF" stroke-opacity="0.26" stroke-width="0.9" stroke-dasharray="2 7"/>
+    <g class="moon">
+        <animateMotion dur="13s" begin="-12.3s" repeatCount="indefinite" path="M 50,0 A 50,50 0 1,1 -50,0 A 50,50 0 1,1 50,0"/>
+        <circle r="2.7" fill="#F5F7FF"/>
+        <circle r="1.5" fill="#A9C4E8" opacity="0.55"/>
+      </g>
+<g class="moon">
+        <animateMotion dur="20s" begin="-6.7s" repeatCount="indefinite" path="M 59,0 A 59,59 0 1,1 -59,0 A 59,59 0 1,1 59,0"/>
+        <circle r="2.7" fill="#F5F7FF"/>
+        <circle r="1.5" fill="#A9C4E8" opacity="0.55"/>
+      </g>
+<g class="moon">
+        <animateMotion dur="17s" begin="0s" repeatCount="indefinite" path="M 68,0 A 68,68 0 1,1 -68,0 A 68,68 0 1,1 68,0"/>
+        <circle r="3.2" fill="#F5F7FF"/>
+        <circle r="1.8" fill="#A9C4E8" opacity="0.55"/>
+      </g>
+    <circle class="planet-body" r="34.0" fill="url(#planet-0)" stroke="#3984FF" stroke-opacity="0.6" stroke-width="1"/>
+    <g class="planet-icon" clip-path="url(#icon-clip-0)" fill="#F5F7FF">
+      <g transform="translate(-18.70 -18.70) scale(1.5583) translate(0 0)">
+        <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
+      </g>
+    </g>
+    <ellipse cx="-10.2" cy="-11.6" rx="13.6" ry="8.8" fill="#FFFFFF" opacity="0.13"/>
+    <g class="planet-label-group" transform="translate(0 48.0)">
+      <text class="planet-label" x="0" y="0" text-anchor="middle">
+        <tspan x="0">TypeScript</tspan>
+        <tspan x="0" dy="16">97%</tspan>
+      </text>
+    </g>
+  </g>
+  <g id="planet-visual-1">
+    
+    
+    <circle class="planet-body" r="21.7" fill="url(#planet-1)" stroke="#9270FF" stroke-opacity="0.6" stroke-width="1"/>
+    <g class="planet-icon" clip-path="url(#icon-clip-1)" fill="#F5F7FF">
+      <g transform="translate(-11.96 -11.96) scale(0.9966) translate(0 0)">
+        <path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/>
+      </g>
+    </g>
+    <ellipse cx="-6.5" cy="-7.4" rx="8.7" ry="5.7" fill="#FFFFFF" opacity="0.13"/>
+    <g class="planet-label-group" transform="translate(0 35.7)">
+      <text class="planet-label" x="0" y="0" text-anchor="middle">
+        <tspan x="0">CSS</tspan>
+        <tspan x="0" dy="16">1.5%</tspan>
+      </text>
+    </g>
+  </g>
   <clipPath id="solar-clip"><rect x="0.5" y="0.5" width="959" height="359" rx="20"/></clipPath>
   <clipPath id="sun-clip"><circle cx="480" cy="180" r="43"/></clipPath>
   <style>
@@ -144,58 +194,35 @@
 <ellipse cx="480" cy="180" rx="260" ry="109.2" fill="none" stroke="#34465F" stroke-opacity="0.46" stroke-width="1" stroke-dasharray="4 8"/>
 <ellipse cx="480" cy="180" rx="325" ry="136.5" fill="none" stroke="#34465F" stroke-opacity="0.38" stroke-width="1" stroke-dasharray="4 8"/>
   </g>
-  <g class="system" transform="translate(480 180)">
-<g class="planet">
+  <g class="system system-back" transform="translate(480 180)">
+<g class="planet-copy back" data-planet="0">
     <animateMotion dur="134s" begin="-115.1s" repeatCount="indefinite" path="M 260,0 A 260,109.2 0 1,1 -260,0 A 260,109.2 0 1,1 260,0"/>
-    <circle r="50" fill="none" stroke="#3984FF" stroke-opacity="0.26" stroke-width="0.9" stroke-dasharray="2 7"/>
-<circle r="59" fill="none" stroke="#3984FF" stroke-opacity="0.26" stroke-width="0.9" stroke-dasharray="2 7"/>
-<circle r="68" fill="none" stroke="#3984FF" stroke-opacity="0.26" stroke-width="0.9" stroke-dasharray="2 7"/>
-    <g class="moon">
-        <animateMotion dur="13s" begin="-12.3s" repeatCount="indefinite" path="M 50,0 A 50,50 0 1,1 -50,0 A 50,50 0 1,1 50,0"/>
-        <circle r="2.7" fill="#F5F7FF"/>
-        <circle r="1.5" fill="#A9C4E8" opacity="0.55"/>
-      </g>
-<g class="moon">
-        <animateMotion dur="20s" begin="-6.7s" repeatCount="indefinite" path="M 59,0 A 59,59 0 1,1 -59,0 A 59,59 0 1,1 59,0"/>
-        <circle r="2.7" fill="#F5F7FF"/>
-        <circle r="1.5" fill="#A9C4E8" opacity="0.55"/>
-      </g>
-<g class="moon">
-        <animateMotion dur="17s" begin="0s" repeatCount="indefinite" path="M 68,0 A 68,68 0 1,1 -68,0 A 68,68 0 1,1 68,0"/>
-        <circle r="3.2" fill="#F5F7FF"/>
-        <circle r="1.8" fill="#A9C4E8" opacity="0.55"/>
-      </g>
-    <circle class="planet-body" r="34.0" fill="url(#planet-0)" stroke="#3984FF" stroke-opacity="0.6" stroke-width="1"/>
-    <g class="planet-icon" clip-path="url(#icon-clip-0)" fill="#F5F7FF">
-      <g transform="translate(-18.70 -18.70) scale(1.5583) translate(0 0)">
-        <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
-      </g>
-    </g>
-    <ellipse cx="-10.2" cy="-11.6" rx="13.6" ry="8.8" fill="#FFFFFF" opacity="0.13"/>
-    <g class="planet-label-group" transform="translate(0 48.0)">
-      <text class="planet-label" x="0" y="0" text-anchor="middle">
-        <tspan x="0">TypeScript</tspan>
-        <tspan x="0" dy="16">97%</tspan>
-      </text>
-    </g>
+    <animate attributeName="visibility" dur="134s" begin="-115.1s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5000;1" values="hidden;visible;hidden"/>
+    <use href="#planet-visual-0"/>
   </g>
-<g class="planet">
+<g class="planet-copy back" data-planet="1">
     <animateMotion dur="129s" begin="-83.5s" repeatCount="indefinite" path="M 130,0 A 130,54.6 0 1,1 -130,0 A 130,54.6 0 1,1 130,0"/>
-    
-    
-    <circle class="planet-body" r="21.7" fill="url(#planet-1)" stroke="#9270FF" stroke-opacity="0.6" stroke-width="1"/>
-    <g class="planet-icon" clip-path="url(#icon-clip-1)" fill="#F5F7FF">
-      <g transform="translate(-11.96 -11.96) scale(0.9966) translate(0 0)">
-        <path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/>
-      </g>
-    </g>
-    <ellipse cx="-6.5" cy="-7.4" rx="8.7" ry="5.7" fill="#FFFFFF" opacity="0.13"/>
-    <g class="planet-label-group" transform="translate(0 35.7)">
-      <text class="planet-label" x="0" y="0" text-anchor="middle">
-        <tspan x="0">CSS</tspan>
-        <tspan x="0" dy="16">1.5%</tspan>
-      </text>
-    </g>
+    <animate attributeName="visibility" dur="129s" begin="-83.5s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5000;1" values="hidden;visible;hidden"/>
+    <use href="#planet-visual-1"/>
+  </g>
+  </g>
+  <g class="sun">
+    <circle cx="480" cy="180" r="52" fill="none" stroke="#F5C46B" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 7"/>
+    <circle cx="480" cy="180" r="47" fill="none" stroke="#F5C46B" stroke-opacity="0.3" stroke-width="1"/>
+    <image href="data:image/jpeg;base64,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" x="437" y="137" width="86" height="86" clip-path="url(#sun-clip)" preserveAspectRatio="xMidYMid slice"/>
+    <circle cx="480" cy="180" r="43" fill="none" stroke="#F5C46B" stroke-width="5" stroke-opacity="0.14"/>
+    <circle cx="480" cy="180" r="43" fill="none" stroke="#FFE3A3" stroke-width="2.2"/>
+  </g>
+  <g class="system system-front" transform="translate(480 180)">
+<g class="planet-copy front" data-planet="0">
+    <animateMotion dur="134s" begin="-115.1s" repeatCount="indefinite" path="M 260,0 A 260,109.2 0 1,1 -260,0 A 260,109.2 0 1,1 260,0"/>
+    <animate attributeName="visibility" dur="134s" begin="-115.1s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5000;1" values="visible;hidden;visible"/>
+    <use href="#planet-visual-0"/>
+  </g>
+<g class="planet-copy front" data-planet="1">
+    <animateMotion dur="129s" begin="-83.5s" repeatCount="indefinite" path="M 130,0 A 130,54.6 0 1,1 -130,0 A 130,54.6 0 1,1 130,0"/>
+    <animate attributeName="visibility" dur="129s" begin="-83.5s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5000;1" values="visible;hidden;visible"/>
+    <use href="#planet-visual-1"/>
   </g>
   </g>
 <g class="comet" style="--delay:-26.7s">
@@ -204,13 +231,6 @@
     <circle r="5.5" fill="url(#comet-glow)" opacity="0.7"/>
     <circle r="2.5" fill="#FFE3A3"/>
     <text class="comet-label" x="10" y="4">employee_management</text>
-  </g>
-  <g class="sun">
-    <circle cx="480" cy="180" r="52" fill="none" stroke="#F5C46B" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 7"/>
-    <circle cx="480" cy="180" r="47" fill="none" stroke="#F5C46B" stroke-opacity="0.3" stroke-width="1"/>
-    <image href="data:image/jpeg;base64,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" x="437" y="137" width="86" height="86" clip-path="url(#sun-clip)" preserveAspectRatio="xMidYMid slice"/>
-    <circle cx="480" cy="180" r="43" fill="none" stroke="#F5C46B" stroke-width="5" stroke-opacity="0.14"/>
-    <circle cx="480" cy="180" r="43" fill="none" stroke="#FFE3A3" stroke-width="2.2"/>
   </g>
   <text class="eyebrow" x="28" y="34">SOLAR SYSTEM · @Arjun07707</text>
   <g class="legend" text-anchor="end">

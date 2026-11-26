@@ -314,7 +314,7 @@ Astronomy taught me to think in scales I cannot see. Stars are fusion engines wi
   <img src="./assets/solar-system.svg" alt="Animated solar system: Subhamita's avatar as the sun, languages as planets, repositories as moons, recent pushes as comets" width="100%">
 </a>
 
-<sub>I am the sun; my languages are the planets, my repos their moons, and my recent pushes the comets.</sub>
+<sub>I am the Sun; my languages orbit as planets, my repositories drift as moons, and my latest commits blaze across the cosmos like comets.</sub>
 <!-- SOLAR-SYSTEM:END -->
 
 <img src="assets/cosmic-footer.svg" width="100%" alt="A sparse star field above a dark planet horizon, with a faint shooting star." />
