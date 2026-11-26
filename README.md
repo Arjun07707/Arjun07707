@@ -1,6 +1,12 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Subhamita Adhikari — Beyond the Code. Into the Cosmos." width="100%" />
+  <a href="https://github.com/Arjun07707?tab=repositories">
+    <img src="assets/hero-galaxy.svg" alt="Animated galaxy where each star is one of Subhamita's GitHub repositories" width="100%" />
+  </a>
 </div>
+
+<p align="center">
+  <sub>⭐ <a href="https://github.com/Arjun07707/employee_management">employee_management</a> · <a href="https://github.com/Arjun07707/AI-Claims-Ace">AI-Claims-Ace</a> · <a href="https://github.com/Arjun07707/InsurEase">InsurEase</a></sub>
+</p>
 
 <p align="center">
   <a href="https://github.com/Arjun07707">
