@@ -1,107 +1,106 @@
-Plan: Add the 3D Contribution City after your snake
+Plan: Big-number stats inside the Contribution City
 
-The GitSkins card in your preview credits github-profile-3d-contrib as its 3D engine. That is a free GitHub Action, so you can either use the GitSkins card or generate the city yourself. Your existing README, snake workflow and assets stay untouched. You only add one new block and one new workflow file.
+This adds three large stats to the city card: contributions in the last year, active days, and busiest day. Only the 3D city block changes. snake.yml, the other README sections and your assets stay as they are.
 
-Step 1: Pick a route (5 min)
+Step 0: Switch to the self-hosted route
 
-Open your preview link and see whether this template is free. GitSkins says free templates can be previewed, copied and published at no cost, while Pro templates need Pro or a one-time export. I couldn't confirm which tier Contribution City is. 
-gitskins
+GitSkins cards are fixed images, so you can't change their font sizes. If you used Route A from last time, move to Route B (the profile-3d.yml workflow). Then your repo builds the whole card itself, and the stats become part of the same SVG as the animated city.
 
-	Route A: GitSkins card	Route B: self-hosted Action
-Look	Exactly your preview 3	Close match after recolouring
-Cost	Free or Pro (unverified)	Free
-Ownership	Depends on gitskins.com	Files live in your repo
-Effort	About 5 min	About 30 min
+Step 1: Define the three numbers
 
-If it's free, use Route A. If it's Pro, or you want to own the files, use Route B.
+These come from your contribution calendar, using GitHub's GraphQL API with the same token the workflow already has.
 
-Route A: GitSkins card
-In README Studio, choose Copy Markdown (not one-click publish, which would overwrite your README).
-Copy only the Contribution City block.
-Skip to Step 3.
-Route B: Self-hosted with GitHub Actions
-B1. Add a separate workflow
+Stat	How it's computed
+Contributions	totalContributions for the last 12 months
+Active days	Count of days with contributionCount > 0
+Busiest day	Highest single-day contributionCount, with its date as a small sub-label
+graphql
+query($login: String!) {
+  user(login: $login) {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { date contributionCount } }
+      }
+    }
+  }
+}
+Day boundaries follow GitHub's calendar (UTC).
+This counts public contributions only. Counting private work needs a personal access token and the "Include private contributions" profile setting.
+Check the output against your profile's own count before publishing. Your two GitSkins cards disagreed earlier (20 vs 33).
+Step 2: Add a card-builder script
 
-Create .github/workflows/profile-3d.yml. Don't edit snake.yml.
+Create scripts/build-city-card.mjs (Node 20, no dependencies). It will:
+
+Fetch the calendar and compute the three stats.
+Read the generated scene from profile-3d-contrib/ (your recoloured profile-customize.svg, or the animated green one).
+Wrap the scene's contents in a card SVG and write assets/contribution-city.svg.
+Exit with an error and write nothing if the API call fails, so the last good card stays in place.
+
+Inline the scene instead of linking it, because an SVG shown as an image can't load other files. I haven't seen the generated SVG yet, so two risks need checking on the first run:
+
+Style clashes. The scene's own <style> rules apply across the whole document. Prefix every card class with cc- and avoid duplicate ids.
+Built-in text. If the scene includes its own labels or charts, crop to the city only using a viewBox, so the numbers aren't shown twice.
+Step 3: Card layout (viewBox 960×400)
+Element	Position	Style
+Card frame	Full canvas, rounded	Dark teal gradient, thin teal border at low opacity
+Eyebrow CONTRIBUTION CITY	Top left	Monospace, 20px, wide letter-spacing
+Contributions number	Left, under eyebrow	96px, bold, mint #7DE8D5
+Label contributions in the last year	Under the number	24px, teal #2BC9B0
+Active days and Busiest day	Left, side by side	64px numbers, 24px labels, busiest date in small text
+@Arjun07707 and credit line	Bottom left	18px, muted teal. Credit "3D view: github-profile-3d-contrib (MIT)".
+City scene	Right half	Nested <svg>, preserveAspectRatio="xMidYMid meet"
+
+Colour values are sampled by eye from your screenshot, so adjust them.
+
+Fonts. Use system fonts only ('Segoe UI', -apple-system, Helvetica, Arial, sans-serif). Web fonts won't load inside an SVG shown as an image.
+
+Mobile. GitHub scales the whole card to the screen width, so on a phone the numbers shrink proportionally. At roughly 390px wide, the 96px number renders around 39px and the 24px labels around 10px. That's why labels are 24px and not smaller. A stacked layout would keep them larger, at the cost of a taller card. I don't recommend counting on <picture> width breakpoints for a separate mobile version, since GitHub support for that is unreliable.
+
+Number format. Show full numbers with commas (1,516) instead of 4K for accuracy.
+
+Animation. The rising buildings come from the scene and should survive nesting. Verify this. I'd skip count-up effects on the numbers (SVG has no clean way without scripting). A slow fade-in is optional, and add prefers-reduced-motion to calm it.
+
+Step 4: Update only profile-3d.yml
+
+Add a Node step after the 3D action, pass the token and username, and include the new file in the commit:
 
 yaml
-name: GitHub-Profile-3D-Contrib
-on:
-  schedule:
-    - cron: "0 18 * * *"   # 23:30 IST daily
-  workflow_dispatch:
-permissions:
-  contents: write
-concurrency:
-  group: profile-3d
-  cancel-in-progress: true
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build stats card
+        run: node scripts/build-city-card.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: Arjun07707
-          # SETTING_JSON: ./settings/city.json   <- enable in B3
       - name: Commit generated files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add profile-3d-contrib/
+          git add profile-3d-contrib/ assets/contribution-city.svg
           git diff --cached --quiet || git commit -m "chore: update 3D city [skip ci]"
           git push
 
-This follows the pattern used in public examples: a daily schedule, a manual trigger, and the action given the default token. I scoped git add to the output folder so it never stages anything else, and [skip ci] stops the commit from retriggering your snake workflow if that one runs on push. 0.7.1 is the latest release listed on the releases page, dated January 2023. Check that page for anything newer before you commit. 
-github
-github
+Keep [skip ci] so the commit doesn't retrigger your snake workflow. snake.yml is untouched.
 
-B2. First run
+Step 5: README change (one line)
 
-Go to Actions, then GitHub-Profile-3D-Contrib, then Run workflow. The action writes its images into a profile-3d-contrib/ folder, including animated versions such as profile-green-animate.svg. Open the generated SVG and confirm the buildings rise when it loads. 
-github
+Inside the 3D-CONTRIBUTION-CITY markers only, change the image source to ./assets/contribution-city.svg. Keep the heading and caption. Nothing outside the markers changes.
 
-B3. Match the teal look and growing animation
-The SETTING_JSON option points to a settings file for customizing the output; the repo's sample-settings/*.json and src/type.ts list the real keys. Copy a sample into settings/city.json in your repo. I haven't seen the key names, so don't guess them. 
-github
-Recolour to the inspiration palette. These values are sampled by eye from your screenshot, so adjust them to taste:
-Building tops: mint #7DE8D5
-Building sides: teal #2BC9B0
-Empty grid tiles: dark teal #0F5C54
-Enable the growing animation if the settings file exposes it. Release 0.7.0 fixed the growing animation in the settings JSON and let you choose the output filename. 
-github
-Uncomment SETTING_JSON in the workflow and rerun. With a settings file, the output is profile-customize.svg, unless you set a different name. 
-github
-B4. Optional: the card frame and stats panel
+Step 6: Verify
+[ ] Workflow runs green from the Actions tab
+[ ] Opening assets/contribution-city.svg directly shows the card, big numbers, and rising buildings
+[ ] The three numbers match your profile's contribution graph
+[ ] Labels are readable at phone width
+[ ] No duplicated stats from the scene
+[ ] Hard-refresh the profile: snake and everything else look the same as before
+Lightweight fallback
 
-Your preview shows a rounded card with a stats column (total, active days, busiest day). The Action only produces the 3D scene. To match the frame:
+If nesting causes problems, keep the scene image as is and put the three stats in an HTML table above it using <h1 align="center"> for the numbers. It's simpler but caps out at heading size and needs a script to update the README text between markers.
 
-Add a small Node step that fetches your contribution totals from the GitHub API and wraps the scene in a card SVG. Inline the scene's contents, because an SVG loaded as an image can't pull in external files.
-Or skip it and put one text line under the image. Your first screenshot's four stats (1-year total, busiest day, longest streak, current streak) work well as that line.
-Step 3: Insert after the snake
-
-Paste this immediately after your existing snake block and change nothing else:
-
-html
-<!-- 3D-CONTRIBUTION-CITY:START -->
-<div align="center">
-
-### The City I Built This Year
-
-<img src="./profile-3d-contrib/profile-customize.svg" alt="Animated 3D contribution city for Arjun07707" width="100%">
-
-<sub>Every building is a day; taller means more contributions.</sub>
-
-</div>
-<!-- 3D-CONTRIBUTION-CITY:END -->
-
-For Route A, replace the <img> line with the GitSkins Markdown. If you skipped the settings file in Route B, use the file name that actually appeared in profile-3d-contrib/ (for example profile-green-animate.svg).
-
-Step 4: Verify
-[ ] Your hard-refreshed profile (Ctrl+Shift+R) shows the city directly below the snake
-[ ] Buildings rise on load (animation works when the SVG is shown as an image)
-[ ] The heading and caption match the rest of your section style
-[ ] Looks fine on a phone width and in GitHub light mode
-[ ] Snake, stats and everything else are unchanged (compare against your backup)
-[ ] Workflow ran green and committed only profile-3d-contrib/
+Order and effort
+Generate and inspect the scene SVG (10 min)
+Write and test the stats script locally or via a manual run (45 min)
+Style the card and check mobile (30 min)
+Wire up the workflow and README line (15 min)
