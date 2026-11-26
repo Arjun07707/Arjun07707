@@ -329,7 +329,7 @@ function languageKey(planets) {
     const y = top + gap + index * gap;
     return `<g class="key-row">
       <circle cx="32" cy="${y - 4.5}" r="3.6" fill="${planet.color}"/>
-      <text x="42" y="${y}">${esc(planet.language)} ${shareLabel(planet.share)}</text>
+      <text class="key-label" x="42" y="${y}">${esc(planet.language)} ${shareLabel(planet.share)}</text>
     </g>`;
   });
 
@@ -413,8 +413,8 @@ function buildSvg({ profile, planets, comets }) {
     .solar text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
     .eyebrow { font-size: 12px; fill: ${COLORS.muted}; letter-spacing: 2.4px; font-weight: 600; }
     .planet-badge { fill: #FFFFFF; font-weight: 700; letter-spacing: 0.4px; paint-order: stroke; stroke: #05070D; stroke-width: 2.4px; stroke-linejoin: round; }
-    .language-key text { font-size: 15px; fill: ${COLORS.ink}; paint-order: stroke; stroke: ${COLORS.bg}; stroke-width: 4px; stroke-linejoin: round; }
-    .language-key .key-title { font-size: 10px; fill: ${COLORS.muted}; letter-spacing: 2px; font-weight: 600; stroke-width: 3px; }
+    .language-key .key-label { font-size: 15px; fill: ${COLORS.ink}; }
+    .language-key .key-title { font-size: 10px; fill: ${COLORS.muted}; letter-spacing: 2px; font-weight: 600; paint-order: stroke; stroke: ${COLORS.bg}; stroke-width: 3px; stroke-linejoin: round; }
     .comet-label { font-size: 12.5px; fill: ${COLORS.ink}; paint-order: stroke; stroke: ${COLORS.bg}; stroke-width: 3.5px; stroke-linejoin: round; }
     .legend { font-size: 13px; fill: ${COLORS.muted}; }
     .star { fill: ${COLORS.ink}; animation: solarTwinkle 7s ease-in-out infinite; animation-delay: var(--delay, 0s); }

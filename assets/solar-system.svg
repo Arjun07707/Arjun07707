@@ -26,7 +26,7 @@
     <stop offset="0.55" stop-color="#9270FF"/>
     <stop offset="1" stop-color="#5634C3"/>
   </radialGradient>
-  <linearGradient id="comet-tail-0" x1="0" y1="0" x2="-59.0" y2="-22.4" gradientUnits="userSpaceOnUse">
+  <linearGradient id="comet-tail-0" x1="0" y1="0" x2="-58.9" y2="-22.4" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#FFE3A3" stop-opacity="0.95"/>
     <stop offset="0.55" stop-color="#F5C46B" stop-opacity="0.4"/>
     <stop offset="1" stop-color="#F5C46B" stop-opacity="0"/>
@@ -37,8 +37,8 @@
     .solar text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
     .eyebrow { font-size: 12px; fill: #8FA6B8; letter-spacing: 2.4px; font-weight: 600; }
     .planet-badge { fill: #FFFFFF; font-weight: 700; letter-spacing: 0.4px; paint-order: stroke; stroke: #05070D; stroke-width: 2.4px; stroke-linejoin: round; }
-    .language-key text { font-size: 15px; fill: #DCE9F4; paint-order: stroke; stroke: #05070D; stroke-width: 4px; stroke-linejoin: round; }
-    .language-key .key-title { font-size: 10px; fill: #8FA6B8; letter-spacing: 2px; font-weight: 600; stroke-width: 3px; }
+    .language-key .key-label { font-size: 15px; fill: #DCE9F4; }
+    .language-key .key-title { font-size: 10px; fill: #8FA6B8; letter-spacing: 2px; font-weight: 600; paint-order: stroke; stroke: #05070D; stroke-width: 3px; stroke-linejoin: round; }
     .comet-label { font-size: 12.5px; fill: #DCE9F4; paint-order: stroke; stroke: #05070D; stroke-width: 3.5px; stroke-linejoin: round; }
     .legend { font-size: 13px; fill: #8FA6B8; }
     .star { fill: #DCE9F4; animation: solarTwinkle 7s ease-in-out infinite; animation-delay: var(--delay, 0s); }
@@ -179,7 +179,7 @@
   </g>
 <g class="comet" style="--delay:-26.7s">
     <animateMotion dur="28s" begin="-26.7s" repeatCount="indefinite" path="M 520,40 L 940,140"/>
-    <path d="M 0 0 C -20.0 -13.0, -42.4 -20.0, -59.0 -22.4 C -35.4 -9.4, -14.1 1.2, 0 0 Z" fill="url(#comet-tail-0)"/>
+    <path d="M 0 0 C -20.0 -13.0, -42.4 -20.0, -58.9 -22.4 C -35.4 -9.4, -14.1 1.2, 0 0 Z" fill="url(#comet-tail-0)"/>
     <circle r="5.5" fill="url(#comet-glow)" opacity="0.7"/>
     <circle r="2.5" fill="#FFE3A3"/>
     <text class="comet-label" x="10" y="4">employee_management</text>
@@ -196,11 +196,11 @@
     <text class="key-title" x="30" y="306">LANGUAGES</text>
 <g class="key-row">
       <circle cx="32" cy="321.5" r="3.6" fill="#3984FF"/>
-      <text x="42" y="326">TypeScript 97%</text>
+      <text class="key-label" x="42" y="326">TypeScript 97%</text>
     </g>
 <g class="key-row">
       <circle cx="32" cy="341.5" r="3.6" fill="#9270FF"/>
-      <text x="42" y="346">CSS 1.5%</text>
+      <text class="key-label" x="42" y="346">CSS 1.5%</text>
     </g>
   </g>
   <g class="legend" text-anchor="end">
