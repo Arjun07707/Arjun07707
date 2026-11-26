@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "settings/city.json"
+      - "scripts/round-city.mjs"
       - ".github/workflows/profile-3d.yml"
 
 permissions:
@@ -31,6 +32,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: ./settings/city.json
+
+      - name: Round the card corners
+        run: node scripts/round-city.mjs
 
       - name: Commit generated files
         run: |

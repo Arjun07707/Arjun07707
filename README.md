@@ -251,7 +251,7 @@ An animated view of the contribution graph, generated daily by GitHub Actions.
 
 <h3>The City I Built This Year</h3>
 
-<img src="./profile-3d-contrib/profile-cosmic-city.svg" alt="Animated 3D contribution city for Arjun07707" width="100%" style="border-radius: 16px;" />
+<img src="./profile-3d-contrib/profile-cosmic-city.svg" alt="Animated 3D contribution city for Arjun07707" width="100%">
 
 <sub>Every building is a day; taller means more contributions.</sub>
 
