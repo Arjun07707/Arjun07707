@@ -143,13 +143,6 @@
 <ellipse cx="480" cy="180" rx="260" ry="109.2" fill="none" stroke="#34465F" stroke-opacity="0.46" stroke-width="1" stroke-dasharray="4 8"/>
 <ellipse cx="480" cy="180" rx="325" ry="136.5" fill="none" stroke="#34465F" stroke-opacity="0.38" stroke-width="1" stroke-dasharray="4 8"/>
   </g>
-<g class="comet" style="--delay:-26.7s">
-    <animateMotion dur="28s" begin="-26.7s" repeatCount="indefinite" path="M 236,74 L 906,286"/>
-    <path d="M 0 0 C -20.0 -13.0, -42.5 -20.0, -59.0 -22.4 C -35.4 -9.4, -14.2 1.2, 0 0 Z" fill="url(#comet-tail-0)"/>
-    <circle r="5.5" fill="url(#comet-glow)" opacity="0.7"/>
-    <circle r="2.5" fill="#FFE3A3"/>
-    <text class="comet-label" x="10" y="4">employee_management</text>
-  </g>
   <g class="system" transform="translate(480 180)">
 <g class="planet">
     <animateMotion dur="134s" begin="-115.1s" repeatCount="indefinite" path="M 260,0 A 260,109.2 0 1,1 -260,0 A 260,109.2 0 1,1 260,0"/>
@@ -183,6 +176,13 @@
     <ellipse cx="-5.0" cy="-5.7" rx="6.7" ry="4.3" fill="#FFFFFF" opacity="0.13"/>
     <text class="planet-badge" x="0" y="0" text-anchor="middle" dominant-baseline="central" font-size="8.7">CSS</text>
   </g>
+  </g>
+<g class="comet" style="--delay:-26.7s">
+    <animateMotion dur="28s" begin="-26.7s" repeatCount="indefinite" path="M 520,40 L 940,140"/>
+    <path d="M 0 0 C -20.0 -13.0, -42.5 -20.0, -59.0 -22.4 C -35.4 -9.4, -14.2 1.2, 0 0 Z" fill="url(#comet-tail-0)"/>
+    <circle r="5.5" fill="url(#comet-glow)" opacity="0.7"/>
+    <circle r="2.5" fill="#FFE3A3"/>
+    <text class="comet-label" x="10" y="4">employee_management</text>
   </g>
   <g class="sun">
     <circle cx="480" cy="180" r="52" fill="none" stroke="#F5C46B" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 7"/>

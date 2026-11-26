@@ -38,10 +38,10 @@ const FALLBACK = { color: "#68758A" };
 
 // Each comet crosses a little of the upper half of the card while visible.
 const COMET_PATHS = [
-  "M 236,74 L 906,286",
-  "M 300,52 L 884,206",
-  "M 214,100 L 850,306",
-  "M 340,64 L 920,242",
+  "M 520,40 L 940,140",
+  "M 560,28 L 960,116",
+  "M 480,54 L 920,160",
+  "M 600,20 L 980,100",
 ];
 
 const nf = new Intl.NumberFormat("en-US");
@@ -441,10 +441,10 @@ ${starField()}
   <g class="orbits">
 ${orbitRings()}
   </g>
-${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
   <g class="system" transform="translate(${CENTER.x} ${CENTER.y})">
 ${planets.map((planet) => planetMarkup(planet)).join("\n")}
   </g>
+${comets.map((comet, index) => cometMarkup(comet, index)).join("\n")}
   <g class="sun">
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="52" fill="none" stroke="${COLORS.gold}" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="2 7"/>
     <circle cx="${CENTER.x}" cy="${CENTER.y}" r="47" fill="none" stroke="${COLORS.gold}" stroke-opacity="0.3" stroke-width="1"/>
