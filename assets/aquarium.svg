@@ -126,57 +126,57 @@
   <ellipse cx="292" cy="376" rx="12" ry="4" fill="#193638" opacity="0.8"/>
   <ellipse cx="512" cy="363" rx="16" ry="4.5" fill="#1B3A3C" opacity="0.75"/>
   <ellipse cx="828" cy="372" rx="22" ry="5" fill="#193638" opacity="0.8"/>
-<g transform="translate(283.585 276)">
-  <g class="aq-swim" style="--amp:195.68499999999997px;--dur:58s;--delay:-21.1s">
+<g transform="translate(273.46 276)">
+  <g class="aq-swim" style="--amp:178.45999999999998px;--dur:58s;--delay:-21.1s">
     <g class="aq-body" style="--dur:116s;--delay:-21.1s">
       <g transform="scale(0.720)">
         <use href="#aq-fish" style="color:#F1E05A"/>
       </g>
     </g>
-    <text class="aq-label" x="-61.9" y="41.6">Arjun07707</text>
-    <g transform="translate(36.9 31.1)">
+    <text class="aq-label" x="-46.4" y="41.6">Arjun07707</text>
+    <g transform="translate(42.0 -7)">
       <rect width="25.0" height="14" rx="4" fill="#F1E05A" fill-opacity="0.16" stroke="#F1E05A" stroke-opacity="0.5"/>
       <text class="aq-badge" x="12.5" y="10.8" text-anchor="middle" fill="#F1E05A">JS</text>
     </g>
   </g>
 </g>
-<g transform="translate(426.195 112)">
+<g transform="translate(422.82 112)">
   <g class="aq-swim" style="--amp:200px;--dur:56s;--delay:-29.2s">
     <g class="aq-body" style="--dur:112s;--delay:-29.2s">
       <g transform="scale(0.720)">
         <use href="#aq-fish" style="color:#3984FF"/>
       </g>
     </g>
-    <text class="aq-label" x="-92.8" y="41.6">employee_management</text>
-    <g transform="translate(67.8 31.1)">
+    <text class="aq-label" x="-77.3" y="41.6">employee_management</text>
+    <g transform="translate(42.0 -7)">
       <rect width="25.0" height="14" rx="4" fill="#3984FF" fill-opacity="0.16" stroke="#3984FF" stroke-opacity="0.5"/>
       <text class="aq-badge" x="12.5" y="10.8" text-anchor="middle" fill="#3984FF">TS</text>
     </g>
   </g>
 </g>
-<g transform="translate(542.8050000000001 194)">
+<g transform="translate(546.1800000000001 194)">
   <g class="aq-swim" style="--amp:200px;--dur:51s;--delay:-36.6s">
     <g class="aq-body" style="--dur:102s;--delay:-36.6s">
       <g transform="scale(0.720)">
         <use href="#aq-fish" style="color:#3984FF"/>
       </g>
     </g>
-    <text class="aq-label" x="-69.3" y="41.6">AI-Claims-Ace</text>
-    <g transform="translate(44.3 31.1)">
+    <text class="aq-label" x="-53.8" y="41.6">AI-Claims-Ace</text>
+    <g transform="translate(42.0 -7)">
       <rect width="25.0" height="14" rx="4" fill="#3984FF" fill-opacity="0.16" stroke="#3984FF" stroke-opacity="0.5"/>
       <text class="aq-badge" x="12.5" y="10.8" text-anchor="middle" fill="#3984FF">TS</text>
     </g>
   </g>
 </g>
-<g transform="translate(687.415 276)">
-  <g class="aq-swim" style="--amp:192.04500000000002px;--dur:40s;--delay:-39.5s">
+<g transform="translate(697.54 276)">
+  <g class="aq-swim" style="--amp:167.46000000000004px;--dur:40s;--delay:-39.5s">
     <g class="aq-body" style="--dur:80s;--delay:-39.5s">
       <g transform="scale(0.720)">
         <use href="#aq-fish" style="color:#3984FF"/>
       </g>
     </g>
-    <text class="aq-label" x="-54.5" y="41.6">InsurEase</text>
-    <g transform="translate(29.5 31.1)">
+    <text class="aq-label" x="-39.0" y="41.6">InsurEase</text>
+    <g transform="translate(42.0 -7)">
       <rect width="25.0" height="14" rx="4" fill="#3984FF" fill-opacity="0.16" stroke="#3984FF" stroke-opacity="0.5"/>
       <text class="aq-badge" x="12.5" y="10.8" text-anchor="middle" fill="#3984FF">TS</text>
     </g>
@@ -208,8 +208,8 @@
 <circle class="aq-bubble" style="--dur:10s;--delay:-2.6s" cx="736" cy="339" r="2.4" fill="none" stroke="#6FE3D2" stroke-width="1.09" opacity="0.5"/>
 <circle class="aq-bubble" style="--dur:10s;--delay:-2.2s" cx="532" cy="329" r="2.4" fill="none" stroke="#6FE3D2" stroke-width="1.09" opacity="0.5"/>
 <circle class="aq-bubble" style="--dur:10s;--delay:-3s" cx="400" cy="320" r="2.4" fill="none" stroke="#6FE3D2" stroke-width="1.09" opacity="0.5"/>
-<circle class="aq-bubble" style="--dur:8s;--delay:-4.2s" cx="532" cy="339" r="3.5" fill="none" stroke="#6FE3D2" stroke-width="1.23" opacity="0.5"/>
-<circle class="aq-bubble" style="--dur:8s;--delay:-1s" cx="520" cy="314" r="6.4" fill="none" stroke="#6FE3D2" stroke-width="1.57" opacity="0.5"/>
+<circle class="aq-bubble" style="--dur:8s;--delay:-4.2s" cx="532" cy="339" r="2.4" fill="none" stroke="#6FE3D2" stroke-width="1.09" opacity="0.5"/>
+<circle class="aq-bubble" style="--dur:8s;--delay:-1s" cx="520" cy="314" r="6.5" fill="none" stroke="#6FE3D2" stroke-width="1.59" opacity="0.5"/>
 <circle class="aq-bubble" style="--dur:12s;--delay:-7s" cx="340" cy="346" r="4.4" fill="none" stroke="#6FE3D2" stroke-width="1.33" opacity="0.5"/>
 <circle class="aq-bubble" style="--dur:10s;--delay:-5s" cx="80" cy="337" r="7.0" fill="none" stroke="#6FE3D2" stroke-width="1.64" opacity="0.5"/>
   <g class="aq-legend" text-anchor="end">

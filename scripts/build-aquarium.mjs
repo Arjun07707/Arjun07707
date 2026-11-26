@@ -217,8 +217,8 @@ function createFish(repo) {
   const label = truncateLabel(repo.name);
   const badgeW = 12 + repo.badge.length * 6.5;
   const nameW = textWidth(label, FONT.label);
-  const totalW = nameW + 6 + badgeW;
-  const half = Math.max(size, totalW) / 2 + 12;
+  // Reserve room for the name and the language tag on the fish's right flank.
+  const half = Math.max(size / 2, nameW / 2 + 2, size / 2 + 6 + badgeW + 2) + 12;
   const duration = 40 + (hash(`${repo.name}:swim`) % 31);
   const delay = -((hash(`${repo.name}:phase`) % (duration * 10)) / 10);
 
@@ -228,7 +228,6 @@ function createFish(repo) {
     label,
     badgeW,
     nameW,
-    totalW,
     half,
     labelBaseline: size * 0.3 + 20,
     duration,
@@ -354,10 +353,10 @@ function bubbles(days) {
 function fishMarkup(fish) {
   return fish
     .map((item) => {
-      const { x, y, size, label, totalW, nameW, badgeW, labelBaseline, color, badge, amp, duration, delay } = item;
-      const labelX = -totalW / 2;
-      const badgeX = labelX + nameW + 6;
-      const badgeY = labelBaseline - 10.5;
+      const { x, y, size, label, nameW, badgeW, labelBaseline, color, badge, amp, duration, delay } = item;
+      const labelX = -nameW / 2;
+      const badgeX = size / 2 + 6;
+      const badgeY = -7;
 
       return `<g transform="translate(${x} ${y})">
   <g class="aq-swim" style="--amp:${amp}px;--dur:${duration}s;--delay:${delay}s">
@@ -367,7 +366,7 @@ function fishMarkup(fish) {
       </g>
     </g>
     <text class="aq-label" x="${labelX.toFixed(1)}" y="${labelBaseline.toFixed(1)}">${esc(label)}</text>
-    <g transform="translate(${badgeX.toFixed(1)} ${badgeY.toFixed(1)})">
+    <g transform="translate(${badgeX.toFixed(1)} ${badgeY})">
       <rect width="${badgeW.toFixed(1)}" height="14" rx="4" fill="${color}" fill-opacity="0.16" stroke="${color}" stroke-opacity="0.5"/>
       <text class="aq-badge" x="${(badgeW / 2).toFixed(1)}" y="10.8" text-anchor="middle" fill="${color}">${esc(badge)}</text>
     </g>
