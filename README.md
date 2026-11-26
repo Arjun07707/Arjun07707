@@ -227,6 +227,8 @@ Selected work across product engineering, applied AI, and insurance workflows.
 
 <p align="center"><sub>Public data only; top languages reflect public repositories, not depth of experience. Cards come from third-party services and may occasionally rate-limit — if one does not load, refresh the page or browse my <a href="https://github.com/Arjun07707?tab=repositories">repositories</a> directly.</sub></p>
 
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
+
 ## Contribution Snake
 
 An animated view of the contribution graph, generated daily by GitHub Actions.
@@ -257,6 +259,8 @@ An animated view of the contribution graph, generated daily by GitHub Actions.
 </table>
 
 <p><sub><strong>Also:</strong> student developer and creative strategist, working across development and creative direction.</sub></p>
+
+<img src="assets/cosmic-divider.svg" width="100%" alt="" />
 
 ## Cosmic Corner
 
