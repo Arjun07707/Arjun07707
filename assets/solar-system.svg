@@ -26,7 +26,7 @@
     <stop offset="0.55" stop-color="#9270FF"/>
     <stop offset="1" stop-color="#5634C3"/>
   </radialGradient>
-  <linearGradient id="comet-tail-0" x1="0" y1="0" x2="-58.9" y2="-22.4" gradientUnits="userSpaceOnUse">
+  <linearGradient id="comet-tail-0" x1="0" y1="0" x2="-58.6" y2="-22.3" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#FFE3A3" stop-opacity="0.95"/>
     <stop offset="0.55" stop-color="#F5C46B" stop-opacity="0.4"/>
     <stop offset="1" stop-color="#F5C46B" stop-opacity="0"/>
@@ -227,7 +227,7 @@
   </g>
 <g class="comet" style="--delay:-26.7s">
     <animateMotion dur="28s" begin="-26.7s" repeatCount="indefinite" path="M 520,40 L 940,140"/>
-    <path d="M 0 0 C -20.0 -13.0, -42.4 -20.0, -58.9 -22.4 C -35.3 -9.4, -14.1 1.2, 0 0 Z" fill="url(#comet-tail-0)"/>
+    <path d="M 0 0 C -19.9 -12.9, -42.2 -19.9, -58.6 -22.3 C -35.2 -9.4, -14.1 1.2, 0 0 Z" fill="url(#comet-tail-0)"/>
     <circle r="5.5" fill="url(#comet-glow)" opacity="0.7"/>
     <circle r="2.5" fill="#FFE3A3"/>
     <text class="comet-label" x="10" y="4">employee_management</text>
