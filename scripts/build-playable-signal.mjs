@@ -495,8 +495,8 @@ function buildSvg({ weeks, total, activeDays, first, last }) {
   const signalClearTimes = [0, outroStart + 0.15, outroStart + 0.9, outroStart + 1.35, loop];
   const scan =
     idle > 0.4 || steps.length === 0
-      ? `<g clip-path="url(#ps-grid-area)"><line x1="0" y1="${f(GRID.top - 6)}" x2="0" y2="${f(GRID.top + gridH + 6)}" stroke="${COLORS.accent}" stroke-opacity="0.1" stroke-width="2">
-      <animateTransform attributeName="transform" type="translate" values="0,0;${f(gridW + 40)},0" dur="6s" repeatCount="indefinite"/>
+      ? `<g clip-path="url(#ps-grid-area)"><line x1="${f(x0)}" y1="${f(GRID.top - 6)}" x2="${f(x0)}" y2="${f(GRID.top + gridH + 6)}" stroke="${COLORS.accent}" stroke-opacity="0.1" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" values="0,0;${f(gridW)},0" dur="6s" repeatCount="indefinite"/>
     </line></g>`
       : "";
 
