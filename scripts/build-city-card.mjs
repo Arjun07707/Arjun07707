@@ -10,6 +10,8 @@ const FONT = {
   statLabel: 20,
   statSub: 16,
   footer: 16,
+  radarLabel: 16,
+  radarTick: 12,
 };
 const LAYOUT = {
   textX: 32,
@@ -31,6 +33,16 @@ const LAYOUT = {
   handleY: 352,
   creditY: 376,
 };
+const RADAR = { cx: 824, cy: 124, R: 60, scale: 1 };
+const RING_LABELS = ["10", "100", "1K", "10K"];
+// Axis label, GraphQL field, and angle in degrees clockwise from up.
+const AXES = [
+  ["Commit", "totalCommitContributions", -90],
+  ["Issue", "totalIssueContributions", -18],
+  ["PullReq", "totalPullRequestContributions", 54],
+  ["Review", "totalPullRequestReviewContributions", 126],
+  ["Repo", "totalRepositoryContributions", 198],
+];
 // Measured with getBBox() on the city group of profile-3d-contrib/profile-cosmic-city.svg.
 const SCENE_BOX = { x: 20, y: 143.79, w: 1196, h: 681.95 };
 const SCENE_VIEW_BOX = (() => {
@@ -57,6 +69,11 @@ const USERNAME = process.env.USERNAME || "Arjun07707";
 const QUERY = `query($login: String!) {
   user(login: $login) {
     contributionsCollection {
+      totalCommitContributions
+      totalIssueContributions
+      totalPullRequestContributions
+      totalPullRequestReviewContributions
+      totalRepositoryContributions
       contributionCalendar {
         totalContributions
         weeks { contributionDays { date contributionCount } }
@@ -82,6 +99,11 @@ const esc = (value) =>
         return "&#39;";
     }
   });
+
+const coord = (value) => {
+  const rounded = Math.round(value * 100) / 100;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(2);
+};
 
 function formatDate(iso) {
   if (!iso) return "\u2014";
@@ -112,7 +134,8 @@ async function fetchCalendar() {
     throw new Error(`GitHub GraphQL failed: ${detail}`);
   }
 
-  const calendar = payload.data?.user?.contributionsCollection?.contributionCalendar;
+  const collection = payload.data?.user?.contributionsCollection;
+  const calendar = collection?.contributionCalendar;
   if (!calendar || !Array.isArray(calendar.weeks)) {
     throw new Error("GitHub GraphQL returned no contribution calendar");
   }
@@ -136,7 +159,85 @@ async function fetchCalendar() {
     }
   }
 
-  return { total, activeDays, busiest };
+  return {
+    total,
+    activeDays,
+    busiest,
+    mix: Object.fromEntries(
+      AXES.map(([, field]) => [field, Math.max(0, Number(collection?.[field]) || 0)]),
+    ),
+  };
+}
+
+function buildRadar(mix) {
+  const R = RADAR.R * RADAR.scale;
+  const { cx, cy } = RADAR;
+  const rad = (deg) => (deg * Math.PI) / 180;
+  const radiusFor = (value) => R * Math.min(1, Math.log10(Math.max(value, 1)) / 4);
+  const vertex = (deg, radius) => [radius * Math.cos(rad(deg)), radius * Math.sin(rad(deg))];
+
+  const axes = AXES.map(([label, field, deg]) => ({
+    label,
+    deg,
+    value: Math.max(0, Number(mix[field]) || 0),
+  }));
+
+  const rings = RING_LABELS.map((label, index) => {
+    const radius = (R * (index + 1)) / 4;
+    const points = axes
+      .map((axis) => vertex(axis.deg, radius).map(coord).join(","))
+      .join(" ");
+    return `<polygon class="cc-radar-ring" points="${points}"/>`;
+  });
+
+  const lines = axes.map((axis) => {
+    const [x, y] = vertex(axis.deg, R);
+    return `<line class="cc-radar-axis" x1="0" y1="0" x2="${coord(x)}" y2="${coord(y)}"/>`;
+  });
+
+  const ticks = RING_LABELS.map((label, index) => {
+    const radius = (R * (index + 1)) / 4;
+    return `<text class="cc-radar-tick" x="7" y="${coord(-radius)}" dominant-baseline="middle">${label}</text>`;
+  });
+
+  const allZero = axes.every((axis) => axis.value === 0);
+  const shape = allZero
+    ? `<circle class="cc-radar-shape cc-radar-dot" cx="0" cy="0" r="2.5"/>`
+    : `<polygon class="cc-radar-shape" points="${axes
+        .map((axis) => vertex(axis.deg, radiusFor(axis.value)).map(coord).join(","))
+        .join(" ")}"/>`;
+
+  const placeLabel = (deg, x, y) => {
+    if (deg === -90) return [x, y - 12, "middle"];
+    if (deg === -18) return [x + 5, y + 5, "start"];
+    if (deg === 198) return [x - 5, y + 5, "end"];
+    return [x, y + 20, "middle"];
+  };
+
+  const labels = axes.map((axis) => {
+    const [vx, vy] = vertex(axis.deg, R);
+    const [x, y, anchor] = placeLabel(axis.deg, vx, vy);
+    return `<text class="cc-radar-label" x="${coord(x)}" y="${coord(y)}" text-anchor="${anchor}">${esc(axis.label)}</text>`;
+  });
+
+  return `<g class="cc-radar">
+      <g transform="translate(${cx} ${cy})">
+        <g class="cc-radar-grid">
+          ${rings.join("\n          ")}
+          ${lines.join("\n          ")}
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0s" dur="1.6s" fill="freeze"/>
+          ${shape}
+        </g>
+        <g class="cc-radar-ticks">
+          ${ticks.join("\n          ")}
+        </g>
+        <g class="cc-radar-labels">
+          ${labels.join("\n          ")}
+        </g>
+      </g>
+    </g>`;
 }
 
 function extractScene(svg) {
@@ -183,13 +284,16 @@ function extractScene(svg) {
   return { style, group };
 }
 
-function buildCard({ total, activeDays, busiest }, scene) {
+function buildCard({ total, activeDays, busiest, mix }, scene) {
   const date = formatDate(busiest.date);
+  const mixText = AXES.map(([label, field]) => `${label} ${nf.format(mix[field])}`).join(", ");
   const title = `Contribution City \u2014 ${nf.format(total)} contributions in the last year`;
   const description =
     `${nf.format(total)} contributions, ${nf.format(activeDays)} active days, ` +
     `busiest day ${nf.format(busiest.count)}${busiest.date ? ` on ${date}` : ""}. ` +
+    `Public contribution mix: ${mixText}. ` +
     "Animated 3D city where every building is a day.";
+  const radar = buildRadar(mix);
 
   const dividerX = LAYOUT.textColW + LAYOUT.gutter / 2;
   const stat2X = LAYOUT.textX + LAYOUT.statColW;
@@ -223,6 +327,11 @@ function buildCard({ total, activeDays, busiest }, scene) {
     .cc-date { font-size: ${FONT.statSub}px; letter-spacing: 0.3px; fill: #7FA9A0; }
     .cc-handle { font-size: ${FONT.footer}px; fill: #9BA8BD; }
     .cc-credit { font-size: ${FONT.footer}px; letter-spacing: 0.2px; fill: #5F7F7A; }
+    .cc-radar-ring, .cc-radar-axis { fill: none; stroke: #5FC9BC; stroke-opacity: 0.3; stroke-width: 1; stroke-dasharray: 3 5; }
+    .cc-radar-tick { font-size: ${FONT.radarTick}px; fill: #5FC9BC; fill-opacity: 0.85; }
+    .cc-radar-label { font-size: ${FONT.radarLabel}px; fill: #E8FFFA; }
+    .cc-radar-shape { fill: #2BC9B0; fill-opacity: 0.35; stroke: #7DE8D5; stroke-width: 2; stroke-linejoin: round; }
+    .cc-radar-dot { fill-opacity: 1; stroke: none; }
     .cc-fade { animation: ccFade 0.9s ease-out both; }
     @keyframes ccFade { from { opacity: 0.55; } to { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .cc-fade { animation: none; } }
@@ -249,6 +358,7 @@ ${scene.group}
     <text class="cc-handle" x="${LAYOUT.textX}" y="${LAYOUT.handleY}">@${esc(USERNAME)}</text>
     <text class="cc-credit" x="${LAYOUT.textX}" y="${LAYOUT.creditY}">3D view: github-profile-3d-contrib (MIT)</text>
   </g>
+  ${radar}
 </g>
 </svg>
 `;
@@ -260,6 +370,10 @@ try {
   const card = buildCard(stats, scene);
   writeFileSync(OUTPUT, card);
   const date = formatDate(stats.busiest.date);
+  console.log(
+    `city card: contribution mix (public, last year): ` +
+      AXES.map(([label, field]) => `${label} ${nf.format(stats.mix[field])}`).join(" \u00b7 "),
+  );
   console.log(
     `city card: wrote assets/contribution-city.svg (${nf.format(stats.total)} contributions, ` +
       `${nf.format(stats.activeDays)} active days, busiest ${nf.format(stats.busiest.count)}${stats.busiest.date ? ` on ${date}` : ""})`,
