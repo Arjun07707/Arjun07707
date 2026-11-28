@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-labelledby="ps-title ps-desc">
-<title id="ps-title">Playable Signal — 59 contributions across 6 active days</title>
-<desc id="ps-desc">Animated contribution grid for @Arjun07707, 2025-11-23 to 2026-11-28. A ship sweeps across the year and fires at the 6 most recent active days; each hit cell pulses, clears, and returns. Public contributions only.</desc>
+<title id="ps-title">Playable Signal — 60 contributions across 7 active days</title>
+<desc id="ps-desc">Animated contribution grid for @Arjun07707, 2025-11-23 to 2026-11-28. A ship sweeps across the year and fires at the 7 most recent active days; each hit cell pulses, clears, and returns. Public contributions only.</desc>
 <defs>
   <clipPath id="ps-clip"><rect x="0.5" y="0.5" width="959" height="199" rx="11.5"/></clipPath>
   <style>
@@ -52,83 +52,98 @@
       </g>
     </g>
   <g class="ps-target">
+      <rect x="813" y="75" width="10" height="10" fill="#0e4429" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.190179;0.193304;0.212054;0.240179;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#0e4429;#0e4429;#d7ffe2;#0e4429;#0e4429" keyTimes="0;0.190179;0.195179;0.215179;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="818" cy="80" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.190179;0.191429;0.221429;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.190179;0.191429;0.221429;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="818" y1="167" x2="818" y2="80" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="818" y1="167" x2="818" y2="80" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.182679;0.188929;0.200179;0.205179;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g class="ps-target">
       <rect x="813" y="88" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.2;0.203125;0.221875;0.25;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.2;0.205;0.225;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.311607;0.314732;0.333482;0.361607;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.311607;0.316607;0.336607;1" dur="16s" repeatCount="indefinite"/>
       </rect>
       <circle class="ps-ring" cx="818" cy="93" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.2;0.20125;0.23125;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.2;0.20125;0.23125;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.311607;0.312857;0.342857;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.311607;0.312857;0.342857;1" dur="16s" repeatCount="indefinite"/>
       </circle>
       <g class="ps-beam" opacity="0">
         <line x1="818" y1="167" x2="818" y2="93" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
         <line x1="818" y1="167" x2="818" y2="93" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.1925;0.19875;0.21;0.215;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.304107;0.310357;0.321607;0.326607;1" dur="16s" repeatCount="indefinite"/>
       </g>
     </g>
   <g class="ps-target">
       <rect x="813" y="101" width="10" height="10" fill="#006d32" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.33125;0.334375;0.353125;0.38125;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#006d32;#006d32;#d7ffe2;#006d32;#006d32" keyTimes="0;0.33125;0.33625;0.35625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.433036;0.436161;0.454911;0.483036;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#006d32;#006d32;#d7ffe2;#006d32;#006d32" keyTimes="0;0.433036;0.438036;0.458036;1" dur="16s" repeatCount="indefinite"/>
       </rect>
       <circle class="ps-ring" cx="818" cy="106" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.33125;0.3325;0.3625;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.33125;0.3325;0.3625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.433036;0.434286;0.464286;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.433036;0.434286;0.464286;1" dur="16s" repeatCount="indefinite"/>
       </circle>
       <g class="ps-beam" opacity="0">
         <line x1="818" y1="167" x2="818" y2="106" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
         <line x1="818" y1="167" x2="818" y2="106" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.32375;0.33;0.34125;0.34625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.425536;0.431786;0.443036;0.448036;1" dur="16s" repeatCount="indefinite"/>
       </g>
     </g>
   <g class="ps-target">
       <rect x="813" y="114" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.4625;0.465625;0.484375;0.5125;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.4625;0.4675;0.4875;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.554464;0.557589;0.576339;0.604464;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.554464;0.559464;0.579464;1" dur="16s" repeatCount="indefinite"/>
       </rect>
       <circle class="ps-ring" cx="818" cy="119" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.4625;0.46375;0.49375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4625;0.46375;0.49375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.554464;0.555714;0.585714;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.554464;0.555714;0.585714;1" dur="16s" repeatCount="indefinite"/>
       </circle>
       <g class="ps-beam" opacity="0">
         <line x1="818" y1="167" x2="818" y2="119" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
         <line x1="818" y1="167" x2="818" y2="119" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.455;0.46125;0.4725;0.4775;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.546964;0.553214;0.564464;0.569464;1" dur="16s" repeatCount="indefinite"/>
       </g>
     </g>
   <g class="ps-target">
       <rect x="813" y="127" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.59375;0.596875;0.615625;0.64375;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.59375;0.59875;0.61875;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.675893;0.679018;0.697768;0.725893;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.675893;0.680893;0.700893;1" dur="16s" repeatCount="indefinite"/>
       </rect>
       <circle class="ps-ring" cx="818" cy="132" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.59375;0.595;0.625;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.59375;0.595;0.625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.675893;0.677143;0.707143;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.675893;0.677143;0.707143;1" dur="16s" repeatCount="indefinite"/>
       </circle>
       <g class="ps-beam" opacity="0">
         <line x1="818" y1="167" x2="818" y2="132" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
         <line x1="818" y1="167" x2="818" y2="132" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.58625;0.5925;0.60375;0.60875;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.668393;0.674643;0.685893;0.690893;1" dur="16s" repeatCount="indefinite"/>
       </g>
     </g>
   <g class="ps-target">
-      <rect x="813" y="140" width="10" height="10" fill="#26a641" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.725;0.728125;0.746875;0.775;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#26a641;#26a641;#d7ffe2;#26a641;#26a641" keyTimes="0;0.725;0.73;0.75;1" dur="16s" repeatCount="indefinite"/>
+      <rect x="813" y="140" width="10" height="10" fill="#39d353" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.797321;0.800446;0.819196;0.847321;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.797321;0.802321;0.822321;1" dur="16s" repeatCount="indefinite"/>
       </rect>
       <circle class="ps-ring" cx="818" cy="145" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.725;0.72625;0.75625;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.725;0.72625;0.75625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.797321;0.798571;0.828571;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.797321;0.798571;0.828571;1" dur="16s" repeatCount="indefinite"/>
       </circle>
       <g class="ps-beam" opacity="0">
         <line x1="818" y1="167" x2="818" y2="145" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
         <line x1="818" y1="167" x2="818" y2="145" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.7175;0.72375;0.735;0.74;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.789821;0.796071;0.807321;0.812321;1" dur="16s" repeatCount="indefinite"/>
       </g>
     </g>
   <g transform="translate(0 174)">
     <g class="ps-ship">
-      <animateTransform attributeName="transform" type="translate" values="-100,0;-100,0;792,0;792,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;1060,0" keyTimes="0;0.009375;0.05;0.096875;0.18125;0.228125;0.3125;0.359375;0.44375;0.490625;0.575;0.621875;0.70625;0.753125;1" dur="16s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="-100,0;-100,0;792,0;792,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;1060,0" keyTimes="0;0.009375;0.05;0.096875;0.171429;0.218304;0.292857;0.339732;0.414286;0.461161;0.535714;0.582589;0.657143;0.704018;0.778571;0.825446;1" dur="16s" repeatCount="indefinite"/>
       <path class="ps-engine" d="M -33,0 L -45,-4 L -45,4 Z" opacity="0.45">
         <animate attributeName="opacity" values="0.35;0.7;0.35" keyTimes="0;0.5;1" dur="16s" repeatCount="indefinite"/>
       </path>
