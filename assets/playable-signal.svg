@@ -1,17 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-labelledby="ps-title ps-desc">
-<title id="ps-title">Playable Signal — 60 contributions across 7 active days</title>
-<desc id="ps-desc">Animated contribution grid for @Arjun07707, 2025-11-23 to 2026-11-28. A ship sweeps across the year and fires at the 7 most recent active days; each hit cell pulses, clears, and returns. Public contributions only.</desc>
+<title id="ps-title">Playable Signal — 60 contributions across 6 active days</title>
+<desc id="ps-desc">Animated contribution grid for @Arjun07707, 2025-11-23 to 2026-11-28. A ship sweeps the year and fires at 6 busy days; each hit brightens, clears and returns. Public contributions only.</desc>
 <defs>
   <clipPath id="ps-clip"><rect x="0.5" y="0.5" width="959" height="199" rx="11.5"/></clipPath>
+  <clipPath id="ps-grid-area"><rect x="137" y="56" width="686" height="100"/></clipPath>
+  <radialGradient id="ps-glow">
+    <stop offset="0" stop-color="#42D9FF" stop-opacity="0.55"/>
+    <stop offset="1" stop-color="#42D9FF" stop-opacity="0"/>
+  </radialGradient>
+  <g id="ps-bolt">
+    <circle r="4.5" fill="url(#ps-glow)"/>
+    <path d="M0,13 L0,2" stroke="#42D9FF" stroke-width="2" stroke-opacity="0.25" stroke-linecap="round"/>
+    <path d="M0,6 L0,0" stroke="#42D9FF" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <path id="ps-sparks" d="M0,-7L0,-16M6.06,-3.50L17.32,-10M6.06,3.50L13.86,8M0,7L0,20M-6.06,3.50L-13.86,8M-6.06,-3.50L-17.32,-10" fill="none" stroke="#7de8d5" stroke-width="1.3" stroke-linecap="round"/>
   <style>
     .ps-card text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
     .ps-header { font-family: 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 14px; letter-spacing: 2px; font-weight: 600; fill: #8b949e; }
     .ps-month { font-size: 11px; fill: #6e7681; }
+    .ps-score { font-family: 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 12px; letter-spacing: 1px; font-weight: 600; fill: #39d353; }
+    .ps-read { font-family: 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 11px; letter-spacing: 0.5px; fill: #7de8d5; }
     .ps-empty { fill: #10151C; }
     .ps-level-1 { fill: #0e4429; }
     .ps-level-2 { fill: #006d32; }
     .ps-level-3 { fill: #26a641; }
     .ps-level-4 { fill: #39d353; }
+    .ps-reticle { fill: none; stroke: #7de8d5; stroke-width: 1.2; }
     .ps-ring { fill: none; stroke: #7de8d5; stroke-width: 1.4; }
     .ps-engine { fill: #39d353; }
   </style>
@@ -36,119 +50,271 @@
     <path class="ps-empty" d="M137,62h10v10h-10zM137,75h10v10h-10zM137,88h10v10h-10zM137,101h10v10h-10zM137,114h10v10h-10zM137,127h10v10h-10zM137,140h10v10h-10zM150,62h10v10h-10zM150,75h10v10h-10zM150,88h10v10h-10zM150,101h10v10h-10zM150,114h10v10h-10zM150,127h10v10h-10zM150,140h10v10h-10zM163,62h10v10h-10zM163,75h10v10h-10zM163,88h10v10h-10zM163,101h10v10h-10zM163,114h10v10h-10zM163,127h10v10h-10zM163,140h10v10h-10zM176,62h10v10h-10zM176,75h10v10h-10zM176,88h10v10h-10zM176,101h10v10h-10zM176,114h10v10h-10zM176,127h10v10h-10zM176,140h10v10h-10zM189,62h10v10h-10zM189,75h10v10h-10zM189,88h10v10h-10zM189,101h10v10h-10zM189,114h10v10h-10zM189,127h10v10h-10zM189,140h10v10h-10zM202,62h10v10h-10zM202,75h10v10h-10zM202,88h10v10h-10zM202,101h10v10h-10zM202,114h10v10h-10zM202,127h10v10h-10zM202,140h10v10h-10zM215,62h10v10h-10zM215,75h10v10h-10zM215,88h10v10h-10zM215,101h10v10h-10zM215,114h10v10h-10zM215,127h10v10h-10zM215,140h10v10h-10zM228,62h10v10h-10zM228,75h10v10h-10zM228,88h10v10h-10zM228,101h10v10h-10zM228,114h10v10h-10zM228,127h10v10h-10zM228,140h10v10h-10zM241,62h10v10h-10zM241,75h10v10h-10zM241,88h10v10h-10zM241,101h10v10h-10zM241,114h10v10h-10zM241,127h10v10h-10zM241,140h10v10h-10zM254,62h10v10h-10zM254,75h10v10h-10zM254,88h10v10h-10zM254,101h10v10h-10zM254,114h10v10h-10zM254,127h10v10h-10zM254,140h10v10h-10zM267,62h10v10h-10zM267,75h10v10h-10zM267,88h10v10h-10zM267,101h10v10h-10zM267,114h10v10h-10zM267,127h10v10h-10zM267,140h10v10h-10zM280,62h10v10h-10zM280,75h10v10h-10zM280,88h10v10h-10zM280,101h10v10h-10zM280,114h10v10h-10zM280,127h10v10h-10zM280,140h10v10h-10zM293,62h10v10h-10zM293,75h10v10h-10zM293,88h10v10h-10zM293,101h10v10h-10zM293,114h10v10h-10zM293,127h10v10h-10zM293,140h10v10h-10zM306,62h10v10h-10zM306,75h10v10h-10zM306,88h10v10h-10zM306,101h10v10h-10zM306,114h10v10h-10zM306,127h10v10h-10zM306,140h10v10h-10zM319,62h10v10h-10zM319,75h10v10h-10zM319,88h10v10h-10zM319,101h10v10h-10zM319,114h10v10h-10zM319,127h10v10h-10zM319,140h10v10h-10zM332,62h10v10h-10zM332,75h10v10h-10zM332,88h10v10h-10zM332,101h10v10h-10zM332,114h10v10h-10zM332,127h10v10h-10zM332,140h10v10h-10zM345,62h10v10h-10zM345,75h10v10h-10zM345,88h10v10h-10zM345,101h10v10h-10zM345,114h10v10h-10zM345,127h10v10h-10zM345,140h10v10h-10zM358,62h10v10h-10zM358,75h10v10h-10zM358,88h10v10h-10zM358,101h10v10h-10zM358,114h10v10h-10zM358,127h10v10h-10zM358,140h10v10h-10zM371,62h10v10h-10zM371,75h10v10h-10zM371,88h10v10h-10zM371,101h10v10h-10zM371,114h10v10h-10zM371,127h10v10h-10zM371,140h10v10h-10zM384,62h10v10h-10zM384,75h10v10h-10zM384,88h10v10h-10zM384,101h10v10h-10zM384,114h10v10h-10zM384,127h10v10h-10zM384,140h10v10h-10zM397,62h10v10h-10zM397,75h10v10h-10zM397,88h10v10h-10zM397,101h10v10h-10zM397,114h10v10h-10zM397,127h10v10h-10zM397,140h10v10h-10zM410,62h10v10h-10zM410,75h10v10h-10zM410,88h10v10h-10zM410,101h10v10h-10zM410,114h10v10h-10zM410,127h10v10h-10zM410,140h10v10h-10zM423,62h10v10h-10zM423,75h10v10h-10zM423,88h10v10h-10zM423,101h10v10h-10zM423,114h10v10h-10zM423,127h10v10h-10zM423,140h10v10h-10zM436,62h10v10h-10zM436,75h10v10h-10zM436,88h10v10h-10zM436,101h10v10h-10zM436,114h10v10h-10zM436,127h10v10h-10zM436,140h10v10h-10zM449,62h10v10h-10zM449,75h10v10h-10zM449,88h10v10h-10zM449,101h10v10h-10zM449,114h10v10h-10zM449,127h10v10h-10zM449,140h10v10h-10zM462,62h10v10h-10zM462,75h10v10h-10zM462,88h10v10h-10zM462,101h10v10h-10zM462,114h10v10h-10zM462,127h10v10h-10zM462,140h10v10h-10zM475,62h10v10h-10zM475,75h10v10h-10zM475,88h10v10h-10zM475,101h10v10h-10zM475,114h10v10h-10zM475,127h10v10h-10zM475,140h10v10h-10zM488,62h10v10h-10zM488,75h10v10h-10zM488,88h10v10h-10zM488,101h10v10h-10zM488,114h10v10h-10zM488,127h10v10h-10zM488,140h10v10h-10zM501,62h10v10h-10zM501,75h10v10h-10zM501,88h10v10h-10zM501,101h10v10h-10zM501,114h10v10h-10zM501,127h10v10h-10zM501,140h10v10h-10zM514,62h10v10h-10zM514,75h10v10h-10zM514,88h10v10h-10zM514,101h10v10h-10zM514,114h10v10h-10zM514,127h10v10h-10zM514,140h10v10h-10zM527,62h10v10h-10zM527,75h10v10h-10zM527,88h10v10h-10zM527,101h10v10h-10zM527,114h10v10h-10zM527,127h10v10h-10zM527,140h10v10h-10zM540,62h10v10h-10zM540,75h10v10h-10zM540,88h10v10h-10zM540,101h10v10h-10zM540,114h10v10h-10zM540,127h10v10h-10zM540,140h10v10h-10zM553,62h10v10h-10zM553,75h10v10h-10zM553,88h10v10h-10zM553,101h10v10h-10zM553,114h10v10h-10zM553,127h10v10h-10zM553,140h10v10h-10zM566,62h10v10h-10zM566,75h10v10h-10zM566,88h10v10h-10zM566,101h10v10h-10zM566,114h10v10h-10zM566,127h10v10h-10zM566,140h10v10h-10zM579,62h10v10h-10zM579,75h10v10h-10zM579,88h10v10h-10zM579,101h10v10h-10zM579,114h10v10h-10zM579,127h10v10h-10zM579,140h10v10h-10zM592,62h10v10h-10zM592,75h10v10h-10zM592,88h10v10h-10zM592,101h10v10h-10zM592,114h10v10h-10zM592,127h10v10h-10zM592,140h10v10h-10zM605,62h10v10h-10zM605,75h10v10h-10zM605,88h10v10h-10zM605,101h10v10h-10zM605,114h10v10h-10zM605,127h10v10h-10zM605,140h10v10h-10zM618,62h10v10h-10zM618,75h10v10h-10zM618,88h10v10h-10zM618,101h10v10h-10zM618,114h10v10h-10zM618,127h10v10h-10zM618,140h10v10h-10zM631,62h10v10h-10zM631,75h10v10h-10zM631,88h10v10h-10zM631,101h10v10h-10zM631,114h10v10h-10zM631,127h10v10h-10zM631,140h10v10h-10zM644,62h10v10h-10zM644,75h10v10h-10zM644,88h10v10h-10zM644,101h10v10h-10zM644,114h10v10h-10zM644,127h10v10h-10zM644,140h10v10h-10zM657,62h10v10h-10zM657,75h10v10h-10zM657,88h10v10h-10zM657,101h10v10h-10zM657,114h10v10h-10zM657,127h10v10h-10zM657,140h10v10h-10zM670,62h10v10h-10zM670,75h10v10h-10zM670,88h10v10h-10zM670,101h10v10h-10zM670,114h10v10h-10zM670,127h10v10h-10zM670,140h10v10h-10zM683,62h10v10h-10zM683,75h10v10h-10zM683,88h10v10h-10zM683,101h10v10h-10zM683,114h10v10h-10zM683,127h10v10h-10zM683,140h10v10h-10zM696,62h10v10h-10zM696,75h10v10h-10zM696,88h10v10h-10zM696,101h10v10h-10zM696,114h10v10h-10zM696,127h10v10h-10zM696,140h10v10h-10zM709,62h10v10h-10zM709,75h10v10h-10zM709,88h10v10h-10zM709,101h10v10h-10zM709,114h10v10h-10zM709,127h10v10h-10zM709,140h10v10h-10zM722,62h10v10h-10zM722,75h10v10h-10zM722,88h10v10h-10zM722,101h10v10h-10zM722,114h10v10h-10zM722,127h10v10h-10zM722,140h10v10h-10zM735,62h10v10h-10zM735,75h10v10h-10zM735,88h10v10h-10zM735,101h10v10h-10zM735,114h10v10h-10zM735,127h10v10h-10zM735,140h10v10h-10zM748,62h10v10h-10zM748,75h10v10h-10zM748,88h10v10h-10zM748,101h10v10h-10zM748,114h10v10h-10zM748,127h10v10h-10zM748,140h10v10h-10zM761,62h10v10h-10zM761,75h10v10h-10zM761,88h10v10h-10zM761,101h10v10h-10zM761,114h10v10h-10zM761,127h10v10h-10zM761,140h10v10h-10zM774,62h10v10h-10zM774,75h10v10h-10zM774,88h10v10h-10zM774,101h10v10h-10zM774,114h10v10h-10zM774,127h10v10h-10zM774,140h10v10h-10zM787,62h10v10h-10zM787,75h10v10h-10zM787,88h10v10h-10zM787,101h10v10h-10zM787,114h10v10h-10zM787,127h10v10h-10zM787,140h10v10h-10zM800,62h10v10h-10zM800,75h10v10h-10zM800,88h10v10h-10zM800,101h10v10h-10zM800,114h10v10h-10zM800,127h10v10h-10zM800,140h10v10h-10zM813,62h10v10h-10zM813,75h10v10h-10zM813,88h10v10h-10zM813,101h10v10h-10zM813,114h10v10h-10zM813,127h10v10h-10zM813,140h10v10h-10z"/>
     
   </g>
+  
   <g class="ps-target">
       <rect x="787" y="127" width="10" height="10" fill="#26a641" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.06875;0.071875;0.090625;0.11875;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#26a641;#26a641;#d7ffe2;#26a641;#26a641" keyTimes="0;0.06875;0.07375;0.09375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" keyTimes="0;0.127993;0.133517;0.150092;0.85267;0.880295;1" values="#26a641;#26a641;#d7ffe2;#10151C;#10151C;#26a641;#26a641" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.127993;0.133517;0.150092;0.85267;0.880295;1" values="1;1;1;0;0;1;1" dur="10.86s" repeatCount="indefinite"/>
       </rect>
+      <circle class="ps-reticle" cx="792" cy="132" r="9" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.036832;0.040516;0.059853;1" values="19.8;19.8;9;9;9" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.036832;0.040516;0.059853;1" values="0;0;0.85;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </circle>
       <circle class="ps-ring" cx="792" cy="132" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.06875;0.07;0.1;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.06875;0.07;0.1;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="r" keyTimes="0;0.127993;0.135359;0.169429;1" values="4;4;14;14;14" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.127993;0.135359;0.169429;1" values="0;0;0.8;0;0" dur="10.86s" repeatCount="indefinite"/>
       </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="792" y1="167" x2="792" y2="132" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="792" y1="167" x2="792" y2="132" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.06125;0.0675;0.07875;0.08375;1" dur="16s" repeatCount="indefinite"/>
+      <g transform="translate(792 132)">
+        <g opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.127993;0.132597;0.164825;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" keyTimes="0;0.127993;0.132597;0.164825;1" values="0.2;0.2;1;1;1" dur="10.86s" repeatCount="indefinite"/>
+          <use href="#ps-sparks"/>
+        </g>
       </g>
-    </g>
-  <g class="ps-target">
-      <rect x="813" y="75" width="10" height="10" fill="#0e4429" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.190179;0.193304;0.212054;0.240179;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#0e4429;#0e4429;#d7ffe2;#0e4429;#0e4429" keyTimes="0;0.190179;0.195179;0.215179;1" dur="16s" repeatCount="indefinite"/>
-      </rect>
-      <circle class="ps-ring" cx="818" cy="80" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.190179;0.191429;0.221429;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.190179;0.191429;0.221429;1" dur="16s" repeatCount="indefinite"/>
-      </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="818" y1="167" x2="818" y2="80" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="818" y1="167" x2="818" y2="80" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.182679;0.188929;0.200179;0.205179;1" dur="16s" repeatCount="indefinite"/>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.059853;0.076427;1" values="792,167;792,167;792,132;792,132" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.059853;0.061694;0.074586;0.076427;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
       </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.085635;0.10221;1" values="792,167;792,167;792,132;792,132" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.085635;0.087477;0.100368;0.10221;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.111418;0.127993;1" values="792,167;792,167;792,132;792,132" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.111418;0.11326;0.126151;0.127993;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <text class="ps-score" x="932" y="30" text-anchor="end" opacity="0">SCORE 0004
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.036832;0.21547;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
+      <text class="ps-read" x="800" y="30" text-anchor="end" opacity="0">LOCKED · Nov 13 · 4 contributions
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.036832;0.169429;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
     </g>
   <g class="ps-target">
       <rect x="813" y="88" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.311607;0.314732;0.333482;0.361607;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.311607;0.316607;0.336607;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" keyTimes="0;0.30663;0.312155;0.328729;0.857274;0.884899;1" values="#39d353;#39d353;#d7ffe2;#10151C;#10151C;#39d353;#39d353" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.30663;0.312155;0.328729;0.857274;0.884899;1" values="1;1;1;0;0;1;1" dur="10.86s" repeatCount="indefinite"/>
       </rect>
-      <circle class="ps-ring" cx="818" cy="93" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.311607;0.312857;0.342857;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.311607;0.312857;0.342857;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-reticle" cx="818" cy="93" r="9" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.21547;0.219153;0.23849;1" values="19.8;19.8;9;9;9" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.21547;0.219153;0.23849;1" values="0;0;0.85;0;0" dur="10.86s" repeatCount="indefinite"/>
       </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="818" y1="167" x2="818" y2="93" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="818" y1="167" x2="818" y2="93" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.304107;0.310357;0.321607;0.326607;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-ring" cx="818" cy="93" r="4" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.30663;0.313996;0.348066;1" values="4;4;14;14;14" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.30663;0.313996;0.348066;1" values="0;0;0.8;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </circle>
+      <g transform="translate(818 93)">
+        <g opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.30663;0.311234;0.343462;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" keyTimes="0;0.30663;0.311234;0.343462;1" values="0.2;0.2;1;1;1" dur="10.86s" repeatCount="indefinite"/>
+          <use href="#ps-sparks"/>
+        </g>
       </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.23849;0.255064;1" values="818,167;818,167;818,93;818,93" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.23849;0.240331;0.253223;0.255064;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.264273;0.280847;1" values="818,167;818,167;818,93;818,93" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.264273;0.266114;0.279006;0.280847;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.290055;0.30663;1" values="818,167;818,167;818,93;818,93" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.290055;0.291897;0.304788;0.30663;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <text class="ps-score" x="932" y="30" text-anchor="end" opacity="0">SCORE 0017
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.21547;0.348066;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
+      <text class="ps-read" x="800" y="30" text-anchor="end" opacity="0">LOCKED · Nov 24 · 13 contributions
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.21547;0.348066;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
     </g>
   <g class="ps-target">
       <rect x="813" y="101" width="10" height="10" fill="#006d32" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.433036;0.436161;0.454911;0.483036;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#006d32;#006d32;#d7ffe2;#006d32;#006d32" keyTimes="0;0.433036;0.438036;0.458036;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" keyTimes="0;0.413444;0.418969;0.435543;0.861878;0.889503;1" values="#006d32;#006d32;#d7ffe2;#10151C;#10151C;#006d32;#006d32" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.413444;0.418969;0.435543;0.861878;0.889503;1" values="1;1;1;0;0;1;1" dur="10.86s" repeatCount="indefinite"/>
       </rect>
-      <circle class="ps-ring" cx="818" cy="106" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.433036;0.434286;0.464286;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.433036;0.434286;0.464286;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-reticle" cx="818" cy="106" r="9" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.348066;0.35175;0.371087;1" values="19.8;19.8;9;9;9" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.348066;0.35175;0.371087;1" values="0;0;0.85;0;0" dur="10.86s" repeatCount="indefinite"/>
       </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="818" y1="167" x2="818" y2="106" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="818" y1="167" x2="818" y2="106" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.425536;0.431786;0.443036;0.448036;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-ring" cx="818" cy="106" r="4" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.413444;0.42081;0.45488;1" values="4;4;14;14;14" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.413444;0.42081;0.45488;1" values="0;0;0.8;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </circle>
+      <g transform="translate(818 106)">
+        <g opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.413444;0.418048;0.450276;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" keyTimes="0;0.413444;0.418048;0.450276;1" values="0.2;0.2;1;1;1" dur="10.86s" repeatCount="indefinite"/>
+          <use href="#ps-sparks"/>
+        </g>
       </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.371087;0.387661;1" values="818,167;818,167;818,106;818,106" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.371087;0.372928;0.38582;0.387661;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.396869;0.413444;1" values="818,167;818,167;818,106;818,106" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.396869;0.398711;0.411602;0.413444;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <text class="ps-score" x="932" y="30" text-anchor="end" opacity="0">SCORE 0020
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.348066;0.45488;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
+      <text class="ps-read" x="800" y="30" text-anchor="end" opacity="0">LOCKED · Nov 25 · 3 contributions
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.348066;0.45488;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
     </g>
   <g class="ps-target">
       <rect x="813" y="114" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.554464;0.557589;0.576339;0.604464;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.554464;0.559464;0.579464;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" keyTimes="0;0.546041;0.551565;0.56814;0.866483;0.894107;1" values="#39d353;#39d353;#d7ffe2;#10151C;#10151C;#39d353;#39d353" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.546041;0.551565;0.56814;0.866483;0.894107;1" values="1;1;1;0;0;1;1" dur="10.86s" repeatCount="indefinite"/>
       </rect>
-      <circle class="ps-ring" cx="818" cy="119" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.554464;0.555714;0.585714;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.554464;0.555714;0.585714;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-reticle" cx="818" cy="119" r="9" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.45488;0.458564;0.477901;1" values="19.8;19.8;9;9;9" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.45488;0.458564;0.477901;1" values="0;0;0.85;0;0" dur="10.86s" repeatCount="indefinite"/>
       </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="818" y1="167" x2="818" y2="119" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="818" y1="167" x2="818" y2="119" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.546964;0.553214;0.564464;0.569464;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-ring" cx="818" cy="119" r="4" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.546041;0.553407;0.587477;1" values="4;4;14;14;14" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.546041;0.553407;0.587477;1" values="0;0;0.8;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </circle>
+      <g transform="translate(818 119)">
+        <g opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.546041;0.550645;0.582873;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" keyTimes="0;0.546041;0.550645;0.582873;1" values="0.2;0.2;1;1;1" dur="10.86s" repeatCount="indefinite"/>
+          <use href="#ps-sparks"/>
+        </g>
       </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.477901;0.494475;1" values="818,167;818,167;818,119;818,119" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.477901;0.479742;0.492634;0.494475;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.503683;0.520258;1" values="818,167;818,167;818,119;818,119" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.503683;0.505525;0.518416;0.520258;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.529466;0.546041;1" values="818,167;818,167;818,119;818,119" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.529466;0.531308;0.544199;0.546041;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <text class="ps-score" x="932" y="30" text-anchor="end" opacity="0">SCORE 0049
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.45488;0.587477;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
+      <text class="ps-read" x="800" y="30" text-anchor="end" opacity="0">LOCKED · Nov 26 · 29 contributions
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.45488;0.587477;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
     </g>
   <g class="ps-target">
       <rect x="813" y="127" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.675893;0.679018;0.697768;0.725893;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.675893;0.680893;0.700893;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" keyTimes="0;0.678637;0.684162;0.700737;0.871087;0.898711;1" values="#39d353;#39d353;#d7ffe2;#10151C;#10151C;#39d353;#39d353" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.678637;0.684162;0.700737;0.871087;0.898711;1" values="1;1;1;0;0;1;1" dur="10.86s" repeatCount="indefinite"/>
       </rect>
-      <circle class="ps-ring" cx="818" cy="132" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.675893;0.677143;0.707143;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.675893;0.677143;0.707143;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-reticle" cx="818" cy="132" r="9" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.587477;0.59116;0.610497;1" values="19.8;19.8;9;9;9" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.587477;0.59116;0.610497;1" values="0;0;0.85;0;0" dur="10.86s" repeatCount="indefinite"/>
       </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="818" y1="167" x2="818" y2="132" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="818" y1="167" x2="818" y2="132" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.668393;0.674643;0.685893;0.690893;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-ring" cx="818" cy="132" r="4" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.678637;0.686004;0.720074;1" values="4;4;14;14;14" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.678637;0.686004;0.720074;1" values="0;0;0.8;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </circle>
+      <g transform="translate(818 132)">
+        <g opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.678637;0.683241;0.71547;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" keyTimes="0;0.678637;0.683241;0.71547;1" values="0.2;0.2;1;1;1" dur="10.86s" repeatCount="indefinite"/>
+          <use href="#ps-sparks"/>
+        </g>
       </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.610497;0.627072;1" values="818,167;818,167;818,132;818,132" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.610497;0.612339;0.62523;0.627072;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.63628;0.652855;1" values="818,167;818,167;818,132;818,132" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.63628;0.638122;0.651013;0.652855;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.662063;0.678637;1" values="818,167;818,167;818,132;818,132" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.662063;0.663904;0.676796;0.678637;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <text class="ps-score" x="932" y="30" text-anchor="end" opacity="0">SCORE 0055
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.587477;0.720074;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
+      <text class="ps-read" x="800" y="30" text-anchor="end" opacity="0">LOCKED · Nov 27 · 6 contributions
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.587477;0.720074;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
     </g>
   <g class="ps-target">
       <rect x="813" y="140" width="10" height="10" fill="#39d353" opacity="1">
-        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.797321;0.800446;0.819196;0.847321;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.797321;0.802321;0.822321;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" keyTimes="0;0.811234;0.816759;0.833333;0.875691;0.903315;1" values="#39d353;#39d353;#d7ffe2;#10151C;#10151C;#39d353;#39d353" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.811234;0.816759;0.833333;0.875691;0.903315;1" values="1;1;1;0;0;1;1" dur="10.86s" repeatCount="indefinite"/>
       </rect>
-      <circle class="ps-ring" cx="818" cy="145" r="4" opacity="0">
-        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.797321;0.798571;0.828571;1" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.797321;0.798571;0.828571;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-reticle" cx="818" cy="145" r="9" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.720074;0.723757;0.743094;1" values="19.8;19.8;9;9;9" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.720074;0.723757;0.743094;1" values="0;0;0.85;0;0" dur="10.86s" repeatCount="indefinite"/>
       </circle>
-      <g class="ps-beam" opacity="0">
-        <line x1="818" y1="167" x2="818" y2="145" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
-        <line x1="818" y1="167" x2="818" y2="145" stroke="#7de8d5" stroke-width="1.1"/>
-        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.789821;0.796071;0.807321;0.812321;1" dur="16s" repeatCount="indefinite"/>
+      <circle class="ps-ring" cx="818" cy="145" r="4" opacity="0">
+        <animate attributeName="r" keyTimes="0;0.811234;0.8186;0.85267;1" values="4;4;14;14;14" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" keyTimes="0;0.811234;0.8186;0.85267;1" values="0;0;0.8;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </circle>
+      <g transform="translate(818 145)">
+        <g opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.811234;0.815838;0.848066;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="scale" keyTimes="0;0.811234;0.815838;0.848066;1" values="0.2;0.2;1;1;1" dur="10.86s" repeatCount="indefinite"/>
+          <use href="#ps-sparks"/>
+        </g>
       </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.743094;0.759669;1" values="818,167;818,167;818,145;818,145" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.743094;0.744936;0.757827;0.759669;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.768877;0.785451;1" values="818,167;818,167;818,145;818,145" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.768877;0.770718;0.78361;0.785451;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <g class="ps-bolt" opacity="0">
+        <animateTransform attributeName="transform" type="translate" calcMode="linear" keyTimes="0;0.794659;0.811234;1" values="818,167;818,167;818,145;818,145" dur="10.86s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" calcMode="linear" keyTimes="0;0.794659;0.796501;0.809392;0.811234;1" values="0;0;1;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+        <use href="#ps-bolt"/>
+      </g>
+      <text class="ps-score" x="932" y="30" text-anchor="end" opacity="0">SCORE 0060
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.720074;0.85267;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
+      <text class="ps-read" x="800" y="30" text-anchor="end" opacity="0">LOCKED · Nov 28 · 5 contributions
+        <animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.720074;0.85267;1" values="0;1;0;0" dur="10.86s" repeatCount="indefinite"/>
+      </text>
     </g>
+  <text class="ps-clear" x="480" y="168" text-anchor="middle" opacity="0" fill="#39d353" font-size="12" letter-spacing="5" font-weight="600" font-family="'Cascadia Mono', 'SFMono-Regular', Consolas, monospace">SIGNAL CLEAR
+    <animate attributeName="opacity" keyTimes="0;0.866483;0.935543;0.97698;1" values="0;0;0.9;0;0" dur="10.86s" repeatCount="indefinite"/>
+  </text>
   <g transform="translate(0 174)">
     <g class="ps-ship">
-      <animateTransform attributeName="transform" type="translate" values="-100,0;-100,0;792,0;792,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;1060,0" keyTimes="0;0.009375;0.05;0.096875;0.171429;0.218304;0.292857;0.339732;0.414286;0.461161;0.535714;0.582589;0.657143;0.704018;0.778571;0.825446;1" dur="16s" repeatCount="indefinite"/>
-      <path class="ps-engine" d="M -33,0 L -45,-4 L -45,4 Z" opacity="0.45">
-        <animate attributeName="opacity" values="0.35;0.7;0.35" keyTimes="0;0.5;1" dur="16s" repeatCount="indefinite"/>
-      </path>
-      <path d="M 0,0 L -16,-3.5 L -32,-6 L -26,0 L -32,6 L -16,3.5 Z" fill="#7ee787"/>
-      <circle cx="-14" cy="0" r="2.2" fill="#05070D"/>
+      <animateTransform attributeName="transform" type="translate" calcMode="spline" keySplines=".4 0 .2 1;0 0 1 1;.4 0 .2 1;0 0 1 1;0 0 1 1;0 0 1 1;0 0 1 1;0 0 1 1;.4 0 .2 1" keyTimes="0;0.036832;0.169429;0.21547;0.348066;0.45488;0.587477;0.720074;0.85267;1" values="-100,0;792,0;792,0;818,0;818,0;818,0;818,0;818,0;818,0;1060,0" dur="10.86s" repeatCount="indefinite"/>
+      <g class="ps-ship-bank">
+        <animateTransform attributeName="transform" type="rotate" keyTimes="0;0.018416;0.036832;0.169429;0.192449;0.21547;0.85267;0.926335;1" values="0 -16 0;8 -16 0;0 -16 0;0 -16 0;8 -16 0;0 -16 0;0 -16 0;8 -16 0;0 -16 0" dur="10.86s" repeatCount="indefinite"/>
+        <path d="M-30,-6 L-76,0 L-30,6 Z" fill="#7ee787" opacity="0">
+          <animate attributeName="opacity" keyTimes="0;0.009208;0.036832;0.169429;0.178637;0.21547;0.85267;0.861878;1" values="0;0.30;0;0;0.30;0;0;0.30;0" dur="10.86s" repeatCount="indefinite"/>
+        </path>
+        <path class="ps-engine" d="M -33,0 L -45,-4 L -45,4 Z">
+          <animate attributeName="opacity" values="0.3;0.75;0.3" keyTimes="0;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 0,0 L -16,-3.5 L -32,-6 L -26,0 L -32,6 L -16,3.5 Z" fill="#7ee787"/>
+        <circle cx="-14" cy="0" r="2.2" fill="#05070D"/>
+      </g>
     </g>
   </g>
 </g>
