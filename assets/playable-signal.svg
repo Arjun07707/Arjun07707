@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-labelledby="ps-title ps-desc">
+<title id="ps-title">Playable Signal — 59 contributions across 6 active days</title>
+<desc id="ps-desc">Animated contribution grid for @Arjun07707, 2025-11-23 to 2026-11-28. A ship sweeps across the year and fires at the 6 most recent active days; each hit cell pulses, clears, and returns. Public contributions only.</desc>
+<defs>
+  <clipPath id="ps-clip"><rect x="0.5" y="0.5" width="959" height="199" rx="11.5"/></clipPath>
+  <style>
+    .ps-card text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+    .ps-header { font-family: 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 14px; letter-spacing: 2px; font-weight: 600; fill: #8b949e; }
+    .ps-month { font-size: 11px; fill: #6e7681; }
+    .ps-empty { fill: #10151C; }
+    .ps-level-1 { fill: #0e4429; }
+    .ps-level-2 { fill: #006d32; }
+    .ps-level-3 { fill: #26a641; }
+    .ps-level-4 { fill: #39d353; }
+    .ps-ring { fill: none; stroke: #7de8d5; stroke-width: 1.4; }
+    .ps-engine { fill: #39d353; }
+  </style>
+</defs>
+<rect x="0.5" y="0.5" width="959" height="199" rx="11.5" fill="#05070D" stroke="#202C40" stroke-opacity="0.6"/>
+<g class="ps-card" clip-path="url(#ps-clip)">
+  <text class="ps-header" x="28" y="30">PLAYABLE SIGNAL · @Arjun07707</text>
+  <text class="ps-month" x="163" y="53">Dec</text>
+  <text class="ps-month" x="215" y="53">Jan</text>
+  <text class="ps-month" x="267" y="53">Feb</text>
+  <text class="ps-month" x="319" y="53">Mar</text>
+  <text class="ps-month" x="384" y="53">Apr</text>
+  <text class="ps-month" x="436" y="53">May</text>
+  <text class="ps-month" x="501" y="53">Jun</text>
+  <text class="ps-month" x="553" y="53">Jul</text>
+  <text class="ps-month" x="605" y="53">Aug</text>
+  <text class="ps-month" x="670" y="53">Sep</text>
+  <text class="ps-month" x="722" y="53">Oct</text>
+  <text class="ps-month" x="774" y="53">Nov</text>
+  <line x1="129" y1="174" x2="831" y2="174" stroke="#202C40" stroke-opacity="0.55" stroke-dasharray="2 7"/>
+  <g class="ps-grid">
+    <path class="ps-empty" d="M137,62h10v10h-10zM137,75h10v10h-10zM137,88h10v10h-10zM137,101h10v10h-10zM137,114h10v10h-10zM137,127h10v10h-10zM137,140h10v10h-10zM150,62h10v10h-10zM150,75h10v10h-10zM150,88h10v10h-10zM150,101h10v10h-10zM150,114h10v10h-10zM150,127h10v10h-10zM150,140h10v10h-10zM163,62h10v10h-10zM163,75h10v10h-10zM163,88h10v10h-10zM163,101h10v10h-10zM163,114h10v10h-10zM163,127h10v10h-10zM163,140h10v10h-10zM176,62h10v10h-10zM176,75h10v10h-10zM176,88h10v10h-10zM176,101h10v10h-10zM176,114h10v10h-10zM176,127h10v10h-10zM176,140h10v10h-10zM189,62h10v10h-10zM189,75h10v10h-10zM189,88h10v10h-10zM189,101h10v10h-10zM189,114h10v10h-10zM189,127h10v10h-10zM189,140h10v10h-10zM202,62h10v10h-10zM202,75h10v10h-10zM202,88h10v10h-10zM202,101h10v10h-10zM202,114h10v10h-10zM202,127h10v10h-10zM202,140h10v10h-10zM215,62h10v10h-10zM215,75h10v10h-10zM215,88h10v10h-10zM215,101h10v10h-10zM215,114h10v10h-10zM215,127h10v10h-10zM215,140h10v10h-10zM228,62h10v10h-10zM228,75h10v10h-10zM228,88h10v10h-10zM228,101h10v10h-10zM228,114h10v10h-10zM228,127h10v10h-10zM228,140h10v10h-10zM241,62h10v10h-10zM241,75h10v10h-10zM241,88h10v10h-10zM241,101h10v10h-10zM241,114h10v10h-10zM241,127h10v10h-10zM241,140h10v10h-10zM254,62h10v10h-10zM254,75h10v10h-10zM254,88h10v10h-10zM254,101h10v10h-10zM254,114h10v10h-10zM254,127h10v10h-10zM254,140h10v10h-10zM267,62h10v10h-10zM267,75h10v10h-10zM267,88h10v10h-10zM267,101h10v10h-10zM267,114h10v10h-10zM267,127h10v10h-10zM267,140h10v10h-10zM280,62h10v10h-10zM280,75h10v10h-10zM280,88h10v10h-10zM280,101h10v10h-10zM280,114h10v10h-10zM280,127h10v10h-10zM280,140h10v10h-10zM293,62h10v10h-10zM293,75h10v10h-10zM293,88h10v10h-10zM293,101h10v10h-10zM293,114h10v10h-10zM293,127h10v10h-10zM293,140h10v10h-10zM306,62h10v10h-10zM306,75h10v10h-10zM306,88h10v10h-10zM306,101h10v10h-10zM306,114h10v10h-10zM306,127h10v10h-10zM306,140h10v10h-10zM319,62h10v10h-10zM319,75h10v10h-10zM319,88h10v10h-10zM319,101h10v10h-10zM319,114h10v10h-10zM319,127h10v10h-10zM319,140h10v10h-10zM332,62h10v10h-10zM332,75h10v10h-10zM332,88h10v10h-10zM332,101h10v10h-10zM332,114h10v10h-10zM332,127h10v10h-10zM332,140h10v10h-10zM345,62h10v10h-10zM345,75h10v10h-10zM345,88h10v10h-10zM345,101h10v10h-10zM345,114h10v10h-10zM345,127h10v10h-10zM345,140h10v10h-10zM358,62h10v10h-10zM358,75h10v10h-10zM358,88h10v10h-10zM358,101h10v10h-10zM358,114h10v10h-10zM358,127h10v10h-10zM358,140h10v10h-10zM371,62h10v10h-10zM371,75h10v10h-10zM371,88h10v10h-10zM371,101h10v10h-10zM371,114h10v10h-10zM371,127h10v10h-10zM371,140h10v10h-10zM384,62h10v10h-10zM384,75h10v10h-10zM384,88h10v10h-10zM384,101h10v10h-10zM384,114h10v10h-10zM384,127h10v10h-10zM384,140h10v10h-10zM397,62h10v10h-10zM397,75h10v10h-10zM397,88h10v10h-10zM397,101h10v10h-10zM397,114h10v10h-10zM397,127h10v10h-10zM397,140h10v10h-10zM410,62h10v10h-10zM410,75h10v10h-10zM410,88h10v10h-10zM410,101h10v10h-10zM410,114h10v10h-10zM410,127h10v10h-10zM410,140h10v10h-10zM423,62h10v10h-10zM423,75h10v10h-10zM423,88h10v10h-10zM423,101h10v10h-10zM423,114h10v10h-10zM423,127h10v10h-10zM423,140h10v10h-10zM436,62h10v10h-10zM436,75h10v10h-10zM436,88h10v10h-10zM436,101h10v10h-10zM436,114h10v10h-10zM436,127h10v10h-10zM436,140h10v10h-10zM449,62h10v10h-10zM449,75h10v10h-10zM449,88h10v10h-10zM449,101h10v10h-10zM449,114h10v10h-10zM449,127h10v10h-10zM449,140h10v10h-10zM462,62h10v10h-10zM462,75h10v10h-10zM462,88h10v10h-10zM462,101h10v10h-10zM462,114h10v10h-10zM462,127h10v10h-10zM462,140h10v10h-10zM475,62h10v10h-10zM475,75h10v10h-10zM475,88h10v10h-10zM475,101h10v10h-10zM475,114h10v10h-10zM475,127h10v10h-10zM475,140h10v10h-10zM488,62h10v10h-10zM488,75h10v10h-10zM488,88h10v10h-10zM488,101h10v10h-10zM488,114h10v10h-10zM488,127h10v10h-10zM488,140h10v10h-10zM501,62h10v10h-10zM501,75h10v10h-10zM501,88h10v10h-10zM501,101h10v10h-10zM501,114h10v10h-10zM501,127h10v10h-10zM501,140h10v10h-10zM514,62h10v10h-10zM514,75h10v10h-10zM514,88h10v10h-10zM514,101h10v10h-10zM514,114h10v10h-10zM514,127h10v10h-10zM514,140h10v10h-10zM527,62h10v10h-10zM527,75h10v10h-10zM527,88h10v10h-10zM527,101h10v10h-10zM527,114h10v10h-10zM527,127h10v10h-10zM527,140h10v10h-10zM540,62h10v10h-10zM540,75h10v10h-10zM540,88h10v10h-10zM540,101h10v10h-10zM540,114h10v10h-10zM540,127h10v10h-10zM540,140h10v10h-10zM553,62h10v10h-10zM553,75h10v10h-10zM553,88h10v10h-10zM553,101h10v10h-10zM553,114h10v10h-10zM553,127h10v10h-10zM553,140h10v10h-10zM566,62h10v10h-10zM566,75h10v10h-10zM566,88h10v10h-10zM566,101h10v10h-10zM566,114h10v10h-10zM566,127h10v10h-10zM566,140h10v10h-10zM579,62h10v10h-10zM579,75h10v10h-10zM579,88h10v10h-10zM579,101h10v10h-10zM579,114h10v10h-10zM579,127h10v10h-10zM579,140h10v10h-10zM592,62h10v10h-10zM592,75h10v10h-10zM592,88h10v10h-10zM592,101h10v10h-10zM592,114h10v10h-10zM592,127h10v10h-10zM592,140h10v10h-10zM605,62h10v10h-10zM605,75h10v10h-10zM605,88h10v10h-10zM605,101h10v10h-10zM605,114h10v10h-10zM605,127h10v10h-10zM605,140h10v10h-10zM618,62h10v10h-10zM618,75h10v10h-10zM618,88h10v10h-10zM618,101h10v10h-10zM618,114h10v10h-10zM618,127h10v10h-10zM618,140h10v10h-10zM631,62h10v10h-10zM631,75h10v10h-10zM631,88h10v10h-10zM631,101h10v10h-10zM631,114h10v10h-10zM631,127h10v10h-10zM631,140h10v10h-10zM644,62h10v10h-10zM644,75h10v10h-10zM644,88h10v10h-10zM644,101h10v10h-10zM644,114h10v10h-10zM644,127h10v10h-10zM644,140h10v10h-10zM657,62h10v10h-10zM657,75h10v10h-10zM657,88h10v10h-10zM657,101h10v10h-10zM657,114h10v10h-10zM657,127h10v10h-10zM657,140h10v10h-10zM670,62h10v10h-10zM670,75h10v10h-10zM670,88h10v10h-10zM670,101h10v10h-10zM670,114h10v10h-10zM670,127h10v10h-10zM670,140h10v10h-10zM683,62h10v10h-10zM683,75h10v10h-10zM683,88h10v10h-10zM683,101h10v10h-10zM683,114h10v10h-10zM683,127h10v10h-10zM683,140h10v10h-10zM696,62h10v10h-10zM696,75h10v10h-10zM696,88h10v10h-10zM696,101h10v10h-10zM696,114h10v10h-10zM696,127h10v10h-10zM696,140h10v10h-10zM709,62h10v10h-10zM709,75h10v10h-10zM709,88h10v10h-10zM709,101h10v10h-10zM709,114h10v10h-10zM709,127h10v10h-10zM709,140h10v10h-10zM722,62h10v10h-10zM722,75h10v10h-10zM722,88h10v10h-10zM722,101h10v10h-10zM722,114h10v10h-10zM722,127h10v10h-10zM722,140h10v10h-10zM735,62h10v10h-10zM735,75h10v10h-10zM735,88h10v10h-10zM735,101h10v10h-10zM735,114h10v10h-10zM735,127h10v10h-10zM735,140h10v10h-10zM748,62h10v10h-10zM748,75h10v10h-10zM748,88h10v10h-10zM748,101h10v10h-10zM748,114h10v10h-10zM748,127h10v10h-10zM748,140h10v10h-10zM761,62h10v10h-10zM761,75h10v10h-10zM761,88h10v10h-10zM761,101h10v10h-10zM761,114h10v10h-10zM761,127h10v10h-10zM761,140h10v10h-10zM774,62h10v10h-10zM774,75h10v10h-10zM774,88h10v10h-10zM774,101h10v10h-10zM774,114h10v10h-10zM774,127h10v10h-10zM774,140h10v10h-10zM787,62h10v10h-10zM787,75h10v10h-10zM787,88h10v10h-10zM787,101h10v10h-10zM787,114h10v10h-10zM787,127h10v10h-10zM787,140h10v10h-10zM800,62h10v10h-10zM800,75h10v10h-10zM800,88h10v10h-10zM800,101h10v10h-10zM800,114h10v10h-10zM800,127h10v10h-10zM800,140h10v10h-10zM813,62h10v10h-10zM813,75h10v10h-10zM813,88h10v10h-10zM813,101h10v10h-10zM813,114h10v10h-10zM813,127h10v10h-10zM813,140h10v10h-10z"/>
+    
+  </g>
+  <g class="ps-target">
+      <rect x="787" y="127" width="10" height="10" fill="#26a641" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.06875;0.071875;0.090625;0.11875;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#26a641;#26a641;#d7ffe2;#26a641;#26a641" keyTimes="0;0.06875;0.07375;0.09375;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="792" cy="132" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.06875;0.07;0.1;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.06875;0.07;0.1;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="792" y1="167" x2="792" y2="132" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="792" y1="167" x2="792" y2="132" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.06125;0.0675;0.07875;0.08375;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g class="ps-target">
+      <rect x="813" y="88" width="10" height="10" fill="#39d353" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.2;0.203125;0.221875;0.25;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.2;0.205;0.225;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="818" cy="93" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.2;0.20125;0.23125;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.2;0.20125;0.23125;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="818" y1="167" x2="818" y2="93" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="818" y1="167" x2="818" y2="93" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.1925;0.19875;0.21;0.215;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g class="ps-target">
+      <rect x="813" y="101" width="10" height="10" fill="#006d32" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.33125;0.334375;0.353125;0.38125;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#006d32;#006d32;#d7ffe2;#006d32;#006d32" keyTimes="0;0.33125;0.33625;0.35625;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="818" cy="106" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.33125;0.3325;0.3625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.33125;0.3325;0.3625;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="818" y1="167" x2="818" y2="106" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="818" y1="167" x2="818" y2="106" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.32375;0.33;0.34125;0.34625;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g class="ps-target">
+      <rect x="813" y="114" width="10" height="10" fill="#39d353" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.4625;0.465625;0.484375;0.5125;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.4625;0.4675;0.4875;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="818" cy="119" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.4625;0.46375;0.49375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.4625;0.46375;0.49375;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="818" y1="167" x2="818" y2="119" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="818" y1="167" x2="818" y2="119" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.455;0.46125;0.4725;0.4775;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g class="ps-target">
+      <rect x="813" y="127" width="10" height="10" fill="#39d353" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.59375;0.596875;0.615625;0.64375;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#39d353;#39d353;#d7ffe2;#39d353;#39d353" keyTimes="0;0.59375;0.59875;0.61875;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="818" cy="132" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.59375;0.595;0.625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.59375;0.595;0.625;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="818" y1="167" x2="818" y2="132" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="818" y1="167" x2="818" y2="132" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.58625;0.5925;0.60375;0.60875;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g class="ps-target">
+      <rect x="813" y="140" width="10" height="10" fill="#26a641" opacity="1">
+        <animate attributeName="opacity" values="1;1;1;1;0;0;1;1" keyTimes="0;0.725;0.728125;0.746875;0.775;0.925;0.9375;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="#26a641;#26a641;#d7ffe2;#26a641;#26a641" keyTimes="0;0.725;0.73;0.75;1" dur="16s" repeatCount="indefinite"/>
+      </rect>
+      <circle class="ps-ring" cx="818" cy="145" r="4" opacity="0">
+        <animate attributeName="r" values="4;4;5;14;14" keyTimes="0;0.725;0.72625;0.75625;1" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.725;0.72625;0.75625;1" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <g class="ps-beam" opacity="0">
+        <line x1="818" y1="167" x2="818" y2="145" stroke="#7de8d5" stroke-width="3" stroke-opacity="0.22"/>
+        <line x1="818" y1="167" x2="818" y2="145" stroke="#7de8d5" stroke-width="1.1"/>
+        <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.7175;0.72375;0.735;0.74;1" dur="16s" repeatCount="indefinite"/>
+      </g>
+    </g>
+  <g transform="translate(0 174)">
+    <g class="ps-ship">
+      <animateTransform attributeName="transform" type="translate" values="-100,0;-100,0;792,0;792,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;818,0;1060,0" keyTimes="0;0.009375;0.05;0.096875;0.18125;0.228125;0.3125;0.359375;0.44375;0.490625;0.575;0.621875;0.70625;0.753125;1" dur="16s" repeatCount="indefinite"/>
+      <path class="ps-engine" d="M -33,0 L -45,-4 L -45,4 Z" opacity="0.45">
+        <animate attributeName="opacity" values="0.35;0.7;0.35" keyTimes="0;0.5;1" dur="16s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 0,0 L -16,-3.5 L -32,-6 L -26,0 L -32,6 L -16,3.5 Z" fill="#7ee787"/>
+      <circle cx="-14" cy="0" r="2.2" fill="#05070D"/>
+    </g>
+  </g>
+</g>
+</svg>

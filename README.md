@@ -40,13 +40,9 @@ I'm a B.Tech Computer Science undergraduate with a minor in Astronomy, Astrophys
 I like problems that need both structure and imagination: modelling data, shaping an interaction, or turning a rough idea into something people can actually use. The astronomy minor keeps that curiosity honest — a reminder that every system we build is a small model of something much larger.
 
 <!-- PLAYABLE-SIGNAL:START -->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arjun07707/Arjun07707/signal/signal-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Arjun07707/Arjun07707/signal/signal-light.svg" />
-    <img src="https://raw.githubusercontent.com/Arjun07707/Arjun07707/signal/signal-light.svg" width="100%" alt="Playable Signal: a ship sweeps across Subhamita's contribution grid, firing at the days with contributions while each hit cell pulses, clears, and returns" />
-  </picture>
-</p>
+<div align="center">
+  <img src="./assets/playable-signal.svg" alt="Animated contribution grid: a ship fires at Arjun07707's lit contribution cells" width="100%">
+</div>
 <!-- PLAYABLE-SIGNAL:END -->
 
 <img src="assets/cosmic-divider.svg" width="100%" alt="" />
