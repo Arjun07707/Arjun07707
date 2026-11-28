@@ -1,0 +1,42 @@
+name: Generate Playable Signal
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: playable-signal
+  cancel-in-progress: true
+
+jobs:
+  signal:
+    name: Generate and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build the signal SVGs
+        run: node scripts/build-signal.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_LOGIN: Arjun07707
+
+      - name: Publish the SVGs to the signal branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: signal
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
